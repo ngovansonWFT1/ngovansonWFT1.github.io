@@ -1,0 +1,54 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+img {
+	max-width: 300px;
+	border: 1px solid blue;
+}
+#div1 {
+	margin-top: 50px;
+	margin-left: 50px;
+	float: left;
+}
+#div2 {
+	margin-top: 50px;
+	margin-left: 100px;
+	float: left;
+}
+#div3 {
+	margin-top: 50px;
+	margin-left: 100px;
+	float: left;
+}
+#div4 {
+	margin-top: 50px;
+	margin-left: 50px;
+	float: left;
+}
+#div5 {
+	margin-top: 50px;
+	margin-left: 100px;
+	float: left;
+}
+a:link {
+	color: black;
+	text-decoration: none;
+}
+a:visited {
+	color: grey;
+	
+}
+a:hover {
+	color: green;
+	
+}
+a:active {
+	color: blue;
+	
+}
+b {
+	display: block;
+	width: 300px;
+	height: 36px;
+}
