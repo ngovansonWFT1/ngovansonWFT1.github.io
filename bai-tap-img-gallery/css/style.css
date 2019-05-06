@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #fbf18e;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    line-height: 14px;
+}
+div {
+	display: block;
+}
+a {
+	text-decoration: none;
+}
+.logo {
+	float: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #fff;
+    text-align: center;
+    width: 16.66666667%;
+  }
+.logo>h1 {
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} 
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+.menu {
+	background-color: black;
+	float: left;
+    padding-bottom: 15px;
+    list-style: none;
+    width: calc(100% - 16.66666667%);
+}
+.main {
+	display: block;
+    height: auto;
+    padding-top: 15px;
+    padding-left: 15px;
+    float: left;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.main>li {
+    white-space: nowrap;
+    float: left;
+    padding: .75em 1em;
+    display: list-item;
+}
+.main a {
+	font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: Open Sans;
+    line-height: 24px;
+    color: #f7f7f7;
+    font-weight: 500;
+}
+.main a:hover {
+	text-decoration: underline;
+}
+.anh1, .anh2, .anh3, .anh4, .anh5, .anh6, .anh7, .anh8, .anh9, .anh10 {
+	float: left;
+	height: auto;
+	width: calc((100% /3 - 20px));
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+h3 {
+	display: block;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: Georgia,Serif;
+}
+h3>a {
+	color: black;
+}
+
+h3>a:hover {
+	color: green;
+}
+.a1:hover,.a2:hover, .a3:hover, .a4:hover,.a5:hover, .a6:hover, .a7:hover,.a8:hover, .a9:hover, .a10:hover {
+	margin-right: 10px;
+	transform: translate3d(10px,0,0);
+}
