@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	width: 330px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 5px;
+}
+.wrapper div {
+	padding: 2px;
+	background-color: #99d2fb;
+}
+img {
+	max-width: 100%;
+}
+.wrapper div:hover {
+	transform: scale(1.5);
+	transition: 1s;
+}
+

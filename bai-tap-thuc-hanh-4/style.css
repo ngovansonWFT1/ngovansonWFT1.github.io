@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 20px;
+	font-weight: bold;
+}
+div {
+	display: block;
+	margin: auto;
+	text-transform: uppercase;
+}
+.wrapper {
+	max-width: 200px;
+	height: 100px;
+	background-color: #f2eef0;
+	text-align: center;
+	position: relative;
+}
+.wrapper > .div1 {
+	position: absolute;
+	display: inline;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -25%);
+}
+.wrapper > .div3 {
+	position: absolute;
+	display: inline;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -75%);
+}
+.wrapper > .div2 {
+	position: absolute;
+	display: inline;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.div2 {
+	position: relative;
+}
+.d1, .d2, .d3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+@keyframes nhapnhayA {
+	from { z-index: 3; } to { z-index: 1; }
+}
+.d1 {
+	background-color: green;
+	z-index: 1;
+	animation: nhapnhayA 1s linear infinite;
+}
+
+@keyframes nhapnhayB {
+	from { z-index: 3; } to { z-index: 2; }
+}
+
+.d2 {
+	background-color: #f24517;
+	z-index: 2;
+	animation: nhapnhayB 2s linear infinite;
+}
+
+@keyframes nhapnhayC {
+	from { z-index: 3; } to { z-index: 1; }
+} 
+
+.d3 {
+	background-color: #9d71e6;
+	z-index: 3;
+	animation: nhapnhayC 3s linear infinite;
+}
