@@ -38,6 +38,7 @@ a {
 }
 a:hover {
 	color: red;
+	background-color: blue;
 }
 ul {
 	display: block;
@@ -65,6 +66,23 @@ li {
 	height: 370px;
 }
 
+.sub-menu li > i {
+	float: right;
+	visibility: hidden;
+	color: #0924f5;
+}
+
+.sub-menu:hover i {
+	visibility: visible;
+}
+.sub-menu1 li > i {
+	float: right;
+	visibility: hidden;
+	color: #0924f5;
+}
+.sub-menu1:hover i {
+	visibility: visible;
+}
 .sub-menu1 {
 	position: absolute;
 	top: 0;
