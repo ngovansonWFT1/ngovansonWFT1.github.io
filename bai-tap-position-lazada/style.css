@@ -1,0 +1,193 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background-color: #14f6d9;
+}
+div {
+	display: block;
+}
+.wrapper {
+	position: relative;
+	margin: 0;
+}
+.header {
+	background-color: #060a56;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+}
+.header .logo {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	height: 100px;
+}
+.logo img {
+	max-width: 100%;
+	height: 100px;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+}
+ul {
+	display: block;
+	list-style-type: none;
+	background-color: #f4f4f4	;
+}
+li {
+	display: block;
+	padding-top: 12px;
+}
+
+.menu {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	z-index: 2;
+}
+.sub-menu {
+	margin: 0;
+	padding-left: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 370px;
+}
+
+.sub-menu1 {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	width: 250px;
+	display: none;
+	height: 370px;
+}
+.sub-menu2 {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	width: 250px;
+	display: none;
+	height: 370px;
+}
+.sub-menu > li:hover .sub-menu1 {
+	display: block;
+}
+.sub-menu1 > li:hover .sub-menu2 {
+	display: block;
+}
+.anh1 {
+	position: absolute;
+	top: 100px;
+	left: 270px;
+	z-index: 1;
+	max-width: 100%;
+	height: 370px;
+}
+.anh1 img {
+	max-width: 100%;
+	height: 370px;
+}
+.timkiemphobien {
+	position: absolute;
+	top: 470px;
+	left: 50px;
+	width: calc(100% - 100px);
+	height: 300px;
+	margin-top: 50px;
+	padding: 0;
+}
+h3 {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 1.2em;
+}
+.sanpham1 {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 20%;
+	height: 220px;
+	background-color: #fdc64f;
+	border: 1px solid white;
+}
+.sanpham1 a {
+	color: white;
+}
+.sanpham1 img {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -35%);
+	width: 80%;
+	height: 80%;
+}
+.sanpham1 h4 {
+	display: block;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -20%);
+}
+.spX {
+	position: absolute;
+	top: 50px;
+	left: 20%;
+	width: 80%;
+	height: 220px;
+	color: white;
+}
+.spX a {
+	color: white;
+}
+.sanpham2, .sanpham3, .sanpham4, .sanpham5, .sanpham6, .sanpham7, .sanpham8, .sanpham9 {
+	float: left;
+	width: 25%;
+	height: 110px;
+	background-color: #fbcba7;
+	border: 1px solid white;
+}
+.sanpham2 img, .sanpham3 img, .sanpham4 img, .sanpham5 img, .sanpham6 img, .sanpham7 img, .sanpham8 img, .sanpham9 img  {
+	float: left;
+	width: 50%;
+	height: 100px;
+	padding-top: 7px;
+	padding-left: 5px;
+}
+.sanpham2 h4, .sanpham3 h4, .sanpham4 h4, .sanpham5 h4, .sanpham6 h4, .sanpham7 h4, .sanpham8 h4, .sanpham9 h4  {
+	padding-left: 10px;
+	float: left;
+}
+.sanpham1:hover, .sanpham2:hover, .sanpham3:hover, .sanpham4:hover, .sanpham5:hover, .sanpham6:hover, .sanpham7:hover,.sanpham8:hover, .sanpham9:hover {
+	transform: scale(1.025);
+	transition: 0.5s;
+}
+.backtotop {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	width: 50px;
+	height: 50px;
+}
+.backtotop img {
+	max-width: 100%;
+
+
+}
+.backtotop:hover {
+	transform: scale(1.3);
+	margin-top: 0;
+}

@@ -17,62 +17,57 @@ div {
 	text-align: center;
 	position: relative;
 }
-.wrapper > .div1 {
+.div1, .div2, .div3, .div4, .div5 {
 	position: absolute;
 	display: inline;
+}
+.div1 {
 	top: 25%;
 	left: 50%;
 	transform: translate(-50%, -25%);
 }
-.wrapper > .div3 {
-	position: absolute;
-	display: inline;
+.div5 {
 	top: 75%;
 	left: 50%;
 	transform: translate(-50%, -75%);
 }
-.wrapper > .div2 {
-	position: absolute;
-	display: inline;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.div2 {
-	position: relative;
-}
-.d1, .d2, .d3 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.div2, .div3, .div4 {
 	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-@keyframes nhapnhayA {
-	from { z-index: 3; } to { z-index: 1; }
+@keyframes learing {
+	0% { top: 20%; opacity: 0 }
+	33% { top: 50%; opacity: 1 }
+	66% { top: 50%; opacity: 0 }
+	100% { top: 50%; opacity: 0 }
 }
-.d1 {
+
+.div2 {
 	background-color: green;
-	z-index: 1;
-	animation: nhapnhayA 1s linear infinite;
+	animation: learing 1s infinite;
 }
 
-@keyframes nhapnhayB {
-	from { z-index: 3; } to { z-index: 2; }
+@keyframes coding {
+	0% { top: 20%; opacity: 0 }
+	33% { top: 50%; opacity: 0 }
+	66% { top: 50%; opacity: 1 }
+	100% { top: 50%; opacity: 0 }
 }
-
-.d2 {
+.div3 {
 	background-color: #f24517;
-	z-index: 2;
-	animation: nhapnhayB 2s linear infinite;
+	animation: coding 1s infinite;
 }
 
-@keyframes nhapnhayC {
-	from { z-index: 3; } to { z-index: 1; }
-} 
+@keyframes teaching {
+	0% { top: 20%; opacity: 0 }
+	33% { top: 50%; opacity: 0 }
+	66% { top: 50%; opacity: 0 }
+	100% { top: 50%; opacity: 1 }
+}
 
-.d3 {
+.div4 {
 	background-color: #9d71e6;
-	z-index: 3;
-	animation: nhapnhayC 3s linear infinite;
+	animation: teaching 1s infinite;
 }
