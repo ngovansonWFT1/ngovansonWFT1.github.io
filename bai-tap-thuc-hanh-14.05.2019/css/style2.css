@@ -10,7 +10,9 @@ div {
 	display: block;
 }
 header {
-	position: relative;
+	position: absolute;
+	top: 0; 
+	left: 0;
 	width: 100%;
 	height: 100px;
 }
@@ -24,4 +26,35 @@ header {
 .logo img {
 	max-width: 100%;
 	height: 100px;
+}
+section {
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	width: calc(100% - 100px);
+	padding: 0 20px 0 20px;
+}
+div {
+	width: 100%;
+	margin-top: 50px;
+	display: block;
+	float: left;
+}
+article {
+	text-align: justify;
+	padding-left: 30px;
+	display: block;
+	width: calc(70% - 30px);
+	height: 200px;
+	float: left;
+}
+span {
+	display: block;
+	float: left;
+	width: 30%;
+	height: 300px;
+}
+section img {
+	max-width: 100%;
+	height: 300px;
 }
