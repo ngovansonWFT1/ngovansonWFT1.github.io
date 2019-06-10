@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.clear_all {
+    clear: both;
+}
+#khungchinh {
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    margin: auto;
+}
+button {
+    width: 40px; 
+    height: 30px;
+}
+.buttonfist {
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.buttonend {
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.button {
+    margin-left: 15px
+}
+#manhinh {
+    width: 278px;
+    height: 50px;
+    text-align: right;
+    padding: 0px 5px 0px 5px;
+    margin: 30px 10px 30px 10px;
+}
+#so_0 {
+    width: 99px;
+}
+h4 {
+    margin: 10px 10px 0 10px;
+    font-size: 1.05em;
+}
+button:hover {
+    background-color: #fac785;
+}

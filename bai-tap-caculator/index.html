@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="khungchinh">
+        <h4>Caculator</h4>
+        <input type="text" id="manhinh" />
+        <div class="clear_all"></div>
+        <button class="buttonfist phimxoa" type="button" name="DEL" onclick="pressNumber(this)">DEL</button>
+        <button class="button phimxoa" type="button" name="CE" onclick="pressNumber(this)">CE</button>
+        <button class="button phimxoa" type="reset" name="C" onclick="pressNumber(this)">C</button>
+        <button class="button phimso" type="button" name="+/-" onclick="pressNumber(this)">+/-</button>
+        <button class="buttonend phimCBH" type="button" name="√" onclick="pressNumber(this)">√</button>
+
+        <div class="clear_all"></div>
+        <button class="buttonfist phimso" type="button" name="7" onclick="pressNumber(this)">7</button>
+        <button class="button phimso" type="button" name="8" onclick="pressNumber(this)">8</button>
+        <button class="button phimso" type="button" name="9" onclick="pressNumber(this)">9</button>
+        <button class="button pheptinh" type="button" name="/" onclick="pressNumber(this)">/</button>
+        <button class="buttonend " type="button" name="%" onclick="pressNumber(this)">%</button>
+
+        <div class="clear_all"></div>
+        <button class="buttonfist phimso" type="button" name="4" onclick="pressNumber(this)">4</button>
+        <button class="button phimso" type="button" name="5" onclick="pressNumber(this)">5</button>
+        <button class="button phimso" type="button" name="6" onclick="pressNumber(this)">6</button>
+        <button class="button pheptinh" type="button" name="*" onclick="pressNumber(this)">*</button>
+        <button class="buttonend " type="button" name="1/x" onclick="pressNumber(this)">1/x</button>
+
+        <div class="clear_all"></div>
+        <button class="buttonfist phimso" type="button" name="1" onclick="pressNumber(this)">1</button>
+        <button class="button phimso" type="button" name="2" onclick="pressNumber(this)">2</button>
+        <button class="button phimso" type="button" name="3" onclick="pressNumber(this)">3</button>
+        <button class="button pheptinh" type="button" name="-" onclick="pressNumber(this)">-</button>
+        <button class="buttonend " type="button" name="x^2" onclick="pressNumber(this)">x^2</button>
+        
+        <div class="clear_all"></div>
+        <button class="buttonfist phimso" id="so_0" type="button" name="0" onclick="pressNumber(this)">0</button>
+        <button class="button phimso" type="button" name="." onclick="pressNumber(this)">.</button>
+        <button class="button pheptinh" type="button" name="+" onclick="pressNumber(this)">+</button>
+        <button class="buttonend" id="daubang" type="button" name="=" onclick="pressNumber(this)">=</button>
+        
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
