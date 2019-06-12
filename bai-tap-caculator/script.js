@@ -5,6 +5,7 @@ var doi_phep_tinh = false;
 var phep_tinh_cu = '';
 var end = false;
 var ketquaHT = '';
+var khac = document.getElementById('manhinh');
 
 function pressNumber(x) {
    var type = x.innerHTML;
@@ -44,7 +45,7 @@ function pressNumber(x) {
       ketqua.value = ketquaHT + manHinh;
    }
    else if (type == '+' || type == '-' ||
-            type == '*' || type == '/'   ) {
+            type == '×' || type == '÷'   ) {
          
       if(doi_phep_tinh) {
          ketqua.value = ketqua.value.substring(0, ketqua.value.length - 1) + type;
@@ -93,9 +94,35 @@ function pressNumber(x) {
 }
 
 function getValue() {
+   if (khac.value.includes('×','÷')) {
+      khac.value = khac.value.replace(/×/g, '*').replace(/÷/g, '/');
+      khac.value = eval(khac.value);
+      ketqua.value = khac.value;
+      manHinh = ketqua.value;
+      ketquaHT = '';
+   }
+   else if (khac.value.includes('×',0)) {
+      khac.value = khac.value.replace('×', '*');
+      khac.value = eval(khac.value);
+      ketqua.value = khac.value;
+      manHinh = ketqua.value;
+      ketquaHT = '';
+      
+   }
+   else if (khac.value.includes('÷',0)) {
+      khac.value = khac.value.replace('÷', '/');
+      khac.value = eval(khac.value);
+      ketqua.value = khac.value;
+      manHinh = ketqua.value;
+      ketquaHT = '';
+      
+   }
+      
+   else {
    ketqua.value = eval(ketqua.value);
    manHinh = ketqua.value;
    ketquaHT = '';
+   }
 }
 
 function getPercent() {
