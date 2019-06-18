@@ -72,9 +72,17 @@ $('.box-buttom .equal').on('click', function() {
    }
 });
 
-$('box-buttom .phimCBH').on('click', function() {
+$('.box-buttom .phimCBH').on('click', function() {
    $result = $('#manhinh').val();
-   $('#manhinh').val(sqrt(eval($result)));
+   $('#manhinh').val(Math.sqrt(eval($result)));
+});
+
+$('.box-buttom .phimphantram').on('click', function() {
+   $result = $('#manhinh').val();
+   if($result.includes('÷')) {
+      $('#manhinh').val((eval($result) * 100));
+   }
+   else {}
 });
 
 

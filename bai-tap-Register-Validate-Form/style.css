@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: black;
+    background-image: url(./img/Anton_Fadeev_concept_art_artwork_digital_art_Duelist-159863.jpg!d);
+}
+h2 {
+    padding-top: 10px;
+    font-size: 1.5rem;
+    margin-left: 25px;
+    color: #f70a69;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    border: 1px solid #9ce7f7;
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+    background-color: #9ce7f7;
+    opacity: 0.8;
+}
+.form-input {
+    max-width: 100%;
+    margin-left: 25px;
+    margin-top: 15px;
+    display: block;
+}
+input[type="text"],[type="password"] {
+    width: 350px;
+}
+span {
+    padding-right: 1rem;
+}
+.error {
+    color: red;
+    font-size: 0.7rem;
+}
+p {
+    width: 337px;
+}
+input {
+    border: 1px solid #ced4da;
+    padding: 0.25rem 0.55rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    background-color:#fff;
+    border-radius: 0.25rem;
+}
+select {
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.55rem;
+    font-size: 1rem;
+    background-color:#fff;
+    cursor: pointer;
+}
+#btnSubmit {
+    width: 100px;
+    height: 30px;
+    background-color: #007bff;
+    border: 1px solid black;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: #fff;
+}
