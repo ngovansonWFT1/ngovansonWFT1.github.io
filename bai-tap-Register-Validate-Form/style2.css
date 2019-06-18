@@ -19,6 +19,7 @@ body {
     padding-bottom: 20px;
     background-color: #9ce7f7;
     opacity: 0.8;
+    box-shadow: 5px 5px 5px 5px #fff;
 }
 
 img {
@@ -35,7 +36,9 @@ h2 {
 }
 .data-user {
     position: relative;
-    margin-top: 20px;
+    margin-top: 15px;
+    border-bottom: 1px dotted blue;
+
 }
 h4 {
     color: red;
@@ -49,8 +52,9 @@ span {
     color: red;
     position: absolute;
     top: 50%;
-    left: 35%;;
+    left: 27%;
     font-size: 1.2rem;
     margin-left: 20px;
     font-style: italic;
+    width: 300px;
 }

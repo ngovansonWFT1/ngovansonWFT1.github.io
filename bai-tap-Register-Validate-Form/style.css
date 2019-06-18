@@ -30,6 +30,7 @@ div {
     padding-bottom: 20px;
     background-color: #9ce7f7;
     opacity: 0.8;
+    box-shadow: 5px 5px 5px 5px #fff;
 }
 .form-input {
     max-width: 100%;
