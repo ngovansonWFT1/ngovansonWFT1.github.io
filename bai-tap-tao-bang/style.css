@@ -7,7 +7,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(./img/9eH4nSp.jpg);
     background-size: cover;
-    color: white;
+    
 
 }
 h1 {
@@ -15,16 +15,22 @@ h1 {
     text-align: center;
     padding: 20px;
     font-size: 25px;
+    color: #eee;
 }
 table {
     width: 1200px;
     margin: auto;
+    color: black;
+    background-color: white;
+    opacity: 0.8;
+    font-weight: 400;   
 }
 table, th, td {
-    border: 1px solid white;
+    border: 1px solid lightblue;
     border-collapse: collapse;
     font-size: 17px;
     margin-bottom: 20px;
+      
 
 }
 th {
