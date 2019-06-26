@@ -1,11 +1,11 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $(window).on('load', function LayThongTinDangKy() {
         let uri = document.URL;
         let urinew = document.URL.split('?')[0];
         let uri_dec = decodeURIComponent(uri);
         let content = uri_dec.replace(/[&?]/g, ' ').replace(/[+]/g, ' ').replace(/[=]/g, ': ');
         let total = content.replace(urinew, '').trim().split(' ');
-        let hoTen= '';
+        let hoTen = '';
         let ngaySinh = '';
         let gioiTinh = '';
         let diaChi = '';
@@ -14,16 +14,16 @@ $(document).ready(function() {
         let pass = '';
         for (let i = 1; i < total.length; i++) {
             if (i < total.indexOf('birthday_day:', 1)) {
-                hoTen+= total[i] + ' ';
+                hoTen += total[i] + ' ';
                 $('#hoTen').text(hoTen);
-                
+
             }
-            if (i > total.indexOf('birthday_day:', 1) && i < total.indexOf('gender:', 1) && 
-                  total[i] != 'birthday_month:' && total[i] != 'birthday_year:') {
+            if (i > total.indexOf('birthday_day:', 1) && i < total.indexOf('gender:', 1) &&
+                total[i] != 'birthday_month:' && total[i] != 'birthday_year:') {
                 ngaySinh += total[i] + '/';
-                $('#ngaySinh').text(ngaySinh.substring(0,ngaySinh.length -1));
+                $('#ngaySinh').text(ngaySinh.substring(0, ngaySinh.length - 1));
             }
-            if (i > total.indexOf('gender:', 1) && i < total.indexOf('diachi:', 1) ) {
+            if (i > total.indexOf('gender:', 1) && i < total.indexOf('diachi:', 1)) {
                 gioiTinh += total[i];
                 $('#gioiTinh').text(gioiTinh);
             }
