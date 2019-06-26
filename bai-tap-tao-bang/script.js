@@ -46,7 +46,7 @@ let listSanPham = [
     },
 ];
 
-document.getElementById('ten').addEventListener('click', function() {
+document.querySelector('thead tr th:nth-child(2)').addEventListener('click', function() {
     if(document.querySelector('thead tr th:nth-child(2)').getAttribute('class') == 'giam') {
         sapXepTheoTenTangDan();
         document.querySelector('thead tr th:nth-child(2)').setAttribute('class', 'tang');
@@ -55,10 +55,16 @@ document.getElementById('ten').addEventListener('click', function() {
         sapXepTheoTenGiamDan();
         document.querySelector('thead tr th:nth-child(2)').setAttribute('class', 'giam');
         document.getElementById('ten').setAttribute('class', 'fas fa-sort-down');
+
+    }
+    for (let i =2; i <=6; i++) {
+        if (i != 2) {
+        document.querySelector('th:nth-child('+i+') i').setAttribute('class', 'fas fa-sort');
+        }
     }
 });
 
-document.getElementById('ma').addEventListener('click', function() {
+document.querySelector('thead tr th:nth-child(3)').addEventListener('click', function() {
     if(document.querySelector('thead tr th:nth-child(3)').getAttribute('class') == 'giam') {
         sapXepTheoMaSpTangDan();
         document.querySelector('thead tr th:nth-child(3)').setAttribute('class', 'tang');
@@ -68,9 +74,14 @@ document.getElementById('ma').addEventListener('click', function() {
         document.querySelector('thead tr th:nth-child(3)').setAttribute('class', 'giam');
         document.getElementById('ma').setAttribute('class', 'fas fa-sort-down');
     }
+    for (let i =2; i <=6; i++) {
+        if (i != 3) {
+        document.querySelector('th:nth-child('+i+') i').setAttribute('class', 'fas fa-sort');
+        }
+    }
 });
 
-document.getElementById('thuonghieu').addEventListener('click', function() {
+document.querySelector('thead tr th:nth-child(4)').addEventListener('click', function() {
     if(document.querySelector('thead tr th:nth-child(4)').getAttribute('class') == 'giam') {
         sapXepTheoThuongHieuTangDan();
         document.querySelector('thead tr th:nth-child(4)').setAttribute('class', 'tang');
@@ -80,9 +91,14 @@ document.getElementById('thuonghieu').addEventListener('click', function() {
         document.querySelector('thead tr th:nth-child(4)').setAttribute('class', 'giam');
         document.getElementById('thuonghieu').setAttribute('class', 'fas fa-sort-down');
     }
+    for (let i =2; i <=6; i++) {
+        if (i != 4) {
+        document.querySelector('th:nth-child('+i+') i').setAttribute('class', 'fas fa-sort');
+        }
+    }
 });
 
-document.getElementById('gia').addEventListener('click', function() {
+document.querySelector('thead tr th:nth-child(5)').addEventListener('click', function() {
     if(document.querySelector('thead tr th:nth-child(5)').getAttribute('class') == 'giam') {
         sapXepTheoGiaTangDan();
         document.querySelector('thead tr th:nth-child(5)').setAttribute('class', 'tang');
@@ -92,9 +108,14 @@ document.getElementById('gia').addEventListener('click', function() {
         document.querySelector('thead tr th:nth-child(5)').setAttribute('class', 'giam');
         document.getElementById('gia').setAttribute('class', 'fas fa-sort-down');
     }
+    for (let i =2; i <=6; i++) {
+        if (i != 5) {
+        document.querySelector('th:nth-child('+i+') i').setAttribute('class', 'fas fa-sort');
+        }
+    }
 });
 
-document.getElementById('soluong').addEventListener('click', function() {
+document.querySelector('thead tr th:nth-child(6)').addEventListener('click', function() {
     if(document.querySelector('thead tr th:nth-child(6)').getAttribute('class') == 'giam') {
         sapXepTheoSoLuongTangDan();
         document.querySelector('thead tr th:nth-child(6)').setAttribute('class', 'tang');
@@ -104,6 +125,10 @@ document.getElementById('soluong').addEventListener('click', function() {
         document.querySelector('thead tr th:nth-child(6)').setAttribute('class', 'giam');
         document.getElementById('soluong').setAttribute('class', 'fas fa-sort-down');
     }
+    for (let i =2; i <=5; i++) {
+        document.querySelector('th:nth-child('+i+') i').setAttribute('class', 'fas fa-sort');
+    }
+    //document.querySelectorAll('th:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(5) i').setAttribute('class', 'fas fa-sort');
 });
 
 function sapXepTheoTenTangDan() {

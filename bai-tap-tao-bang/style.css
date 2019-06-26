@@ -56,6 +56,6 @@ i {
 
 }
 
-i:hover {
-    color:red;
+thead:hover th:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(5),:nth-child(6){
+    cursor: pointer;
 }
