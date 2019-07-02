@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.row.anh2 .layer2 a.btn.btn-outline-secondary {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+}
+.row.anh2 .layer2 a.btn.btn-outline-secondary:hover {
+    background-color: #F78536;
+}
+.row.anh2 .layer2 h3 {
+    color: white;
+    font-weight: 700;
+}
+
+.row.anh2 .layer2 p {
+    color: #eee;
+    font-size: 17px;
+}
+
+.row.anh2 .layer2 h4.display-5 {
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.row.dongke2 {
+    padding: 45px 0;
+}
+
+.dongke2 hr {
+    color: #F78536;
+    border: 1px solid;
+    margin: 0;
+}
+
+.noidung2 p {
+    font-size: 20px;
+    color: #a68282;
+    padding-bottom: 0;
+}
+
+.noidung2 h2.display-4 {
+    font-size: 41px;
+    font-weight: 400;
+    color: #6b6969;
+    padding-bottom: 31px;
+}
+
+.row.text-center.tieude2 {
+    padding-top: 120px;
+    margin-top: 120p;
+}
+
+.noidung1 p {
+    font-size: 28px;
+}
+
+.noidung1 h2.display-4 {
+    font-weight: bold;
+    font-size: 67px;
+}
+
+a.navbar-brand.tieudelogo {
+    color: #F78536;
+    font-size: 30px;
+    font-weight: bold;
+}
+a.navbar-brand.tieudelogo:hover {
+    color: #F78536;
+}
+
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0.danhmuc li.nav-item a.nav-link {
+    font-weight: 700;
+}
+
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0.danhmuc li.nav-item.active a.nav-link {
+    color: #F78536;
+}
+
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0.danhmuc li.nav-item a.nav-link:hover {
+    color: #F78536;
+}
+
+div#navbarTogglerDemo02 {
+    flex-grow: 0;
+}
+
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0.danhmuc li.nav-item {
+    padding-right: 20px;
+}
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0.danhmuc li.nav-item:last-child {
+    padding-right: 0px;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.row.anh2 .layer2 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 2;
+
+}
+.row.anh2 .khoianh img.layer1.img-fluid {
+    transition: 1s;
+}
+
+.row.anh2 .khoianh:hover img.layer1.img-fluid  {
+    transform: scale(1.2);
+}
+.row.anh2 .khoianh {
+    overflow: hidden;
+ 
+}
+.row.anh2 {
+    position: relative;
+ 
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.menutop {
+    height: 100px;
+    background-color: white!important;
+}
+.noidung1 {
+    position: relative;
+    height: 750px;
+}
+
+.layerchinh {
+    background-image: url(img/1.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+}
+.layer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 750px;
+    background-image: linear-gradient(to right, rgba(255, 62, 28, 0.5) 0%, rgba(255, 140, 0, 0.5) 100%);
+}
+.noidung1 .text-left {
+    position: absolute;
+    z-index: 2;
+    top: 60%;
+    left: 5%;
+    transform: translateY(-60%);
+    
+    color: #fff;
+}
+
+.noidung2 {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding-bottom: 100px;
+}
+.noidung2 .nutoffer {
+    margin-top: 30px;
+    padding: 10px 20px;
+    width: 100%;
+}
+.noidung2 .nutoffer a.btn.btn-outline-secondary {
+    color: #F78536;
+    border: 2px solid #F78536;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+}
+.noidung2 .nutoffer a.btn.btn-outline-secondary:hover {
+    background-color: #F78536;
+    color: #fff;
+}
+
+.noidung3 .row.hang3 {
+    padding-bottom: 35px;
+}
+.noidung3 .container .row .col-lg-6 .chuaanh {
+    background-image: url(img/6.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.noidung3 {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.col-sm-6.phantext3 a {
+    color: #F78536;
+}
+
+.col-sm-6.phantext3 a:hover {
+    text-decoration: none;
+}
+
+.col-sm-6.phantext3 p {
+    font-size: 15px;
+    color: #8e8686;
+}
+
+.col-sm-6.phantext3 h4.display-5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+section.noidung4 .khoianhnho {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+}
+
+section.noidung4 {
+    width: 100%;
+
+}
+
+
+.noidung4 .khoianhnho .khunginner {
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.noidung4 .khoianhnho .gradien {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #73737366 50%, #00000054 100%);
+    opacity: 0.8;
+}
+.noidung4 .khoianhnho:hover .gradien {
+    opacity: 0.6;
+}
+
+.noidung4 .khoianhnho:hover .khunginner {
+    opacity: 1;
+}
+.noidung4 .khoianhnho .display-5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 4;
+}
+.noidung4 .khoianhnho {
+    background-position: center;
+    background-size: cover;
+}
+
+
+.noidung4 .col-sm-3.bockhoianh {
+    width: 100%;
+    height: 270px;
+    padding: 0;
+}
+
+.noidung4 .col-sm-6.text-center {
+    padding: 0;
+    background-color: #F78536;
+}
+.noidung4 h3.display-4 {
+    padding-top: 80px;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+.noidung4 a.btn.btn-outline-primary {
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+}
+.phancuoi  {
+    padding: 30px 0;
+    background-color: #6b6969;
+    color: #eee;
+}
+
+@media (max-width: 576px) {
+    *{}
+    .noidung1 .container.text-left .row {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .thanhmenu li.nav-item {
+        border-bottom: 1px dashed;
+    }
+    
+    .thanhmenu button.navbar-toggler {
+        margin-right: 20px;
+    }
+    
+    .thanhmenu button.navbar-toggler.collapsed {
+        margin-right: 20px;
+    }
+    
+    .noidung1 button.navbar-toggler.collapsed {
+        margin-right: 10px!important;
+    }
+    
+    a.navbar-brand.tieudelogo {
+        margin-left: 13px;
+    }
+    
+    div#navbarTogglerDemo02 {
+        width: 100%;
+    }
+    
+    .noidung2 .row.text-center.tieude2 {
+        padding-top: 75px;
+    }
+    
+    .noidung1 .layer-overlay {
+        height: 500px;
+    }
+    
+    .noidung1 .layerchinh {
+        height: 500px;
+    }
+    
+    .noidung1 .container.text-left {
+        padding: 0;
+        width: 87%;
+        top: 60%;
+    }
+    
+    .noidung1 p {
+        font-size: 20px;
+    }
+    
+    .noidung1 h2.display-4 {
+        font-size: 31px;
+        width: 100%;
+    }
+    
+    section.noidung1 {
+        height: 500px;
+    }
+    
+    ul.navbar-nav.mr-auto.mt-2.mt-lg-0.danhmuc {
+        text-align: center;
+        background-color: #f6f6f6;
+        width: 100%;
+    }
+    
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.menutop.fixed-top {
+        background-color: #f6f6f6!important;
+        height: 71px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row.anh2 .layer2 {
+        top: 35%;
+        left: 10%;
+    }
+    .noidung2 .row.anh2 .khoianh {
+        margin-bottom: 5%;
+    }
+    .noidung3 .col-sm-6.phantext3 {
+        padding-bottom: 10%;
+
+    }
+    
+    .noidung3 .col-lg-6.anhnen3 {
+        height: 300px;
+        margin-bottom: 10%;
+    }
+    .noidung4 .col-sm-3.bockhoianh {
+        height: 230px;
+    }
+    .noidung4 .col-sm-6.text-center {
+        padding-bottom: 15%;
+    }
+    
+    .noidung4 h3.display-4 {
+        font-size: 25px;
+        padding-top: 15%;
+    }
+}
+@media (width:768px) {
+    *{}
+    .noidung2 .nutoffer a.btn.btn-outline-secondary {
+        font-size: 19px;
+    }
+    
+    .row.anh2 .layer2 a.btn.btn-outline-secondary {
+        font-size: 10px;
+    }
+    
+    .row.anh2 .layer2 h3 {
+        font-size: 20px;
+    }
+    
+    .row.anh2 .layer2 p {
+        font-size: 15px;
+    }
+    
+    .row.anh2 .layer2 h4.display-5 {
+        font-size: 23px;
+    }
+    
+    .noidung2 .row.anh2 .layer2 {
+        top: 30%;
+        left: 12%;
+    }
+    .thanhmenu .container {
+        max-width: 768px;
+    }
+    .thanhmenu li.nav-item {
+        border-bottom: 1px dashed;
+    }
+    
+    .thanhmenu button.navbar-toggler {
+        margin-right: 25px;
+    }
+    
+    .thanhmenu button.navbar-toggler.collapsed {
+        margin-right: 25px;
+    }
+    
+    .noidung1 button.navbar-toggler.collapsed {
+        margin-right: 10px!important;
+    }
+    
+    a.navbar-brand.tieudelogo {
+        margin-left: 20px;
+    }
+    
+    div#navbarTogglerDemo02 {
+        width: 100%;
+    }
+    ul.navbar-nav.mr-auto.mt-2.mt-lg-0.danhmuc {
+        text-align: center;
+        background-color: #f6f6f6;
+        width: 100%;
+    }
+    
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.menutop.fixed-top {
+        background-color: #f6f6f6!important;
+        height: 71px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .noidung1 p {
+        font-size: 24px;
+    }
+    
+    .noidung1 h2.display-4 {
+        font-size: 40px;
+        width: 100%;
+    }
+    .noidung3 .col-lg-6.anhnen3 {
+        height: 600px;
+        margin-bottom: 10%;
+    }
+    .noidung4 .col-sm-3.bockhoianh {
+        height: 220px;
+    }
+    .noidung4 .col-sm-6.text-center {
+        height: 220px;
+        padding-bottom: 25%;
+    }
+    
+    .noidung4 h3.display-4 {
+        font-size: 25px;
+        padding-top: 15%;
+    }
+}

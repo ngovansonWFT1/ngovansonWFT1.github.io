@@ -2,17 +2,17 @@ let listSanPham = [
     {
         thumbnail: './img/1.jpg',
         title: 'SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB',
-        maSp: 'CT120BX500SSD1',
-        thuonghieu: 'Crucial',
-        cost: 480000,
+        productID: 'CT120BX500SSD1',
+        brand: 'Crucial',
+        cost: 580000,
         amount: 30,
         status: 'còn hàng'
     },
     {
         thumbnail: './img/2.jpg',
         title: 'SSD Kingston UV500 3D-NAND SATA III 120GB',
-        maSp: 'SUV500/120G',
-        thuonghieu: 'Kingston',
+        productID: 'SUV500/120G',
+        brand: 'Kingston',
         cost: 700000,
         amount: 30,
         status: 'còn hàng'
@@ -20,8 +20,8 @@ let listSanPham = [
     {
         thumbnail: './img/3.jpg',
         title: 'SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB',
-        maSp: 'CT250MX500SSD1',
-        thuonghieu: 'Crucial',
+        productID: 'CT250MX500SSD1',
+        brand: 'Crucial',
         cost: 1090000,
         amount: 20,
         status: 'còn hàng'
@@ -29,8 +29,8 @@ let listSanPham = [
     {
         thumbnail: './img/4.jpg',
         title: 'SSD Samsung 860 Evo 250GB 2.5-Inch SATA III',
-        maSp: 'MZ-76E250BW',
-        thuonghieu: 'Samsung',
+        productID: 'MZ-76E250BW',
+        brand: 'Samsung',
         cost: 1099000,
         amount: 10,
         status: 'còn hàng'
@@ -38,8 +38,8 @@ let listSanPham = [
     {
         thumbnail: './img/5.jpg',
         title: 'SSD Kingston UV500 3D-NAND mSATA SATA III 240GB',
-        maSp: 'SUV500MS/240G',
-        thuonghieu: 'Kingston',
+        productID: 'SUV500MS/240G',
+        brand: 'Kingston',
         cost: 1090000,
         amount: 40,
         status: 'còn hàng'
@@ -48,11 +48,11 @@ let listSanPham = [
 
 document.querySelector('thead tr th:nth-child(2)').addEventListener('click', function() {
     if(document.querySelector('thead tr th:nth-child(2)').getAttribute('class') == 'giam') {
-        sapXepTheoTenTangDan();
+        sortIncreaseByTitle();
         document.querySelector('thead tr th:nth-child(2)').setAttribute('class', 'tang');
         document.getElementById('ten').setAttribute('class', 'fas fa-sort-up');
     } else if(document.querySelector('thead tr th:nth-child(2)').getAttribute('class') == 'tang') {
-        sapXepTheoTenGiamDan();
+        sortDecreaseByTitle();
         document.querySelector('thead tr th:nth-child(2)').setAttribute('class', 'giam');
         document.getElementById('ten').setAttribute('class', 'fas fa-sort-down');
 
@@ -66,11 +66,11 @@ document.querySelector('thead tr th:nth-child(2)').addEventListener('click', fun
 
 document.querySelector('thead tr th:nth-child(3)').addEventListener('click', function() {
     if(document.querySelector('thead tr th:nth-child(3)').getAttribute('class') == 'giam') {
-        sapXepTheoMaSpTangDan();
+        sortIncreaseByProductID();
         document.querySelector('thead tr th:nth-child(3)').setAttribute('class', 'tang');
         document.getElementById('ma').setAttribute('class', 'fas fa-sort-up');
     } else if(document.querySelector('thead tr th:nth-child(3)').getAttribute('class') == 'tang') {
-        sapXepTheoMaSpGianDan();
+        sortDecreaseByProductID();
         document.querySelector('thead tr th:nth-child(3)').setAttribute('class', 'giam');
         document.getElementById('ma').setAttribute('class', 'fas fa-sort-down');
     }
@@ -83,13 +83,13 @@ document.querySelector('thead tr th:nth-child(3)').addEventListener('click', fun
 
 document.querySelector('thead tr th:nth-child(4)').addEventListener('click', function() {
     if(document.querySelector('thead tr th:nth-child(4)').getAttribute('class') == 'giam') {
-        sapXepTheoThuongHieuTangDan();
+        sortIncreaseByBrand();
         document.querySelector('thead tr th:nth-child(4)').setAttribute('class', 'tang');
-        document.getElementById('thuonghieu').setAttribute('class', 'fas fa-sort-up');
+        document.getElementById('brand').setAttribute('class', 'fas fa-sort-up');
     } else if(document.querySelector('thead tr th:nth-child(4)').getAttribute('class') == 'tang') {
-        sapXepTheoThuongHieuGiamDan();
+        sortDecreaseByBrand();
         document.querySelector('thead tr th:nth-child(4)').setAttribute('class', 'giam');
-        document.getElementById('thuonghieu').setAttribute('class', 'fas fa-sort-down');
+        document.getElementById('brand').setAttribute('class', 'fas fa-sort-down');
     }
     for (let i =2; i <=6; i++) {
         if (i != 4) {
@@ -100,11 +100,11 @@ document.querySelector('thead tr th:nth-child(4)').addEventListener('click', fun
 
 document.querySelector('thead tr th:nth-child(5)').addEventListener('click', function() {
     if(document.querySelector('thead tr th:nth-child(5)').getAttribute('class') == 'giam') {
-        sapXepTheoGiaTangDan();
+        sortIncreaseByCost();
         document.querySelector('thead tr th:nth-child(5)').setAttribute('class', 'tang');
         document.getElementById('gia').setAttribute('class', 'fas fa-sort-up');
     } else if(document.querySelector('thead tr th:nth-child(5)').getAttribute('class') == 'tang') {
-        sapXepTheoGiaGiamDan();
+        sortDecreaseByCost();
         document.querySelector('thead tr th:nth-child(5)').setAttribute('class', 'giam');
         document.getElementById('gia').setAttribute('class', 'fas fa-sort-down');
     }
@@ -117,11 +117,11 @@ document.querySelector('thead tr th:nth-child(5)').addEventListener('click', fun
 
 document.querySelector('thead tr th:nth-child(6)').addEventListener('click', function() {
     if(document.querySelector('thead tr th:nth-child(6)').getAttribute('class') == 'giam') {
-        sapXepTheoSoLuongTangDan();
+        sortIncreaseByAmount();
         document.querySelector('thead tr th:nth-child(6)').setAttribute('class', 'tang');
         document.getElementById('soluong').setAttribute('class', 'fas fa-sort-up');
     } else if(document.querySelector('thead tr th:nth-child(6)').getAttribute('class') == 'tang') {
-        sapXepTheoSoLuongGiamDan();
+        sortDecreaseByAmount();
         document.querySelector('thead tr th:nth-child(6)').setAttribute('class', 'giam');
         document.getElementById('soluong').setAttribute('class', 'fas fa-sort-down');
     }
@@ -131,7 +131,7 @@ document.querySelector('thead tr th:nth-child(6)').addEventListener('click', fun
     //document.querySelectorAll('th:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(5) i').setAttribute('class', 'fas fa-sort');
 });
 
-function sapXepTheoTenTangDan() {
+function sortIncreaseByTitle() {
     listSanPham.sort(function (a, b) {
         if (a.title.toLowerCase() > b.title.toLowerCase()) {
             return 1;
@@ -144,11 +144,11 @@ function sapXepTheoTenTangDan() {
 
     });
     document.getElementsByClassName('thongtinsanpham')[0].innerHTML = '<tr></tr>';
-    themSanPhamVaoBang();
+    importProductInTable();
 
 }
 
-function sapXepTheoTenGiamDan() {
+function sortDecreaseByTitle() {
     listSanPham.sort(function (a, b) {
         if (a.title.toLowerCase() > b.title.toLowerCase()) {
             return 1;
@@ -161,15 +161,15 @@ function sapXepTheoTenGiamDan() {
 
     }).reverse();
     document.getElementsByClassName('thongtinsanpham')[0].innerHTML = '<tr></tr>';
-    themSanPhamVaoBang();
+    importProductInTable();
 
 }
 
-function sapXepTheoMaSpTangDan() {
+function sortIncreaseByProductID() {
     listSanPham.sort(function (a, b) {
-        if (a.maSp.toLowerCase() > b.maSp.toLowerCase()) {
+        if (a.productID.toLowerCase() > b.productID.toLowerCase()) {
             return 1;
-        } else if (a.maSp.toLowerCase() < b.maSp.toLowerCase()) {
+        } else if (a.productID.toLowerCase() < b.productID.toLowerCase()) {
             return -1;
         }
         else {
@@ -178,14 +178,14 @@ function sapXepTheoMaSpTangDan() {
 
     });
     document.getElementsByClassName('thongtinsanpham')[0].innerHTML = '<tr></tr>';
-    themSanPhamVaoBang();
+    importProductInTable();
 }
 
-function sapXepTheoMaSpGianDan() {
+function sortDecreaseByProductID() {
     listSanPham.sort(function (a, b) {
-        if (a.maSp.toLowerCase() > b.maSp.toLowerCase()) {
+        if (a.productID.toLowerCase() > b.productID.toLowerCase()) {
             return 1;
-        } else if (a.maSp.toLowerCase() < b.maSp.toLowerCase()) {
+        } else if (a.productID.toLowerCase() < b.productID.toLowerCase()) {
             return -1;
         }
         else {
@@ -194,14 +194,14 @@ function sapXepTheoMaSpGianDan() {
 
     }).reverse();
     document.getElementsByClassName('thongtinsanpham')[0].innerHTML = '<tr></tr>';
-    themSanPhamVaoBang();
+    importProductInTable();
 }
 
-function sapXepTheoThuongHieuTangDan() {
+function sortIncreaseByBrand() {
     listSanPham.sort(function (a, b) {
-        if (a.thuonghieu.toLowerCase() > b.thuonghieu.toLowerCase()) {
+        if (a.brand.toLowerCase() > b.brand.toLowerCase()) {
             return 1;
-        } else if (a.thuonghieu.toLowerCase() < b.thuonghieu.toLowerCase()) {
+        } else if (a.brand.toLowerCase() < b.brand.toLowerCase()) {
             return -1;
         }
         else {
@@ -210,14 +210,14 @@ function sapXepTheoThuongHieuTangDan() {
 
     });
     document.getElementsByClassName('thongtinsanpham')[0].innerHTML = '<tr></tr>';
-    themSanPhamVaoBang();
+    importProductInTable();
 }
 
-function sapXepTheoThuongHieuGiamDan() {
+function sortDecreaseByBrand() {
     listSanPham.sort(function (a, b) {
-        if (a.thuonghieu.toLowerCase() > b.thuonghieu.toLowerCase()) {
+        if (a.brand.toLowerCase() > b.brand.toLowerCase()) {
             return 1;
-        } else if (a.thuonghieu.toLowerCase() < b.thuonghieu.toLowerCase()) {
+        } else if (a.brand.toLowerCase() < b.brand.toLowerCase()) {
             return -1;
         }
         else {
@@ -226,62 +226,90 @@ function sapXepTheoThuongHieuGiamDan() {
 
     }).reverse();
     document.getElementsByClassName('thongtinsanpham')[0].innerHTML = '<tr></tr>';
-    themSanPhamVaoBang();
+    importProductInTable();
 }
 
-function sapXepTheoGiaTangDan() {
+function sortIncreaseByCost() {
     listSanPham.sort(function (a, b) {
         return a.cost - b.cost;
 
     });
     document.getElementsByClassName('thongtinsanpham')[0].innerHTML = '<tr></tr>';
-    themSanPhamVaoBang();
+    importProductInTable();
 }
 
-function sapXepTheoGiaGiamDan() {
+function sortDecreaseByCost() {
     listSanPham.sort(function (a, b) {
         return b.cost - a.cost;
 
     });
     document.getElementsByClassName('thongtinsanpham')[0].innerHTML = '<tr></tr>';
-    themSanPhamVaoBang();
+    importProductInTable();
 }
 
-function sapXepTheoSoLuongTangDan() {
+function sortIncreaseByAmount() {
     listSanPham.sort(function (a, b) {
         return a.amount - b.amount;
 
     });
     document.getElementsByClassName('thongtinsanpham')[0].innerHTML = '<tr></tr>';
-    themSanPhamVaoBang();
+    importProductInTable();
 }
 
-function sapXepTheoSoLuongGiamDan() {
+function sortDecreaseByAmount() {
     listSanPham.sort(function (a, b) {
         return b.amount - a.amount;
 
     });
     document.getElementsByClassName('thongtinsanpham')[0].innerHTML = '<tr></tr>';
-    themSanPhamVaoBang();
+    importProductInTable();
 }
 
 function formatNumber(num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
   }
 
-function themSanPhamVaoBang() {
+function importProductInTable() {
     for (let i = 0; i < listSanPham.length; i++) {
         let trNew = document.createElement('tr');
         document.getElementsByClassName('thongtinsanpham')[0].appendChild(trNew);
 
         trNew.appendChild(document.createElement('td')).innerHTML = '<img src = "' + listSanPham[i].thumbnail + '" alt ="ảnh sản phẩm"' + '/>';
         trNew.appendChild(document.createElement('td')).innerHTML = listSanPham[i].title;
-        trNew.appendChild(document.createElement('td')).innerHTML = listSanPham[i].maSp;
-        trNew.appendChild(document.createElement('td')).innerHTML = listSanPham[i].thuonghieu;
+        trNew.appendChild(document.createElement('td')).innerHTML = listSanPham[i].productID;
+        trNew.appendChild(document.createElement('td')).innerHTML = listSanPham[i].brand;
         trNew.appendChild(document.createElement('td')).innerHTML = formatNumber(listSanPham[i].cost);
         trNew.appendChild(document.createElement('td')).innerHTML = listSanPham[i].amount;
         trNew.appendChild(document.createElement('td')).innerHTML = listSanPham[i].status;
 
     }
 }
-themSanPhamVaoBang();
+//importProductInTable();
+
+function sumPrice(arr) {
+    let sum = 0; 
+    for (let i =0; i< arr.length; i++) {
+        sum += arr[i].cost*arr[i].amount;
+    }
+    return sum;
+}
+
+document.getElementsByClassName('gia')[0].innerHTML = `${formatNumber(sumPrice(listSanPham))} VNĐ`;
+
+
+function renderContent() {
+    for(let i = 0; i < listSanPham.length; i++) {
+        let strNew = document.createElement('tr');
+        let content = '';
+        content += `<td><img src="${listSanPham[i].thumbnail}"  alt= "ảnh sản phẩm"/></td>`;
+        content += `<td>${listSanPham[i].title} </td>`;
+        content += `<td>${listSanPham[i].productID} </td>`;
+        content += `<td>${listSanPham[i].brand} </td>`;
+        content += `<td>${formatNumber(listSanPham[i].cost)} </td>`;
+        content += `<td>${listSanPham[i].amount} </td>`;
+        content += `<td>${listSanPham[i].status} </td>`;
+        strNew.innerHTML = content;
+        document.getElementsByTagName('tbody')[0].appendChild(strNew);
+    }
+}
+renderContent();
