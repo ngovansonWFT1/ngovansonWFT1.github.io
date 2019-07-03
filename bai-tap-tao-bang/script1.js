@@ -69,10 +69,6 @@ function renderContent() {
 
 renderContent();
 
-
-
-
-
 function sortColumn(thElement) {
     $('i.fa-sort-up').removeClass('fa-sort-up').addClass('fa-sort');
     $('i.fa-sort-down').removeClass('fa-sort-down').addClass('fa-sort');
@@ -106,3 +102,12 @@ function sortAzZa(column, data) {
     if (data == 'asc') return listSanPham;
     else return listSanPham.reverse();
 }
+function sumPrice(arr) {
+    let sum = 0; 
+    for (let i =0; i< arr.length; i++) {
+        sum += arr[i].cost*arr[i].amount;
+    }
+    return sum;
+}
+
+document.getElementsByClassName('gia')[0].innerHTML = `${formatNumber(sumPrice(listSanPham))} VNĐ`;
