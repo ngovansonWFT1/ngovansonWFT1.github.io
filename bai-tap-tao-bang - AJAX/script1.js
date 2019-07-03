@@ -1,32 +1,31 @@
 
 function loadDoc() {
-    let xhttp = new XMLHttpRequest();
-    let str = '';
+    var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        str += this.responseText;
+        document.getElementById("ten").innerHTML = this.responseText;
       }
     };
     xhttp.open("GET", "https://ngovansonwft1.github.io/listProduct.JSON", true);
     xhttp.send();
   }
-  let listProduct = JSON.parse(loadDoc());
-  console.log(listProduct);
+
+
 function formatNumber(num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
   }
 
 function renderContent() {
     let content = '';
-    for(let i = 0; i < listSanPham.length; i++) {
+    for(let i = 0; i < listProduct.length; i++) {
 
-        content += `<tr> <td><img src="${listSanPham[i].thumbnail}"  alt= "${listSanPham[i].title}"/></td>`;
-        content += `<td>${listSanPham[i].title} </td>`;
-        content += `<td>${listSanPham[i].productID} </td>`;
-        content += `<td>${listSanPham[i].brand} </td>`;
-        content += `<td>${formatNumber(listSanPham[i].cost)} </td>`;
-        content += `<td>${listSanPham[i].amount} </td>`;
-        content += `<td>${listSanPham[i].status} </td> </tr>`;
+        content += `<tr> <td><img src="${listProduct[i].thumbnail}"  alt= "${listProduct[i].title}"/></td>`;
+        content += `<td>${listProduct[i].title} </td>`;
+        content += `<td>${listProduct[i].productID} </td>`;
+        content += `<td>${listProduct[i].brand} </td>`;
+        content += `<td>${formatNumber(listProduct[i].cost)} </td>`;
+        content += `<td>${listProduct[i].amount} </td>`;
+        content += `<td>${listProduct[i].status} </td> </tr>`;
         
     }
     $('tbody').html(content);
@@ -58,7 +57,7 @@ function sortColumn(thElement) {
 
 }
 function sortAzZa(column, data) {
-    listSanPham.sort(function(a,b) {
+    listProduct.sort(function(a,b) {
         let x = a[column];
         let y = b[column];
         if(typeof a[column] == 'string') x = a[column].toLowerCase();
@@ -68,6 +67,6 @@ function sortAzZa(column, data) {
         return 0;
 
     });
-    if (data == 'asc') return listSanPham;
-    else return listSanPham.reverse();
+    if (data == 'asc') return listProduct;
+    else return listProduct.reverse();
 }
