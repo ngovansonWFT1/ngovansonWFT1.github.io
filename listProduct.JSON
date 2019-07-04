@@ -4,8 +4,8 @@
         "title": "SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB",
         "productID": "CT120BX500SSD1",
         "brand": "Crucial",
-        "cost": "580000",
-        "amount": "30",
+        "cost": 580000,
+        "amount": 30,
         "status": "còn hàng"
     },
     {
@@ -13,8 +13,8 @@
         "title": "SSD Kingston UV500 3D-NAND SATA III 120GB",
         "productID": "SUV500/120G",
         "brand": "Kingston",
-        "cost": "700000",
-        "amount": "30",
+        "cost": 700000,
+        "amount": 30,
         "status": "còn hàng"
     },
     {
@@ -22,8 +22,8 @@
         "title": "SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB",
         "productID": "CT250MX500SSD1",
         "brand": "Crucial",
-        "cost": "1090000",
-        "amount": "20",
+        "cost": 1090000,
+        "amount": 20,
         "status": "còn hàng"
     },
     {
@@ -31,8 +31,8 @@
         "title": "SSD Samsung 860 Evo 250GB 2.5-Inch SATA III",
         "productID": "MZ-76E250BW",
         "brand": "Samsung",
-        "cost": "1099000",
-        "amount": "10",
+        "cost": 1099000,
+        "amount": 10,
         "status": "còn hàng"
     },
     {
@@ -40,8 +40,8 @@
         "title": "SSD Kingston UV500 3D-NAND mSATA SATA III 240GB",
         "productID": "SUV500MS/240G",
         "brand": "Kingston",
-        "cost": "1090000",
-        "amount": "40",
+        "cost": 1090000,
+        "amount": 40,
         "status": "còn hàng"
     }
 ]
