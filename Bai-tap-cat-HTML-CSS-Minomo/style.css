@@ -128,6 +128,7 @@
 .block_comments .input-group.flex-nowrap {
     width: 100%;
     height: 100%;
+    margin-top: 1%;
 }
 
 
@@ -168,7 +169,6 @@
 .block_comments .only_imgtext {
     width: calc((72/900)*100%);
     height: 72px;
-    border-radius: 50%;
     float: left;
     font-family: 'Ubuntu', sans-serif;
     color: white;
@@ -177,11 +177,16 @@
     padding-top: 1%;
     font-weight: 300;
 }
-.block_comments .only_imgtext.x1 {
+.block_comments .only_imgtext .circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+.block_comments .only_imgtext.x1 .circle {
     background-color: #CAE5E0;
 }
 
-.block_comments .only_imgtext.x2 {
+.block_comments .only_imgtext.x2 .circle  {
     background-color: #EDEDEA;
 }
 
@@ -521,11 +526,7 @@ body {
         padding: 20px 10px;
     }
 
-  
-    .block_comments .only_imgtext {
-        width: 20%;
-        height: 20%;
-    }
+
 
     .block_comments .comments {
         width: 80%;
@@ -534,6 +535,10 @@ body {
     .block_comments .only_img {
         width: 20%;
     }
+
+.block_comments .only_imgtext {
+    width: 20%;
+}
 
     .container.thirdcontent {
         padding-left: 15px;
