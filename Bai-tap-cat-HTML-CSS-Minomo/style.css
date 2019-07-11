@@ -253,7 +253,6 @@ footer.footer {
     background-image: url(images/icon_send.png);
     background-repeat: no-repeat;
     background-position: 99% 50%;
-    padding: 10px 20px;
     outline-color: transparent;
 }
 
@@ -407,7 +406,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
 .banner ul li a.nav-link {
     text-transform: uppercase;
-    margin-right: 100px;
+    margin-right: 105px;
     font-weight: 500;
 }
 
@@ -423,6 +422,7 @@ div#navbarTogglerDemo02 {
     text-transform: uppercase;
     font-family: 'Inconsolata', monospace;
     font-size: 30px;
+    letter-spacing: 7px;
 }
 body {
     font-family: 'Playfair Display', serif;
@@ -783,6 +783,17 @@ a:hover {
 @media(min-width:1200px) {
     *{}
 
+.content1 .textcontent {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.imgcontent .blockimg {
+    margin-right: 60px;
+    width: calc((420/900)*100%);
+    padding: 0;
+}
+
 .secondcontent input[type="text"] {
     width: 30%;
 }
@@ -806,6 +817,7 @@ a:hover {
     .imgcontent .blockimg {
         width: calc((420/900)*100%);
         margin-right: 60px;
+        padding-bottom: 100px;
     }
 
     .imgcontent .blockimg:nth-child(2n) {
