@@ -8,9 +8,7 @@
     <title>Autocryp</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <!-- // Add the new slick-theme.css if you want the default styling -->
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
     <link
         href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,hebrew,latin-ext"
         rel="stylesheet">
@@ -23,9 +21,9 @@
 <body>
     <header class="banner">
         <div class="menutop">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top menutop1">
                 <div class="container">
-                    <a class="navbar-brand" href="#">autocryp</a>
+                    <a class="navbar-brand logo" href="#">autocryp</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -233,46 +231,160 @@
                     <div class="col-md-3"></div>
                     <div class="col-md-9">
                         <div class="variable-width">
-                            <div class="block_slide">
-                                <div class="img-slide">
-                                    <img src="images/9.png" alt="" class="img-fluid">
-                                    <img src="images/9.png" alt="" class="img-fluid">
+                            <div id="carouselId" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselId" data-slide-to="1"></li>
+                                    <li data-target="#carouselId" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <div class="block_slide">
+                                            <div class="img-slide">
+                                                <img src="images/9.png" alt="" class="img-fluid">
+                                                <img src="images/9.png" alt="" class="img-fluid">
+                                            </div>
+                                            <p>"I started driving with Uber because I liked the idea that my own car
+                                                could make me
+                                                money. After just about a couple weeks, I saw that this was something I
+                                                wanted to do
+                                                permanently."</p>
+                                            <p>
+                                                <span>Brandon Roger /</span>
+                                                <span>OWW Studio</span>
+                                            </p>
+                                        </div>
+                                        <div class="block_slide">
+                                            <div class="img-slide">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                            </div>
+                                            <p>"I wanted something where I could meet new people and get out of the
+                                                house. Uber has helped with both of those things, plus I’m seeing new
+                                                parts of the city I’ve never seen before!"</p>
+                                            <p>
+                                                <span>Sean Walker /</span>
+                                                <span>OWW Studio</span>
+                                            </p>
+                                        </div>
+                                        <div class="block_slide">
+                                            <div class="img-slide">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                            </div>
+                                            <p>"Uber enables me to have the creative freedom for baking my cakes and
+                                                also driving on the side so I can make more money and also have my dream
+                                                job."</p>
+                                            <p>
+                                                <span>Jenny Harra /</span>
+                                                <span>OWW Studio</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- end of carousel-item -->
+
+                                    <div class="carousel-item">
+                                        <div class="block_slide">
+                                            <div class="img-slide">
+                                                <img src="images/9.png" alt="" class="img-fluid">
+                                                <img src="images/9.png" alt="" class="img-fluid">
+                                            </div>
+                                            <p>"I wanted something where I could meet new people and get out of the
+                                                house. Uber has helped with both of those things, plus I’m seeing new
+                                                parts of the city I’ve never seen before!"</p>
+                                            <p>
+                                                <span>Sean Walker /</span>
+                                                <span>OWW Studio</span>
+                                            </p>
+                                        </div>
+                                        <div class="block_slide">
+                                            <div class="img-slide">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                            </div>
+                                            <p>"Uber enables me to have the creative freedom for baking my cakes and
+                                                also driving on the side so I can make more money and also have my dream
+                                                job."</p>
+                                            <p>
+                                                <span>Jenny Harra /</span>
+                                                <span>OWW Studio</span>
+                                            </p>
+                                        </div>
+                                        <div class="block_slide">
+                                            <div class="img-slide">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                            </div>
+                                            <p>"I started driving with Uber because I liked the idea that my own car
+                                                could make me
+                                                money. After just about a couple weeks, I saw that this was something I
+                                                wanted to do
+                                                permanently."</p>
+                                            <p>
+                                                <span>Brandon Roger /</span>
+                                                <span>OWW Studio</span>
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- end of carousel-item -->
+
+                                    <div class="carousel-item">
+                                        <div class="block_slide">
+                                            <div class="img-slide">
+                                                <img src="images/9.png" alt="" class="img-fluid">
+                                                <img src="images/9.png" alt="" class="img-fluid">
+                                            </div>
+                                            <p>"Uber enables me to have the creative freedom for baking my cakes and
+                                                also driving on the side so I can make more money and also have my dream
+                                                job."</p>
+                                            <p>
+                                                <span>Jenny Harra /</span>
+                                                <span>OWW Studio</span>
+                                            </p>
+                                        </div>
+                                        <div class="block_slide">
+                                            <div class="img-slide">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                            </div>
+                                            <p>"I started driving with Uber because I liked the idea that my own car
+                                                could make me
+                                                money. After just about a couple weeks, I saw that this was something I
+                                                wanted to do
+                                                permanently."</p>
+                                            <p>
+                                                <span>Brandon Roger /</span>
+                                                <span>OWW Studio</span>
+                                            </p>
+                                        </div>
+                                        <div class="block_slide">
+                                            <div class="img-slide">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                                <img src="images/10.png" alt="" class="img-fluid">
+                                            </div>
+                                            <p>"I wanted something where I could meet new people and get out of the
+                                                house. Uber has helped with both of those things, plus I’m seeing new
+                                                parts of the city I’ve never seen before!"</p>
+                                            <p>
+                                                <span>Sean Walker /</span>
+                                                <span>OWW Studio</span>
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- end of carousel-item -->
                                 </div>
-                                <p>"I started driving with Uber because I liked the idea that my own car could make me
-                                    money. After just about a couple weeks, I saw that this was something I wanted to do
-                                    permanently."</p>
-                                <p>
-                                    <span>Brandon Roger /</span>
-                                    <span>OWW Studio</span>
-                                </p>
                             </div>
-                            <div class="block_slide">
-                                <div class="img-slide">
-                                    <img src="images/10.png" alt="" class="img-fluid">
-                                    <img src="images/10.png" alt="" class="img-fluid">
-                                </div>
-                                <p>"I started driving with Uber because I liked the idea that my own car could make me
-                                    money. After just about a couple weeks, I saw that this was something I wanted to do
-                                    permanently."</p>
-                                <p>
-                                    <span>Brandon Roger /</span>
-                                    <span>OWW Studio</span>
-                                </p>
-                            </div>
-                            <div class="block_slide">
-                                <div class="img-slide">
-                                    <img src="images/10.png" alt="" class="img-fluid">
-                                    <img src="images/10.png" alt="" class="img-fluid">
-                                </div>
-                                <p>"I started driving with Uber because I liked the idea that my own car could make me
-                                    money. After just about a couple weeks, I saw that this was something I wanted to do
-                                    permanently."</p>
-                                <p>
-                                    <span>Brandon Roger /</span>
-                                    <span>OWW Studio</span>
-                                </p>
-                            </div>
+                            <!-- end of carousel -->
+
+
+
                         </div>
+                        <!-- end of variable-width -->
                     </div>
                 </div>
             </div>
@@ -307,6 +419,11 @@
         <!-- end of container -->
     </footer>
     <!-- end of footer -->
+    <div class="backtotop fixed-bottom">
+        <a href="" class="btn btn-primary float-right">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -321,7 +438,7 @@
     <script src="https://kit.fontawesome.com/aa9f6b2ac4.js"></script>
 
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
 
 
