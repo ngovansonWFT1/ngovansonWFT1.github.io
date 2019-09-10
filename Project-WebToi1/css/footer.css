@@ -1,0 +1,148 @@
+*{}
+
+.back-to-top.appearence {
+    visibility: visible;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 10rem;
+    right: 10rem;
+    visibility: hidden;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.copy-right-footer {
+    background-color: #514F4F;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-right-footer p {
+    color: #DBDBDB;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.infor-footer-right .contact-footer .contain-icon-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.infor-footer-right .contact-footer .contain-icon-social a {
+    display: block;
+    width: 40px;
+}
+
+.infor-footer-right .contact-footer {
+}
+
+.infor-footer-right {
+    width: 100%;
+}
+
+.infor-footer {
+    background-color: #2F2F2F;
+    padding-top: 55px;
+    padding-bottom: 2rem;
+}
+
+.infor-footer p {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.infor-footer a {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.infor-footer h5 {
+    text-transform: uppercase;
+    font-family: 'Proxima Nova Semibold';
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.infor-footer-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    *{}
+
+.infor-footer h5 {
+    font-size: 1.1rem;
+}
+
+    .infor-footer-right .contact-footer .contain-icon-social {
+        width: 14rem;
+    }
+
+    .infor-footer-left {
+        flex-flow: column wrap;
+    }
+
+    .back-to-top {
+        right: 0;
+    }
+    
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) and (min-width: 576px) {
+    *{}
+
+    .infor-footer-right .contact-footer .contain-icon-social {
+        width: 60%;
+    }
+
+    .back-to-top {
+        right: 0;
+    }
+
+    .infor-footer h5 {
+        font-size: 1.2rem;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    *{}
+
+    .back-to-top {
+        right: 0;
+    }
+
+    .infor-footer-right .contact-footer .contain-icon-social {
+        width: 100%;
+    }
+
+    .infor-footer h5 {
+        font-size: 1.05rem;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    *{}
+
+    .back-to-top {
+        right: 0;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    *{}
+}

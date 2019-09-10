@@ -1,0 +1,580 @@
+extends layout.pug
+
+block header
+    title Sstore - Home page
+
+block content
+    section.slide-hot-product
+        .only-image-cover
+            div
+                img.img-fluid(src="./../images/home-page/slide-1.jpg",alt="ssd samsung")
+            div
+                img.img-fluid(src="./../images/home-page/slide-1.jpg",alt="ssd samsung")
+            div
+                img.img-fluid(src="./../images/home-page/slide-1.jpg",alt="ssd samsung")
+            div
+                img.img-fluid(src="./../images/home-page/slide-1.jpg",alt="ssd samsung")
+    section.feature-product
+        .container
+            .row
+                .col-md-4
+                    .img-feature-left
+                        a(href="")
+                            img(src="./../images/home-page/1.jpg", alt="ssd")
+                .col-md-4
+                    .img-feature-middle
+                        a(href="")
+                            img(src="./../images/home-page/2.jpg", alt="micro-SD")
+                .col-md-4
+                    .img-feature-right
+                        .block-img-top
+                            a(href="")
+                                img(src="./../images/home-page/3.jpg", alt="ram")
+                        .block-img-top
+                            a(href="")
+                                img(src="./../images/home-page/4.jpg", alt="hard-disk")
+    section.product-sale
+        .container
+            .bagde-title
+                h4 Sản phẩm giảm giá
+            .sort-product-by-brand
+                p Sắp xếp theo
+                .dropdown
+                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.sale-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        | Samsung
+                    .dropdown-menu.sale-prd(aria-labelledby='dropdownMenuButton')
+                        a.dropdown-item(href='#') Samsung
+                        a.dropdown-item(href='#') Crucial
+                        a.dropdown-item(href='#') Flextor
+                        a.dropdown-item(href='#') Western
+                        a.dropdown-item(href='#') Kingston
+            .card-deck
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                        .layer-sale
+                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                            .sale-percent
+                                p 16%
+                                h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 1.830.000 đ
+                                del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                        .layer-sale
+                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                            .sale-percent
+                                p 16%
+                                h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 1.830.000 đ
+                                del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                        .layer-sale
+                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                            .sale-percent
+                                p 16%
+                                h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 1.830.000 đ
+                                del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                        .layer-sale
+                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                            .sale-percent
+                                p 16%
+                                h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 1.830.000 đ
+                                del 2.190.000 đ
+            .see-more-product
+                a(href="") 
+                    |Xem tất cả
+                    img(src="./../images/home-page/see-more.png", alt="arrow")
+    section.product-hard-disk-ssd
+        .container
+            .bagde-title
+                h4 Ổ cứng thể rắn SSD
+            .sort-product-by-brand
+                p Sắp xếp theo
+                .dropdown
+                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.ssd-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        | Samsung
+                    .dropdown-menu.ssd-prd(aria-labelledby='dropdownMenuButton')
+                        a.dropdown-item(href='#') Samsung
+                        a.dropdown-item(href='#') Crucial
+                        a.dropdown-item(href='#') Flextor
+                        a.dropdown-item(href='#') Western
+                        a.dropdown-item(href='#') Kingston
+            .card-deck
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                        .layer-sale
+                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                            .sale-percent
+                                p 16%
+                                h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 1.830.000 đ
+                                del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 1.090.000 đ
+                                //- del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                        .layer-sale
+                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                            .sale-percent
+                                p 16%
+                                h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 1.830.000 đ
+                                del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 1.090.000 đ
+                                //- del 2.190.000 đ
+            .see-more-product
+                a(href="") 
+                    |Xem tất cả
+                    img(src="./../images/home-page/see-more.png", alt="arrow")
+    section.product-mobival-hard-disk
+        .container
+            .bagde-title
+                h4 Ổ cứng di động
+            .sort-product-by-brand
+                p Sắp xếp theo
+                .dropdown
+                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.mobi-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        | Toshiba
+                    .dropdown-menu.mobi-prd(aria-labelledby='dropdownMenuButton')
+                        a.dropdown-item(href='#') Toshiba
+                        a.dropdown-item(href='#') Adata
+                        a.dropdown-item(href='#') Seagate
+                        a.dropdown-item(href='#') Western
+                        a.dropdown-item(href='#') Trancend
+            .card-deck
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/7.jpg' alt='mobival-hard-disk')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 2.250.000 đ
+                                //- del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/7.jpg' alt='mobival-hard-disk')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 2.250.000 đ
+                                //- del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/7.jpg' alt='mobival-hard-disk')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 2.250.000 đ
+                                //- del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/7.jpg' alt='mobival-hard-disk')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 2.250.000 đ
+                                //- del 2.190.000 đ
+            .see-more-product
+                a(href="") 
+                    |Xem tất cả
+                    img(src="./../images/home-page/see-more.png", alt="arrow")
+    section.product-microSD
+        .container
+            .bagde-title
+                h4 Thẻ nhớ điện thoại
+            .sort-product-by-brand
+                p Sắp xếp theo
+                .dropdown
+                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.microsd-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        | Samsung
+                    .dropdown-menu.microsd-prd(aria-labelledby='dropdownMenuButton')
+                        a.dropdown-item(href='#') Samsung
+                        a.dropdown-item(href='#') Toshiba
+                        a.dropdown-item(href='#') Sandisk
+                        a.dropdown-item(href='#') Lexar
+                        a.dropdown-item(href='#') Kingston
+            .card-deck
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/8.jpg' alt='microSD-samsung')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 120.000 đ
+                                //- del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/8.jpg' alt='microSD-samsung')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 120.000 đ
+                                //- del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/8.jpg' alt='microSD-samsung')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 120.000 đ
+                                //- del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/8.jpg' alt='microSD-samsung')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 120.000 đ
+                                //- del 2.190.000 đ
+            .see-more-product
+                a(href="") 
+                    |Xem tất cả
+                    img(src="./../images/home-page/see-more.png", alt="arrow")
+    section.product-ram
+        .container
+            .bagde-title
+                h4 Ram máy tính
+            .sort-product-by-brand
+                p Sắp xếp theo
+                .dropdown
+                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.ram-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        | Apacer
+                    .dropdown-menu.ram-prd(aria-labelledby='dropdownMenuButton')
+                        a.dropdown-item(href='#') Apacer
+                        a.dropdown-item(href='#') Corsair
+                        a.dropdown-item(href='#') G.Skill
+                        a.dropdown-item(href='#') Kingston
+                        a.dropdown-item(href='#') Samsung
+            .card-deck
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/9.jpg' alt='ram-corsair')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 560.000 đ
+                                //- del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/9.jpg' alt='ram-corsair')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 560.000 đ
+                                //- del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/9.jpg' alt='ram-corsair')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 560.000 đ
+                                //- del 2.190.000 đ
+                .card
+                    .block-img
+                        img.card-img-top(src='./../images/home-page/9.jpg' alt='ram-corsair')
+                        //- .layer-sale
+                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                        //-     .sale-percent
+                        //-         p 16%
+                        //-         h5 giảm
+                    .card-body
+                        .product-title
+                            h5.card-title Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
+                        .rating-price
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            .price-product
+                                p 560.000 đ
+                                //- del 2.190.000 đ
+            .see-more-product
+                a(href="") 
+                    |Xem tất cả
+                    img(src="./../images/home-page/see-more.png", alt="arrow")
+    section.brand-favorite
+        .container
+            .bagde-title
+                h4 Các nhãn hiệu được ưa chuộng
+            .brand-appearence-like
+                .slide-only-brand
+                    img.img-fluid(src="./../images/home-page/10.jpg", alt="kingston")
+                .slide-only-brand
+                    img.img-fluid(src="./../images/home-page/11.jpg", alt="crucial")
+                .slide-only-brand
+                    img.img-fluid(src="./../images/home-page/12.jpg", alt="samsung")
+                .slide-only-brand
+                    img.img-fluid(src="./../images/home-page/13.jpg", alt="western")
+                .slide-only-brand
+                    img.img-fluid(src="./../images/home-page/14.jpg", alt="intel")
+                .slide-only-brand
+                    img.img-fluid(src="./../images/home-page/15.jpg", alt="seagate")
+                .slide-only-brand
+                    img.img-fluid(src="./../images/home-page/16.jpg", alt="toshiba")
+                .slide-only-brand
+                    img.img-fluid(src="./../images/home-page/17.jpg", alt="apacer")
+                .slide-only-brand
+                    img.img-fluid(src="./../images/home-page/18.jpg", alt="flextor")
+                
+            

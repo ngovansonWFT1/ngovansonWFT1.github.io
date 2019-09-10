@@ -1,0 +1,52 @@
+*{}
+
+section.product-list {
+    margin-top: 300px;
+}
+
+.filter-by-price.filter-prd {
+    padding-bottom: 1rem;
+}
+
+.title-capacity {
+    margin-bottom: 1.5rem;
+}
+
+.filter-by-size-standard.filter-prd {
+    padding-bottom: 1rem;
+}
+
+.title-price {
+    margin-bottom: 1.5rem;
+}
+
+.title-price h4, .title-capacity h4, .title-standard h4 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.title-standard {
+    margin-bottom: 1.5rem;
+}
+
+
+.filter-by-brand.filter-prd {
+    padding-bottom: 1rem;
+}
+
+.form-check .your-choose {
+    margin-bottom: 0.5rem;
+}
+
+.title-brand h4 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.title-brand {
+    margin-bottom: 1.5rem;
+}

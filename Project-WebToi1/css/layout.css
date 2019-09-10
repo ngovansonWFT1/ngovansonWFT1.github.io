@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Regular'), url('./../fonts/font-face/ProximaNova-Regular.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Proxima Nova Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Thin'), url('./../fonts/font-face/ProximaNovaT-Thin.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Proxima Nova Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Light'), url('./../fonts/font-face/ProximaNova-Light.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Proxima Nova Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Semibold'), url('./../fonts/font-face/ProximaNova-Semibold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Proxima Nova Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Bold'), url('./../fonts/font-face/ProximaNova-Bold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Proxima Nova Extrabold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Extrabold'), url('./../fonts/font-face/ProximaNova-Extrabld.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Proxima Nova Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Black'), url('./../fonts/font-face/ProximaNova-Black.woff') format('woff');
+    }
+
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        font-family: 'Proxima Nova Regular';
+        color: #444444;
+    }
+    a {
+        color: #444444;
+    }
+    a:hover {
+        text-decoration: none;
+    }
