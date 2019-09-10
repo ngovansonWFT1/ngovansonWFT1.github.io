@@ -1,7 +1,142 @@
 *{}
 
+.layout-and-sort .list-icon {
+    background-color: #ffffff;
+}
+
+.layout-and-sort .grid-icon {
+    background-color: #02C874;
+}
+
+.layout-and-sort .grid-icon.remove-background {
+    background-color: #ffffff;
+}
+
+.grid-product-list.hidden {
+    display: none;
+}
+
+.list-product-appearence {
+    display: none;
+    margin-top: 2rem;
+}
+
+.list-product-appearence.showed {
+    display: block;
+}
+
+.right-infor-price a.btn.btn-primary {
+    background-color: #02C874!important;
+    border: 0;
+    padding: 0.5rem 1.5rem;
+}
+
+.right-infor-price {
+    padding-left: 1.5rem;
+}
+
+.right-infor-price h5 {
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.right-infor-price span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.left-only-img {
+}
+
+.list-product-appearence .block-appearence-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.25rem;
+    border-bottom: 2px solid #02C874;
+    margin-bottom: 2rem;
+}
+
+.page-number {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.page-number button.btn {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    padding: 0.4rem 1rem;
+    background-color: #c4c4c4;
+    border: 0;
+}
+
+.title-product h5 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.layout-and-sort .list-icon, .layout-and-sort .grid-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #02C874;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #a3ffd8; */
+}
+
+.layout-and-sort .list-icon.add-background {
+    background-color: #02C874;
+}
+
+.layout-and-sort .list-icon img {
+}
+
+.grid-product-list .card-deck .card-body .rating-price .price-product {
+    margin-top: 0;
+}
+
+.grid-product-list .card-deck .card-body .product-title {
+    margin-bottom: 0;
+}
+
+.title-top-change-layout-prd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout-and-sort .sort-product-by-brand {
+    margin-top: 0;
+}
+
+.layout-and-sort {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.grid-product-list .card-deck {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-product-list .card-deck .card-body {
+    padding-top: 0.625rem;
+}
+
+.grid-product-list .card-deck .card {
+    /* width: 95%; */
+    margin-bottom: 1.5rem;
+}
+
 section.product-list {
     margin-top: 300px;
+    padding-bottom: 7rem;
 }
 
 .filter-by-price.filter-prd {

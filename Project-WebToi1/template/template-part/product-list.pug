@@ -7,7 +7,7 @@ block content
     section.product-list
         .container
             .row
-                .col-md-4
+                .col-md-3
                     .filter-product
 
                         .filter-by-brand.filter-prd
@@ -107,7 +107,7 @@ block content
                                     label.form-check-label(for='defaultCheck4-4')
                                         | 960 GB - 1TB
                         
-                .col-md-8
+                .col-md-9
                     .product-list-filtered
                         .title-top-change-layout-prd
                             .title-product
@@ -117,16 +117,268 @@ block content
                                     img(src="./../images/product-list/list-disactive.svg", alt="list-icon")
                                 .grid-icon
                                     img(src="./../images/product-list/grid-active.svg", alt="grid-icon")
-                                .dropdown
-                                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.sale-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                                        | Mặc định
-                                    .dropdown-menu.sale-prd(aria-labelledby='dropdownMenuButton')
-                                        a.dropdown-item(href='#') Mặc định
-                                        a.dropdown-item(href='#') A - Z
-                                        a.dropdown-item(href='#') Z - A
-                                        a.dropdown-item(href='#') Giá tăng dần
-                                        a.dropdown-item(href='#') Giá giảm dần
+                                .sort-product-by-brand
+                                    .dropdown
+                                        button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                            | Mặc định
+                                        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                            a.dropdown-item(href='#') Mặc định
+                                            a.dropdown-item(href='#') A - Z
+                                            a.dropdown-item(href='#') Z - A
+                                            a.dropdown-item(href='#') Giá tăng dần
+                                            a.dropdown-item(href='#') Giá giảm dần
                         .grid-product-list
+                            .card-deck
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 16%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.830.000 đ
+                                                del 2.190.000 đ
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 16%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.830.000 đ
+                                                del 2.190.000 đ
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 16%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.830.000 đ
+                                                del 2.190.000 đ
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 16%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.830.000 đ
+                                                del 2.190.000 đ
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 16%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.830.000 đ
+                                                del 2.190.000 đ
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.090.000 đ
+                                                //- del 2.190.000 đ
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 16%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.830.000 đ
+                                                del 2.190.000 đ
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.090.000 đ
+                                                //- del 2.190.000 đ
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.090.000 đ
+                                                //- del 2.190.000 đ
+                        .list-product-appearence
+                            .block-appearence-list
+                                .left-only-img
+                                    img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                .right-infor-price
+                                    h5
+                                        a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                    span 500.000 đ
+                                    p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                    a.btn.btn-primary(href="") Mua ngay
+                            .block-appearence-list
+                                .left-only-img
+                                    img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                .right-infor-price
+                                    h5
+                                        a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                    span 500.000 đ
+                                    p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                    a.btn.btn-primary(href="") Mua ngay
+                            .block-appearence-list
+                                .left-only-img
+                                    img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                .right-infor-price
+                                    h5
+                                        a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                    span 500.000 đ
+                                    p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                    a.btn.btn-primary(href="") Mua ngay
+                            .block-appearence-list
+                                .left-only-img
+                                    img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                .right-infor-price
+                                    h5
+                                        a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                    span 500.000 đ
+                                    p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                    a.btn.btn-primary(href="") Mua ngay
+                            .block-appearence-list
+                                .left-only-img
+                                    img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                .right-infor-price
+                                    h5
+                                        a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                    span 500.000 đ
+                                    p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                    a.btn.btn-primary(href="") Mua ngay
+                            .block-appearence-list
+                                .left-only-img
+                                    img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                .right-infor-price
+                                    h5
+                                        a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                    span 500.000 đ
+                                    p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                    a.btn.btn-primary(href="") Mua ngay
+                        .page-number
+                            button.btn.btn-primary 1
+                            button.btn.btn-primary 2
+                            button.btn.btn-primary 3
+                            button.btn.btn-primary Trang cuối
+
                             
                     
 
