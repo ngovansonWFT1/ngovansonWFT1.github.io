@@ -1,0 +1,195 @@
+*{}
+
+.action-after a.btn.btn-info {
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+}
+
+#ex1 .title {
+    background-color: #02C874;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#ex1 .title h4 {
+    margin-bottom: 0;
+}
+
+.img-cart {
+    width: 100px;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.modal a.close-modal {
+    /* overflow: visible; */
+}
+
+.jquery-modal.blocker.current {
+}
+
+div#ex1 {
+    margin-top: 150px;
+    overflow: visible;
+    width: 500px;
+    height: 300px;
+}
+
+div#ex1 p {
+    text-align: center;
+}
+
+.detail-order, .provitional, .transport-cost, .summary-order, .action-after {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-after a svg {
+    margin-right: 0.5rem;
+}
+
+.summary-order {
+    padding-top: 1rem;
+}
+
+.detail-order, .order-cost {
+    border-bottom: 1px solid;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.order-product.style-block .order-cost {
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
+}
+
+.detail-order {
+    width: 100%;
+}
+
+.order-product.style-block .detail-order {
+    padding: 0;
+}
+
+.detail-order img {
+    flex-grow: 2;
+    width: 20%;
+}
+
+.detail-order .name-detail {
+    flex-grow: 1;
+    padding-left: 0.625rem;
+}
+
+.detail-order .price-detail {
+    flex-grow: 2;
+    width: 30%;
+}
+
+.order-product {
+    border: 1px solid #02C874;
+    border-radius: 5px;
+    padding: 1.6rem 2rem;
+    margin-bottom: 8rem;
+}
+
+.order-product.style-block {
+    padding: 1rem;
+}
+
+.guide-payment-delivery,.guide-payment-bank {
+    background-color: #E4EDF0;
+}
+
+.choose-method {}
+
+.choose-method .form-check {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.form-check.border-bottom {
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+.form-group.form-check {
+    margin-left: 20px;
+}
+
+
+.province-select, .district-select {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.province-select label, .district-select label {
+    margin-left: 16px;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.province-select select, 
+.district-select select
+{
+    border: 0;
+    outline: none;
+}
+
+.form-group input, 
+.form-group textarea  {
+    outline: none!important;
+}
+
+.province-select select:focus,
+.province-select select:active,
+.district-select select:focus, 
+.district-select select:active, 
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group input:active,
+.form-group textarea:active
+    {
+    outline: none;
+    box-shadow: none;
+}
+
+.infor-puchare {
+    margin-top: 300px;
+}
+
+.infor-puchare form {
+    border: 1px solid #02C874;
+    padding: 0.625rem;
+    border-radius: 5px;
+}
+
+.infor-puchare h4,
+.payment-method h4,
+.payment-confirm h4 {
+    text-transform: uppercase;
+    font-family: 'Proxima Nova Semibold';
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.payment-method {
+    margin-top: 300px;
+
+}
+
+.choose-method {
+    border: 1px solid #02C874;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+}
+
+.payment-confirm {
+    margin-top: 2.75rem;
+}   

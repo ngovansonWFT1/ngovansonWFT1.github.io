@@ -1,0 +1,78 @@
+extends layout.pug
+block header
+    title Sstore - Chính sách bảo hành
+
+block content
+    section.policy-restore
+        .container
+            h3 Chính sách bảo hành
+            ol.level-1
+                li Điều kiện bảo hành:
+                    ol.level-2
+                        li Tất cả các thiết bị phải có tem bảo hành hoặc phiếu bảo hành của Sstore, còn trong thời gian bảo hành sẽ được bảo hành và hỗ trợ đúng quy định của Sstore và quy định của nhà sản xuất, nhà phân phối.
+                        li Những trường hợp hư hỏng của thiết bị được xác định do lỗi kỹ thuật hoặc lỗi từ nhà sản xuất:
+                            p Thiết bị lưu trữ bị mất định dạng, không đọc được, không format được.
+                            p Những trường hợp được khách hàng mô tả là chập chờn sẽ được nhận kiểm tra.
+                        li Các sản phẩm và thiết bị có kèm theo phiếu bảo hành của Sstore hoặc có dán tem bảo hành của Sstore, trên phiếu bảo hành có ghi rõ các điều kiện bảo hành, địa điểm bảo hành quyền lợi của khách hàng... Khách hàng cần xuất trình phiếu bảo hành khi bảo hành trực tiếp tại trung tâm bảo hành của Sstore.
+
+                li Những trường hợp không hỗ trợ bảo hành:
+                    ol.level-2
+                        li Sản phẩm hết thời hạn bảo hành. Đặc biệt, đối với SSD thì tổng dung lượng đọc ghi của sản phẩm (TBW) không được vượt quá giới hạn đã được niêm yết của nhà sản xuất.
+                        li Thiết bị không có tem bảo hành của Sstore. (trường hợp không còn tem Sstore nhưng còn tem (phiếu bảo hành) của Nhà phân phối, Sstore chỉ dẫn địa chỉ đến điểm bảo hành tại Nhà phân phối; trường hợp rách, tróc tem (phiếu bảo hành) Nhà phân phối nhưng còn tem Sstore; Sstore có quyền quyết định từ chối bảo hành sản phẩm).
+                        li Sản phẩm, mã vạch, chỉ số dung lượng, tem bảo hành, số Serial Number bị rách, mờ hay có dấu hiệu chắp vá, cạo sửa…
+                        li Thiết bị, phụ kiện bị trầy xước, bể, mẻ, cong, cháy nổ... (thẻ nhớ bị trầy xước, gãy, bị biến dạng, cháy nổ, dính hóa chất, va đập mạnh).
+                        li Thiết bị đã được sử dụng trong môi trường ẩm ướt, bụi bậm, từ trường cao, bị oxy hóa, hay trực tiếp dưới ánh nắng mặt trời và có dấu hiệu cháy nổ, do dùng nguồn điện không ổn định  hoặc do côn trùng, chuột bọ phá hoại, hoặc hư hỏng do thiên tai, hỏa hoạn.
+                        li Sstore không chịu trách nhiệm bảo hành dữ liệu có chứa trong thiết bị lưu trữ của khách hàng khi bảo hành thiết bị. (Ngoài ra Sstore có thể hỗ trợ khách hàng lấy lại dữ liệu nếu còn có thể, sẽ phát sinh chi phí).
+
+                li Thời hạn bảo hành:
+                    ol.level-2
+                        li Thời hạn bảo hành cho các loại sản phẩm được tuân thủ theo chế độ bảo hành chính hãng của nhà sản xuất và nhà phân phối cụ thể như sau:
+                            ul.level-3
+                                li Thẻ nhớ lưu dữ liệu: 12 ~ 60 tháng. (tùy thuộc sản phẩm)
+                                li USB lưu dữ liệu: 24 ~ 60 tháng. (tùy thuộc sản phẩm)
+                                li Ổ cứng SSD:
+                                    ul.level-4
+                                        li 3 năm ~ 5 năm. (tùy thuộc sản phẩm)
+                                        li Tổng dung lượng đọc ghi tối đa của ổ cứng (TBW) không vượt quá niêm yết của nhà sản xuất cho Model đó.
+
+                                li Ổ cứng HDD Portable: 24 ~ 36 tháng. (tùy thuộc sản phẩm)
+                                li Wireless Memory: 12 ~ 24 tháng (tùy thuộc sản phẩm)
+                                li RAM: 36 tháng
+                                li Đầu đọc thẻ nhớ: 12 ~ 24 tháng (tùy thuộc sản phẩm)
+                                li Các sản phẩm khác: tùy vào thời gian bảo hành công bố với từng sản phẩm.
+                            p Lưu ý: Thời gian bảo hành có thể thay đổi tùy theo từng Model, quý khách vui lòng tham khảo trong chi tiết của từng sản phẩm.
+
+                        li  Mô tả bảo hành:
+                            ul.level-3  
+                                li Đối với thẻ bảo hành: trên thẻ bảo hành ghi rõ thông tin sản phẩm, số Serial Number, ngày mua sản phẩm và thời hạn bảo hành của sản phẩm.
+                                li Đối với tem bảo hành: trên tem bảo hành có thể hiện tháng và năm mua sản phẩm. Thời hạn bảo hành sản phẩm sẽ được tính từ tháng kế tiếp và đúng như công bố trong chi tiết sản phẩm.
+
+                        
+                li  Phương thức bảo hành:
+                    ol.level-2
+                        li Sản phẩm được bảo hành bằng phương thức đổi sản phẩm mới tương tự khi còn trong mục 1- Điều Kiện bảo hành.
+                        li Đối với sản phẩm tem còn bảo hành nhưng nằm trong "Trường hợp 2 - không được bảo hành", Sstore chỉ tạm nhận hỗ trợ, trong quá trình hỗ trợ nếu phát sinh chi phí, và sẽ thông báo đến khách hàng trước khi xử lý. Thời gian xử lý sẽ không hẹn trước vì tùy thuộc vào nhà cung cấp.
+                        li Đối với các sản phẩm có dấu hiệu "chập chờn" hoặc chưa xác định rõ lỗi sẽ được giữ lại để bộ phận kỹ thuật Sstore kiểm tra và đưa ra kết luận cuối cùng. Thời gian kiểm tra không quá 7 ngày làm việc và Sstore có trách nhiệm đưa ra câu trả lời hợp lý cho khách hàng.
+                        li Đối với các sản phẩm nhà sản xuất đã ngưng sản xuất (End of Life) hoặc không có hàng để đổi trả, Sstore sẽ xử lý khấu trừ thời gian sử dụng và định giá, hỗ trợ khách hàng mua sản phẩm mới. Thời gian bảo hành sẽ được tính lại từ đầu kể từ ngày đổi sản phẩm mới.
+    
+                li Quy trình bảo hành:
+                    ol.level-2
+                        li Bảo hành trực tiếp tại các điểm bảo hành của Sstore hoặc các đối tác bảo hành do Sstore chỉ định, và Sstore sẽ in phiếu biên nhận thông tin sản phẩm lỗi cho quý khách.
+                        li Sstore sẽ gửi sản phẩm lỗi đến Nhà phân phối sản phẩm để bảo hành, và thời gian bảo hành dự kiến tối đa trong vòng 14 ngày kể từ ngày tiếp nhận được sản phẩm bảo hành (không tính thứ 7, Chủ Nhật và các ngày lễ). Trong trường hợp có phát sinh thêm thời gian xử lý bảo hành từ phía nhà phân phối, Sstore sẽ thông báo cho khách hàng vào ngày thứ 13.
+                        li Tại các địa phương không có điểm bảo hành của Sstore, quý khách có thể gửi trả sản phẩm bảo hành cho Sstore thông qua các bước như sau:
+                            ul.level-3
+                                li Cung cấp thông tin đăng kí bảo hành tại Link: 
+                                    a(href="") Click Here
+                                li Xác nhận thông tin, in ra và đóng gói kèm với sản phẩm cần được bảo hành.
+                                li Gửi về trung tâm bảo hành của Sstore tại địa chỉ:
+                                    p Hà Nội: Ngõ 322, đường Mỹ Đình, Từ Liêm, Hà Nội
+                                li Bộ phận bảo hành của Sstore sẽ kiểm tra và liên hệ lại cho quý khách.
+                        li Trả sản phẩm bảo hành:
+                            p Quý khách cần trình phiếu biên nhận bảo hành tại Sstore để xác nhận đúng thông tin trả sản phẩm.
+                            p Trường hợp quý khách đánh mất, làm rách biên nhận bảo hành; Sstore sẽ không giải quyết mọi trường hợp trả sản phẩm cho quý khách.
+                        li Thời gian tiếp nhận và trả bảo hành sản phẩm:
+                            p Thời gian làm việc Thứ 2 đến Thứ 7: bắt đầu từ 9:00 AM - 18:00 PM.
+                            p Chủ Nhật và các ngày lễ: Tạm ngưng tiếp nhận và trả bảo hành sản phẩm.
+
+
+

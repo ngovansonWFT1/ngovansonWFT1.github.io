@@ -1,5 +1,48 @@
 *{}
 
+.page-1.shown, .page-2.shown, .page-3.shown, .page-4.shown {
+    display: block;
+}
+
+.page-1.hidden, .page-2.hidden, .page-3.hidden, .page-4.hidden {
+    display: none;
+}
+
+.page-2, .page-3, .page-4 {
+    display: none;
+}
+
+.block-card:nth-child(2), .block-card:nth-child(3), .block-card:nth-child(4) {
+    display: none;
+}
+
+.form-check {
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 0;
+}
+
+.filter-prd .form-check {
+    margin-left: 0;
+}
+
+.form-check input {
+    /* padding-left: 0!important; */
+    margin-right: 1rem;
+}
+
+.block-card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.block-card .card {
+    width: 262px;
+    margin-bottom: 1rem;
+}
+
 .layout-and-sort .list-icon {
     background-color: #ffffff;
 }
@@ -35,6 +78,13 @@
     padding-left: 1.5rem;
 }
 
+.right-infor-price span del {
+    color: #000000;
+    font-size: 1rem;
+    margin-left: 5rem;
+    display: inline-block;
+}
+
 .right-infor-price h5 {
     font-weight: bold;
     font-size: 1.125rem;
@@ -46,8 +96,7 @@
     color: #ff0000;
 }
 
-.left-only-img {
-}
+.left-only-img {position: relative;width: 200px;}
 
 .list-product-appearence .block-appearence-list {
     display: flex;
@@ -69,6 +118,10 @@
     padding: 0.4rem 1rem;
     background-color: #c4c4c4;
     border: 0;
+}
+
+.page-number button.btn.btn-primary.isActive {
+    background-color: #02C874;
 }
 
 .title-product h5 {
@@ -184,4 +237,8 @@ section.product-list {
 
 .title-brand {
     margin-bottom: 1.5rem;
+}
+
+.title-brand .form-check {
+    margin-left: 0!important;
 }

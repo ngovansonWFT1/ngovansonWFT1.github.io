@@ -1,0 +1,241 @@
+*{}
+
+section.description-product-detail {
+    padding-bottom: 3rem;
+}
+
+section.comment .bagde-title {
+    transform: translateY(0);
+    margin-bottom: 3rem;
+}
+
+section.description-product-detail .bagde-title {
+    transform: translateY(0);
+    margin-bottom: 3rem;
+}
+
+.description-product {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.only-img {
+    margin: auto;
+    width: 100%;
+}
+
+.only-img img {
+    margin: auto;
+    display: block;
+}
+
+.block-content {
+    width: 80%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.block-content h5 {
+    color: black;
+    font-family: 'Proxima Nova Semibold';
+    font-size: 1.5rem;
+}
+
+.infor-with-img .img-block {
+    width: 320px!important;
+    /* height: 320px; */
+}
+
+.img-block img {
+    width: 100%;
+}
+
+.infor-with-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.infor-with-img:last-child {
+    border-bottom: 0;
+}
+
+.delivery-options {
+    border: 1px solid #02C874;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.infor-delivery p:first-child {/* margin-bottom: 0; */margin-top: 1rem;font-family: 'Proxima Nova Semibold';}
+
+.free-delivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid black;
+    padding-top: 1rem;
+}
+
+.free-delivery:last-child {
+    border: 0;
+}
+
+.free-delivery img {
+    margin-right: 0.625rem;
+}
+
+.action-button button.btn.btn-secondary {
+    background-color: #02C874;
+    border: 0;
+}
+
+.action-button button.btn.btn-primary {
+    background-color: #F57224;
+    border: 0;
+}
+
+.action-button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action-button .btn h5 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.action-button .btn p {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+}
+
+.quantity .quantity-option .screen {
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity .quantity-option .screen p {
+    margin-bottom: 0;
+}
+
+.quantity .quantity-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.quantity .quantity-option .asc button, .quantity .quantity-option .desc button {
+    background-color: #ffffff!important;
+    color: #444444;
+    border: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid #444444;
+}
+
+.quantity .quantity-option .desc button {
+    border: 0;
+    border-left: 1px solid #444444;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.quantity {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.infor-detail .block-infor svg {
+    color: #02C874;
+    margin-right: 0.625rem;
+}
+
+.price p {
+    font-size: 30px;
+    color: #02C874;
+}
+
+span.status span {
+    color: #02C874;
+    margin-left: 0.5rem;
+}
+
+span.brand span {
+    color: #02C874;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.title {}
+
+button.slick-next.slick-arrow {
+    transform: translate(-7px, -27px);
+}
+
+button.slick-prev.slick-arrow {transform: translate(7px, -27px);}
+
+.img-product-small .slick-list.draggable {height: 100px;}
+
+button.slick-next.slick-arrow::before {
+    content: url(./../images/product-detail/arrow-right.png);
+}
+
+button.slick-prev.slick-arrow::before {
+    content: url(./../images/product-detail/arrow-left.png);
+}
+
+.img-product-big.slick-initialized.slick-slider {
+    height: 350px;
+}
+
+ul.slick-dots {
+    display: none;
+}
+
+.img-product-small.slick-initialized.slick-slider.slick-dotted {
+    /* height: 100px; */
+    margin-bottom: 0;
+}
+
+
+
+ul.slick-dots {
+    display: none!important;
+}
+
+.img-product-small .slick-slide {
+    border: 1px solid #dadada;
+    width: 65px!important;
+    height: 65px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+section.product-price-detail {
+    margin-top: 300px;
+    padding-bottom: 3rem;
+}
+
+section.product-price-detail .title h4 {
+    color: #444444;
+    font-family: 'Proxima Nova Semibold';
+}

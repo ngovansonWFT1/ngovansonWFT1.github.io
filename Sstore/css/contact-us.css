@@ -1,0 +1,15 @@
+*{}
+
+.hanoi {
+    padding-bottom: 2rem;
+}
+
+.contact-content {
+    padding-bottom: 2rem;
+}
+
+.contact-map iframe {
+    width: 100%;
+}
+
+.contact-content h3, .hanoi h3 {text-align: left!important;}

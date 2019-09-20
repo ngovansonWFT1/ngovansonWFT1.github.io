@@ -1,0 +1,66 @@
+*{}
+
+ul.level-4 {
+    padding-left: 2.5rem;
+}
+
+ul.level-3 {
+    padding-left: 2.5rem;
+}
+
+ol.level-2 {
+    padding-left: 1rem;
+}
+
+ul.level-4 > li {
+    list-style-type: initial;
+    list-style-position: inside;
+}
+
+ul.level-3 > li {
+    list-style-type: initial;
+    list-style-position: inside;
+    font-family: 'Proxima Nova Regular';
+}
+
+ol.level-2 > li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    font-family: 'Proxima Nova Regular';
+}
+
+ol.level-1 > li {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    font-family: 'Proxima Nova Semibold';
+    font-size: 1.1rem;
+}
+
+
+section.policy-restore {
+    margin-top: 300px;
+    padding-bottom: 8rem;
+}
+
+section.policy-restore li {
+    text-align: justify;
+    line-height: 3rem;
+    font-size: 1rem;
+}
+
+section.policy-restore p {
+    padding-left: 1rem;
+    font-family: 'Proxima Nova Regular';
+    line-height: 3rem;
+    text-align: justify;
+    margin-bottom: 0;
+    text-indent: 1rem;
+    font-size: 1rem;
+}
+
+section.policy-restore h3 {
+    font-family: 'Proxima Nova Semibold';
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
