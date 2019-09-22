@@ -6,14 +6,16 @@ block header
 block content
     section.slide-hot-product
         .only-image-cover
-            div
+            .block-slide-img
                 img.img-fluid(src="./../images/home-page/slide-1.jpg",alt="ssd samsung")
-            div
-                img.img-fluid(src="./../images/home-page/slide-1.jpg",alt="ssd samsung")
-            div
-                img.img-fluid(src="./../images/home-page/slide-1.jpg",alt="ssd samsung")
-            div
-                img.img-fluid(src="./../images/home-page/slide-1.jpg",alt="ssd samsung")
+            .block-slide-img
+                img.img-fluid(src="./../images/home-page/slide-2.jpg",alt="ssd samsung")
+            .block-slide-img
+                img.img-fluid(src="./../images/home-page/slide-3.jpg",alt="ssd samsung")
+            .block-slide-img
+                img.img-fluid(src="./../images/home-page/slide-4.jpg",alt="ssd samsung")
+            .block-slide-img
+                img.img-fluid(src="./../images/home-page/slide-5.jpg",alt="ssd samsung")
     section.feature-product
         .container
             .row
@@ -48,91 +50,252 @@ block content
                         a.dropdown-item(href='#') Flextor
                         a.dropdown-item(href='#') Western
                         a.dropdown-item(href='#') Kingston
-            .card-deck
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                        .layer-sale
-                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                            .sale-percent
-                                p 16%
-                                h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 1.830.000 đ
-                                del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                        .layer-sale
-                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                            .sale-percent
-                                p 16%
-                                h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 1.830.000 đ
-                                del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                        .layer-sale
-                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                            .sale-percent
-                                p 16%
-                                h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 1.830.000 đ
-                                del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                        .layer-sale
-                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                            .sale-percent
-                                p 16%
-                                h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 1.830.000 đ
-                                del 2.190.000 đ
+            .row
+                .col-md-12
+                    .block-card
+                        .card
+                            
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ssd/1.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 23%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 500.000 đ
+                                        del 650.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Crucial
+                                .standard 2.5inch
+                                .price 500000
+                                .memory 120
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ram/1.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 44%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ram Laptop Apacer DDR3L 4GB Bus 1600Mhz 1.35v DV.04G2K.KAM
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 420.000 đ
+                                        del 750.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Apacer
+                                .standard 1600
+                                .price 420000
+                                .memory 4
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ram-pc/1.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 30%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ram PC Kingston HyperX Fury Black 8GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 880.000 đ
+                                        del 1.250.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Kingston
+                                .standard 2666
+                                .price 880000
+                                .memory 8
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/hard-disk-mobi/3.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 17%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ổ cứng di động Seagate Backup Plus Slim 1TB
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.450.000 đ
+                                        del 1.750.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Seagate
+                                .standard 2.5inch
+                                .price 1450000
+                                .memory 1000
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/microSD/1.jpg' alt='thẻ nhớ SanDisk')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 38%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Thẻ Nhớ MicroSDHC SanDisk Ultra 16GB 80MB/s 533x
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 80.000 đ
+                                        del 130.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Sandisk
+                                .standard 
+                                .price 130000
+                                .memory 16
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/microSD/2.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 33%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Thẻ nhớ MicroSDHC Kingston Canvas Select 16GB Class 10 U1 80MB/s SDCS/16GB
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 80.000 đ
+                                        del 120.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                                .filter-hidden(style={display:'none'})
+                                    .brand Kingston
+                                    .standard 
+                                    .price 80000
+                                    .memory 16
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/hard-disk-mobi/5.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 9%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ổ cứng di động Western Digital My Passport 1TB WDBYNN0010B (Phiên bản mới)
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.545.000 đ
+                                        del 1.690.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Western Digital
+                                .standard 2.5inch
+                                .price 1545000
+                                .memory 1000
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ram-pc/2.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 29%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ram PC Crucial Ballistix Sport LT 8GB Bus 2666 DDR4 CL16
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 890.000 đ
+                                        del 1.250.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Crucial
+                                .standard 2666
+                                .price 890000
+                                .memory 8
+                    
+                    
             .see-more-product
                 a(href="") 
                     |Xem tất cả
@@ -152,91 +315,251 @@ block content
                         a.dropdown-item(href='#') Flextor
                         a.dropdown-item(href='#') Western
                         a.dropdown-item(href='#') Kingston
-            .card-deck
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                        .layer-sale
-                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                            .sale-percent
-                                p 16%
-                                h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 1.830.000 đ
-                                del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 1.090.000 đ
-                                //- del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                        .layer-sale
-                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                            .sale-percent
-                                p 16%
-                                h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 1.830.000 đ
-                                del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 1.090.000 đ
-                                //- del 2.190.000 đ
+            .row
+                .col-md-12
+                    .block-card
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ssd/1.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 23%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 500.000 đ
+                                        del 650.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Crucial
+                                .standard 2.5inch
+                                .price 500000
+                                .memory 120
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ssd/2.jpg' alt='ssd')
+                                //- .layer-sale
+                                //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                //-     .sale-percent
+                                //-         p 29%
+                                //-         h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") SSD Kingston A400 SATA 3 120GB SA400S37/120G
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 550.000 đ
+                                        //- del 1.250.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Kingston
+                                .standard 2.5inch
+                                .price 550000
+                                .memory 120
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ssd/3.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 20%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 550.000 đ
+                                        del 690.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Kingston
+                                .standard M.2 Sata
+                                .price 550000
+                                .memory 120
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ssd/4.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 29%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 700.000 đ
+                                        del 990.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Crucial
+                                .standard 2.5inch
+                                .price 700000
+                                .memory 240
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ssd/5.jpg' alt='ssd')
+                                //- .layer-sale
+                                //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                //-     .sale-percent
+                                //-         p 23%
+                                //-         h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 720.000 đ
+                                        //- del 650.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Kingston
+                                .standard mSata
+                                .price 720000
+                                .memory 120
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ssd/6.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 26%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 850.000 đ
+                                        del 1.150.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Samsung
+                                .standard M.2 PCIe
+                                .price 850000
+                                .memory 128
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ssd/7.jpg' alt='ssd')
+                                //- .layer-sale
+                                //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                //-     .sale-percent
+                                //-         p 29%
+                                //-         h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.030.000 đ
+                                        //- del 770.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Samsung
+                                .standard M.2 PCIe
+                                .price 1030000
+                                .memory 256
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/ssd/8.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 25%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.090.000 đ
+                                        del 1.450.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Crucial
+                                .standard 2.5inch
+                                .price 1090000
+                                .memory 250
+                        
+
             .see-more-product
                 a(href="") 
                     |Xem tất cả
@@ -256,91 +579,251 @@ block content
                         a.dropdown-item(href='#') Seagate
                         a.dropdown-item(href='#') Western
                         a.dropdown-item(href='#') Trancend
-            .card-deck
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/7.jpg' alt='mobival-hard-disk')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 2.250.000 đ
-                                //- del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/7.jpg' alt='mobival-hard-disk')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 2.250.000 đ
-                                //- del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/7.jpg' alt='mobival-hard-disk')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 2.250.000 đ
-                                //- del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/7.jpg' alt='mobival-hard-disk')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 2.250.000 đ
-                                //- del 2.190.000 đ
+            .row
+                .col-md-12
+                    .block-card
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/hard-disk-mobi/1.jpg' alt='ssd')
+                                //- .layer-sale
+                                //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                //-     .sale-percent
+                                //-         p 16%
+                                //-         h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ổ cứng di động 1TB chống Sock Apacer AC631 Military-Grade USB 3.1 Gen 1 AP1TBAC631U-1
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.199.000 đ
+                                        //- del 2.190.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Apacer
+                                .standard 2.5inch
+                                .price 1199000
+                                .memory 1000
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/hard-disk-mobi/2.jpg' alt='ssd')
+                                //- .layer-sale
+                                //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                //-     .sale-percent
+                                //-         p 16%
+                                //-         h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ổ cứng di động chống Sock Apacer AC630 USB 3.1 1TB AP1TBAC630T-1
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.290.000 đ
+                                        //- del 2.190.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                                .filter-hidden(style={display:'none'})
+                                    .brand Apacer
+                                    .standard 2.5inch
+                                    .price 1290000
+                                    .memory 1000
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/hard-disk-mobi/3.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 17%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ổ cứng di động Seagate Backup Plus Slim 1TB
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.450.000 đ
+                                        del 1.750.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Seagate
+                                .standard 2.5inch
+                                .price 1450000
+                                .memory 1000
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/hard-disk-mobi/4.jpg' alt='ssd')
+                                //- .layer-sale
+                                //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                //-     .sale-percent
+                                //-         p 16%
+                                //-         h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ổ cứng di động Transcend StoreJet Slim 25M3S 1TB TS1TSJ25M3S
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.450.000 đ
+                                        //- del 2.190.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Trancend
+                                .standard 2.5inch
+                                .price 1450000
+                                .memory 1000
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/hard-disk-mobi/5.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 9%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ổ cứng di động Western Digital My Passport 1TB WDBYNN0010B (Phiên bản mới)
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.545.000 đ
+                                        del 1.690.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Western Digital
+                                .standard 2.5inch
+                                .price 1545000
+                                .memory 1000
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/hard-disk-mobi/6.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 18%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ổ cứng di động Western Digital Elements 1.5TB WDBU6Y0015BBK-WESN
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.550.000 đ
+                                        del 1.890.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Western Digital
+                                .standard 2.5inch
+                                .price 1550000
+                                .memory 1500
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/hard-disk-mobi/7.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 18%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ổ cứng di động 2TB chống Sock Apacer AC631 Military-Grade USB 3.1 Gen 1 AP2TBAC631U-1
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.770.000 đ
+                                        del 2.150.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Apacer
+                                .standard 2.5inch
+                                .price 1770000
+                                .memory 2000
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/hard-disk-mobi/8.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 14%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Ổ cứng di động chống Sock Apacer AC630 USB 3.1 2TB AP2TBAC630T-1
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.850.000 đ
+                                        del 2.150.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Apacer
+                                .standard 2.5inch
+                                .price 1850000
+                                .memory 2000
+                        
+
             .see-more-product
                 a(href="") 
                     |Xem tất cả
@@ -360,91 +843,251 @@ block content
                         a.dropdown-item(href='#') Sandisk
                         a.dropdown-item(href='#') Lexar
                         a.dropdown-item(href='#') Kingston
-            .card-deck
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/8.jpg' alt='microSD-samsung')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 120.000 đ
-                                //- del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/8.jpg' alt='microSD-samsung')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 120.000 đ
-                                //- del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/8.jpg' alt='microSD-samsung')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 120.000 đ
-                                //- del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/8.jpg' alt='microSD-samsung')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 120.000 đ
-                                //- del 2.190.000 đ
+            .row
+                .col-md-12
+                    .block-card
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/microSD/1.jpg' alt='thẻ nhớ SanDisk')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 38%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Thẻ Nhớ MicroSDHC SanDisk Ultra 16GB 80MB/s 533x
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 80.000 đ
+                                        del 130.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Sandisk
+                                .standard 
+                                .price 130000
+                                .memory 16
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/microSD/2.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 33%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Thẻ nhớ MicroSDHC Kingston Canvas Select 16GB Class 10 U1 80MB/s SDCS/16GB
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 80.000 đ
+                                        del 120.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                                .filter-hidden(style={display:'none'})
+                                    .brand Kingston
+                                    .standard 
+                                    .price 80000
+                                    .memory 16
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/microSD/3.jpg' alt='ssd')
+                                //- .layer-sale
+                                //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                //-     .sale-percent
+                                //-         p 16%
+                                //-         h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Thẻ Nhớ MicroSDHC SanDisk Ultra 32GB 80MB/s 533x
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 115.000 đ
+                                        //- del 2.190.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Sandisk
+                                .standard 
+                                .price 115000
+                                .memory 32
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/microSD/4.jpg' alt='ssd')
+                                //- .layer-sale
+                                //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                //-     .sale-percent
+                                //-         p 16%
+                                //-         h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Thẻ nhớ MicroSDHC SanDisk Ultra A1 16GB 98MB/s
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 110.000 đ
+                                        //- del 2.190.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Sandisk
+                                .standard 
+                                .price 110000
+                                .memory 16
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/microSD/5.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 19%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Thẻ Nhớ MicroSDXC Samsung EVO Plus U3 64GB 100MB/s MB-MC64G
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 260.000 đ
+                                        del 320.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Samsung
+                                .standard 
+                                .price 260000
+                                .memory 64
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/microSD/6.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 27%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 120.000 đ
+                                        del 165.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Samsung
+                                .standard 
+                                .price 120
+                                .memory 32
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/microSD/7.jpg' alt='ssd')
+                                .layer-sale
+                                    img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                    .sale-percent
+                                        p 22%
+                                        h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Thẻ Nhớ MicroSDXC Lexar U3 V30 A2 512GB 633x 100MB/s LSDMI512BBAP633A
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 1.399.000 đ
+                                        del 1.790.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Lexar
+                                .standard 
+                                .price 1399000
+                                .memory 512
+                        .card
+                            .block-img
+                                img.card-img-top(src='./../images/product-list/microSD/8.jpg' alt='ssd')
+                                //- .layer-sale
+                                //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                //-     .sale-percent
+                                //-         p 16%
+                                //-         h5 giảm
+                            .card-body
+                                .product-title
+                                    h5.card-title
+                                        a(href="") Thẻ Nhớ 32GB TOSHIBA Chính Hãng - 32GB TOSHIBA
+                                .rating-price
+                                    .rating
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.far.fa-star
+                                    .price-product
+                                        p 295.000 đ
+                                        //- del 2.190.000 đ
+                            .layer-hover
+                                .button-buy
+                                    a.btn.btn-info(href="") Mua ngay
+                            .filter-hidden(style={display:'none'})
+                                .brand Toshiba
+                                .standard 
+                                .price 295000
+                                .memory 32
+                        
+
             .see-more-product
                 a(href="") 
                     |Xem tất cả
@@ -453,106 +1096,535 @@ block content
         .container
             .bagde-title
                 h4 Ram máy tính
-            .sort-product-by-brand
-                p Sắp xếp theo
-                .dropdown
-                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.ram-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                        | Apacer
-                    .dropdown-menu.ram-prd(aria-labelledby='dropdownMenuButton')
-                        a.dropdown-item(href='#') Apacer
-                        a.dropdown-item(href='#') Corsair
-                        a.dropdown-item(href='#') G.Skill
-                        a.dropdown-item(href='#') Kingston
-                        a.dropdown-item(href='#') Samsung
-            .card-deck
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/9.jpg' alt='ram-corsair')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 560.000 đ
-                                //- del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/9.jpg' alt='ram-corsair')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 560.000 đ
-                                //- del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/9.jpg' alt='ram-corsair')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 560.000 đ
-                                //- del 2.190.000 đ
-                .card
-                    .block-img
-                        img.card-img-top(src='./../images/home-page/9.jpg' alt='ram-corsair')
-                        //- .layer-sale
-                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                        //-     .sale-percent
-                        //-         p 16%
-                        //-         h5 giảm
-                    .card-body
-                        .product-title
-                            h5.card-title Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
-                        .rating-price
-                            .rating
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.fas.fa-star
-                                i.far.fa-star
-                            .price-product
-                                p 560.000 đ
-                                //- del 2.190.000 đ
-            .see-more-product
-                a(href="") 
-                    |Xem tất cả
-                    img(src="./../images/home-page/see-more.png", alt="arrow")
+            ul#pills-tab.nav.nav-pills.mb-3(role='tablist')
+                li.nav-item
+                    a#pills-home-tab.nav-link.active(data-toggle='pill' href='#pills-home' role='tab' aria-controls='pills-home' aria-selected='true') Ram Laptop
+                li.nav-item
+                    a#pills-profile-tab.nav-link(data-toggle='pill' href='#pills-profile' role='tab' aria-controls='pills-profile' aria-selected='false') Ram PC
+            #pills-tabContent.tab-content
+                #pills-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab')
+                    .sort-product-by-brand
+                        p Sắp xếp theo
+                        .dropdown
+                            button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.ram-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                | Apacer
+                            .dropdown-menu.ram-prd(aria-labelledby='dropdownMenuButton')
+                                a.dropdown-item(href='#') Apacer
+                                a.dropdown-item(href='#') Corsair
+                                a.dropdown-item(href='#') G.Skill
+                                a.dropdown-item(href='#') Kingston
+                                a.dropdown-item(href='#') Samsung
+                    .row
+                        .col-md-12
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/1.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 44%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Laptop Apacer DDR3L 4GB Bus 1600Mhz 1.35v DV.04G2K.KAM
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 420.000 đ
+                                                del 750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 1600
+                                        .price 420000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/2.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 40%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Laptop Apacer DDR3 4GB Bus 1600Mhz 1.5v DS.04G2K.KAM
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 450.000 đ
+                                                del 750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Apacer
+                                            .standard 1600
+                                            .price 450000
+                                            .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/3.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 17%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram G.Skill DDR3 4GB Bus 1600 1.5v F3-12800CL11S-4GBSQ
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 490.000 đ
+                                                //- del 1.750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 490000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/4.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Kingston DDR3L 4GB Bus 1600 SODIMM 1.35v ( KVR16LS11/4 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 500.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1600
+                                        .price 500000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 23%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram G.Skill Ripjaws DDR3L 4GB Bus 1600MHz 1.35v F3-1600C11S-4GRSL
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 500.000 đ
+                                                del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 500000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/6.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 18%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Kingston DDR3 4GB Bus 1333 SODIMM 1.5v ( KVR13S9S8/4 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 520.000 đ
+                                                //- del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1333
+                                        .price 520000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/7.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Corsair DDR3L 4GB Bus 1600 SODIMM 1.35v ( CMSO4GX3M1C1600C11 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 550.000 đ
+                                                del 770.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 550000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/8.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 14%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 560.000 đ
+                                                //- del 2.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 560000
+                                        .memory 4
+                                
+                    .see-more-product
+                        a(href="") 
+                            |Xem tất cả
+                            img(src="./../images/home-page/see-more.png", alt="arrow")
+                #pills-profile.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab')
+                    .sort-product-by-brand
+                        p Sắp xếp theo
+                        .dropdown
+                            button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.ram-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                | Apacer
+                            .dropdown-menu.ram-prd(aria-labelledby='dropdownMenuButton')
+                                a.dropdown-item(href='#') Apacer
+                                a.dropdown-item(href='#') Corsair
+                                a.dropdown-item(href='#') G.Skill
+                                a.dropdown-item(href='#') Kingston
+                                a.dropdown-item(href='#') Samsung
+                    .row
+                        .col-md-12
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/1.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 30%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury Black 8GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 880.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 880000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/2.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Crucial Ballistix Sport LT 8GB Bus 2666 DDR4 CL16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 890.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2666
+                                        .price 890000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/3.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 17%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance LPX 8GB (1x8GB) Bus 2666 DDR4 C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 930.000 đ
+                                                //- del 1.750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 930000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/4.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 24%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 8GB (1x8GB) Bus 3000Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.250.000 đ
+                                                del 1.650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 1250000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/5.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 23%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 8GB Bus 3000 Black CL16 XMP
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                //- del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/6.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 28%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Predator DDR4 RGB 8GB Bus 3200 Black CL16 XMP (8GB x 1)
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                del 1.790.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/7.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury Black 16GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.750.000 đ
+                                                //- del 770.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 1750000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/8.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 14%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance LPX 16GB (1x16GB) Bus 2666 DDR4 C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.950.000 đ
+                                                //- del 2.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 1950000
+                                        .memory 16
+
+                    .see-more-product
+                        a(href="") 
+                            |Xem tất cả
+                            img(src="./../images/home-page/see-more.png", alt="arrow")
+            
+
+            
     section.brand-favorite
         .container
             .bagde-title

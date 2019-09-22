@@ -1,0 +1,1976 @@
+extends layout.pug
+
+block header 
+    title Sstore - Danh sách sản phẩm
+
+block content
+    section.product-list
+        .container
+            .row
+                .col-md-3
+                    .filter-product
+
+                        .filter-by-brand.filter-prd
+                            .title-brand
+                                h4 Thương hiệu
+                            .form-check
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Crucial")/ Crucial
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Kingston")/ Kingston
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="G.Skill")/ G.Skill
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Corsair")/ Corsair
+                                    span.checkmark
+                               
+                        .filter-by-size-standard.filter-prd
+                            .title-standard
+                                h4 Bus Ram
+                            .form-check
+                                label
+                                    input(type='radio' name="standard" value="standard" data-filter=2133)/ 2133MHz
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="standard" value="standard" data-filter=2400)/ 2400MHz
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="standard" value="standard" data-filter=2666)/ 2666MHz
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="standard" value="standard" data-filter=3000)/ 3000MHz
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="standard" value="standard" data-filter=3200)/ 3200Mhz
+                                    span.checkmark
+                                
+                        .filter-by-price.filter-prd
+                            .title-price
+                                h4 Giá sản phẩm
+                            .form-check
+                                //- label
+                                //-     input(type='radio' name="price" value="price" data-filter=[200000,500000])/ 200.000 - 500.000
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[500000,1000000])/ 500.000 - 1.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[1000000,2000000])/ 1.000.000 - 2.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[2000000,3000000])/ 2.000.000 - 3.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[3000000,5000000])/ 3.000.000 - 5.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[5000000,10000000])/ 5.000.000 - 10.000.000
+                                    span.checkmark
+                        .filter-by-capacity.filter-prd
+                            .title-capacity
+                                h4 Dung lượng
+                            .form-check
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[0, 4])/ 4GB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[5, 8])/ 8GB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[9, 16])/ 16GB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[17, 32])/ 32GB
+                                    span.checkmark
+                               
+                        
+                .col-md-9
+                    .product-list-filtered
+                        .title-top-change-layout-prd
+                            .title-product
+                                h5 RAM PC
+                            .layout-and-sort
+                                .list-icon 
+                                    img(src="./../images/product-list/list-disactive.svg", alt="list-icon")
+                                .grid-icon
+                                    img(src="./../images/product-list/grid-active.svg", alt="grid-icon")
+                                .sort-product-by-brand
+                                    .dropdown
+                                        button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                            | Mặc định
+                                        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                            a.dropdown-item(href='#' data-sort-by= "all" data-filter="all") Mặc định
+                                            a.dropdown-item(href='#' data-sort-by="name" data-filter="ASC") A - Z
+                                            a.dropdown-item(href='#' data-sort-by="name" data-filter="DESC") Z - A
+                                            a.dropdown-item(href='#' data-sort-by="price" data-filter="ASC") Giá tăng dần
+                                            a.dropdown-item(href='#' data-sort-by="price" data-filter="DESC") Giá giảm dần
+                        .grid-product-list
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/1.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 30%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury Black 8GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 880.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 880000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/2.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Crucial Ballistix Sport LT 8GB Bus 2666 DDR4 CL16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 890.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2666
+                                        .price 890000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/3.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 17%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance LPX 8GB (1x8GB) Bus 2666 DDR4 C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 930.000 đ
+                                                //- del 1.750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 930000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/4.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 24%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 8GB (1x8GB) Bus 3000Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.250.000 đ
+                                                del 1.650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 1250000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/5.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 23%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 8GB Bus 3000 Black CL16 XMP
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                //- del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/6.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 28%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Predator DDR4 RGB 8GB Bus 3200 Black CL16 XMP (8GB x 1)
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                del 1.790.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/7.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury Black 16GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.750.000 đ
+                                                //- del 770.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 1750000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/8.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 14%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance LPX 16GB (1x16GB) Bus 2666 DDR4 C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.950.000 đ
+                                                //- del 2.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 1950000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/9.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 21%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 16GB (2x8GB) Bus 3000Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.350.000 đ
+                                                del 2.990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 2350000
+                                        .memory 16
+
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/10.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 18%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 16GB Bus 3000 Black CL16 XMP
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.450.000 đ
+                                                del 2.990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 2450000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/11.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury RGB 16GB (Kit 2x8GB) Bus 3200 DDR4 CL16 DIMM XMP Non-ECC
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.490.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Kingston
+                                            .standard 3200
+                                            .price 2490000
+                                            .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/12.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Predator DDR4 RGB 16GB Bus 3200 Black CL16 XMP
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.750.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 2750000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/13.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 22%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Dominator Platinum RGB DDR4 KIT 16GB (2x8GB) Bus 3200Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 3.650.000 đ
+                                                //- del 3.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3200
+                                        .price 3650000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/14.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 32GB (2x16GB) Bus 3000Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.050.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 4050000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/15.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 9%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance LPX 32GB (1x32GB) Bus 2666 DDR4 C16 
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.150.000 đ
+                                                del 4.550.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 4150000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/16.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 32GB (2x16GB) Bus 3200Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.290.000 đ
+                                                //- del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3200
+                                        .price 4290000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/17.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 33%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury RGB 32GB (Kit 2x16GB) Bus 3200 DDR4 CL16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.350.000 đ
+                                                //- del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 4350000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/18.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 11%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 32GB Bus 3000 Black CL16 XMP
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.450.000 đ
+                                                del 5.000.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 4450000
+                                        .memory 32
+                            
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/1.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 30%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury Black 8GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 880.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 880000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/2.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Crucial Ballistix Sport LT 8GB Bus 2666 DDR4 CL16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 890.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Crucial
+                                            .standard 2666
+                                            .price 890000
+                                            .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/3.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 17%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance LPX 8GB (1x8GB) Bus 2666 DDR4 C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 930.000 đ
+                                                //- del 1.750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 930000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/4.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 24%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 8GB (1x8GB) Bus 3000Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.250.000 đ
+                                                del 1.650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 1250000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/5.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 23%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 8GB Bus 3000 Black CL16 XMP
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                //- del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/6.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 28%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Predator DDR4 RGB 8GB Bus 3200 Black CL16 XMP (8GB x 1)
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                del 1.790.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/7.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury Black 16GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.750.000 đ
+                                                //- del 770.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 1750000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/8.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 14%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance LPX 16GB (1x16GB) Bus 2666 DDR4 C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.950.000 đ
+                                                //- del 2.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 1950000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/9.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 21%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 16GB (2x8GB) Bus 3000Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.350.000 đ
+                                                del 2.990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 2350000
+                                        .memory 16
+
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/10.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 18%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 16GB Bus 3000 Black CL16 XMP
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.450.000 đ
+                                                del 2.990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 2450000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/11.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury RGB 16GB (Kit 2x8GB) Bus 3200 DDR4 CL16 DIMM XMP Non-ECC
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.490.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Kingston
+                                            .standard 3200
+                                            .price 2490000
+                                            .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/12.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Predator DDR4 RGB 16GB Bus 3200 Black CL16 XMP
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.750.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 2750000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/13.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 22%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Dominator Platinum RGB DDR4 KIT 16GB (2x8GB) Bus 3200Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 3.650.000 đ
+                                                //- del 3.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3200
+                                        .price 3650000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/14.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 32GB (2x16GB) Bus 3000Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.050.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 4050000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/15.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 9%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance LPX 32GB (1x32GB) Bus 2666 DDR4 C16 
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.150.000 đ
+                                                del 4.550.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 4150000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/16.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 32GB (2x16GB) Bus 3200Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.290.000 đ
+                                                //- del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3200
+                                        .price 4290000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/17.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 33%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury RGB 32GB (Kit 2x16GB) Bus 3200 DDR4 CL16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.350.000 đ
+                                                //- del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 4350000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/18.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 11%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 32GB Bus 3000 Black CL16 XMP
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.450.000 đ
+                                                del 5.000.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 4450000
+                                        .memory 32
+                            
+                                
+                        .list-product-appearence
+                            .page-1.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/1.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 30%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Fury Black 8GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        span 880.000 đ
+                                        span
+                                            del 1.250.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 880000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/2.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Crucial Ballistix Sport LT 8GB Bus 2666 DDR4 CL16
+                                        span 890.000 đ
+                                        span
+                                            del 1.250.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2666
+                                        .price 890000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/3.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 17%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance LPX 8GB (1x8GB) Bus 2666 DDR4 C16
+                                        span 930.000 đ
+                                        //- span
+                                        //-     del 1.750.000đ
+                                        p  Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 930000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/4.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 24%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 8GB (1x8GB) Bus 3000Mhz C16
+                                        span 1.250.000 đ
+                                        span
+                                            del 1.650.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 1250000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/5.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 23%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 8GB Bus 3000 Black CL16 XMP
+                                        span 1.290.000 đ
+                                        //- span
+                                        //-     del 650.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 1290000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/6.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 28%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Predator DDR4 RGB 8GB Bus 3200 Black CL16 XMP (8GB x 1)
+
+                                        span 1.290.000 đ
+                                        span
+                                            del 1.790.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 1290000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/7.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Fury Black 16GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        span 1.750.000 đ
+                                        //- span
+                                        //-     del 770.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(2 x 8 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 1750000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/8.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 14%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance LPX 16GB (1x16GB) Bus 2666 DDR4 C16
+                                        span 1.950.000 đ
+                                        //- span
+                                        //-     del 2.150.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(1 x 16 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 1950000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/9.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 21%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 16GB (2x8GB) Bus 3000Mhz C16
+                                        span 2.350.000 đ
+                                        span
+                                            del 2.990.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(2 x 8 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 2350000
+                                        .memory 16
+                            .page-2.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/10.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 18%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 16GB Bus 3000 Black CL16 XMP
+                                        span 2.450.000 đ
+                                        span
+                                            del 2.990.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(2 x 8 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 2450000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/11.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Fury RGB 16GB (Kit 2x8GB) Bus 3200 DDR4 CL16 DIMM XMP Non-ECC
+
+                                        span 2.490.000 đ
+                                        //- span
+                                        //-     del 1.490.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(2 x 8 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 2490000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/12.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Predator DDR4 RGB 16GB Bus 3200 Black CL16 XMP
+                                        span 2.750.000 đ
+                                        //- span
+                                        //-     del 700.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(1 x 16 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 2750000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/13.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 22%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Dominator Platinum RGB DDR4 KIT 16GB (2x8GB) Bus 3200Mhz C16
+                                        span 3.650.000 đ
+                                        //- span
+                                        //-     del 3.250.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(1 x 8 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3200
+                                        .price 3650000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/14.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 32GB (2x16GB) Bus 3000Mhz C16
+                                        span 4.050.000 đ
+                                        //- span
+                                        //-     del 1.150.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 32GB(2 x 16 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 4050000
+                                        .memory 32
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/15.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 9%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance LPX 32GB (1x32GB) Bus 2666 DDR4 C16
+                                        span 4.150.000 đ
+                                        span
+                                            del 4.550.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 32GB(1 x 32 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 4150000
+                                        .memory 32
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/16.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 32GB (2x16GB) Bus 3200Mhz C16
+                                        span 4.290.000 đ
+                                        //- span
+                                        //-     del 1.890.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 32GB(2 x 16 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3200
+                                        .price 4290000
+                                        .memory 32
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/17.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 33%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Fury RGB 32GB (Kit 2x16GB) Bus 3200 DDR4 CL16
+
+                                        span 4.350.000 đ
+                                        //- span
+                                        //-     del 1.250.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 32GB(2 x 16 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 4350000
+                                        .memory 32
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/18.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 11%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") (Ram PC G.SKILL Trident Z full length RGB DDR4 32GB Bus 3000 Black CL16 XMP
+                                        span 4.450.000 đ
+                                        span
+                                            del 5.000.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 32GB(1 x 32 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skil
+                                        .standard 3000
+                                        .price 4450000
+                                        .memory 32
+                            .page-3.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/1.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 30%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Fury Black 8GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        span 880.000 đ
+                                        span
+                                            del 1.250.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 880000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/2.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Crucial Ballistix Sport LT 8GB Bus 2666 DDR4 CL16
+                                        span 890.000 đ
+                                        span
+                                            del 1.250.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2666
+                                        .price 890000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/3.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 17%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance LPX 8GB (1x8GB) Bus 2666 DDR4 C16
+                                        span 930.000 đ
+                                        //- span
+                                        //-     del 1.750.000đ
+                                        p  Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 930000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/4.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 24%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 8GB (1x8GB) Bus 3000Mhz C16
+                                        span 1.250.000 đ
+                                        span
+                                            del 1.650.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 1250000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/5.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 23%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 8GB Bus 3000 Black CL16 XMP
+                                        span 1.290.000 đ
+                                        //- span
+                                        //-     del 650.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 1290000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/6.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 28%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Predator DDR4 RGB 8GB Bus 3200 Black CL16 XMP (8GB x 1)
+
+                                        span 1.290.000 đ
+                                        span
+                                            del 1.790.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 8 GB(1 x 8 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 1290000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/7.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Fury Black 16GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        span 1.750.000 đ
+                                        //- span
+                                        //-     del 770.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(2 x 8 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 1750000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/8.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 14%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance LPX 16GB (1x16GB) Bus 2666 DDR4 C16
+                                        span 1.950.000 đ
+                                        //- span
+                                        //-     del 2.150.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(1 x 16 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 1950000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/9.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 21%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 16GB (2x8GB) Bus 3000Mhz C16
+                                        span 2.350.000 đ
+                                        span
+                                            del 2.990.000đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(2 x 8 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 2350000
+                                        .memory 16
+                            
+                            .page-4.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/10.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 18%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 16GB Bus 3000 Black CL16 XMP
+                                        span 2.450.000 đ
+                                        span
+                                            del 2.990.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(2 x 8 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 2450000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/11.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Fury RGB 16GB (Kit 2x8GB) Bus 3200 DDR4 CL16 DIMM XMP Non-ECC
+
+                                        span 2.490.000 đ
+                                        //- span
+                                        //-     del 1.490.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(2 x 8 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 2490000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/12.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Predator DDR4 RGB 16GB Bus 3200 Black CL16 XMP
+                                        span 2.750.000 đ
+                                        //- span
+                                        //-     del 700.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(1 x 16 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 2750000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/13.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 22%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Dominator Platinum RGB DDR4 KIT 16GB (2x8GB) Bus 3200Mhz C16
+                                        span 3.650.000 đ
+                                        //- span
+                                        //-     del 3.250.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 16GB(1 x 8 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3200
+                                        .price 3650000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/14.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 32GB (2x16GB) Bus 3000Mhz C16
+                                        span 4.050.000 đ
+                                        //- span
+                                        //-     del 1.150.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 32GB(2 x 16 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 4050000
+                                        .memory 32
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/15.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 9%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance LPX 32GB (1x32GB) Bus 2666 DDR4 C16
+                                        span 4.150.000 đ
+                                        span
+                                            del 4.550.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 32GB(1 x 32 GB) Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 4150000
+                                        .memory 32
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/16.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 32GB (2x16GB) Bus 3200Mhz C16
+                                        span 4.290.000 đ
+                                        //- span
+                                        //-     del 1.890.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 32GB(2 x 16 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3200
+                                        .price 4290000
+                                        .memory 32
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/17.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 33%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram PC Kingston HyperX Fury RGB 32GB (Kit 2x16GB) Bus 3200 DDR4 CL16
+
+                                        span 4.350.000 đ
+                                        //- span
+                                        //-     del 1.250.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 32GB(2 x 16 GB) Chuẩn: DDR4 Bus: 3200 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 4350000
+                                        .memory 32
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram-pc/18.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 11%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") (Ram PC G.SKILL Trident Z full length RGB DDR4 32GB Bus 3000 Black CL16 XMP
+                                        span 4.450.000 đ
+                                        span
+                                            del 5.000.000 đ
+                                        p Loại sản phẩm: Ram PC Dung lượng: 32GB(1 x 32 GB) Chuẩn: DDR4 Bus: 3000 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skil
+                                        .standard 3000
+                                        .price 4450000
+                                        .memory 32
+                        
+                        .page-number
+                            button.btn.btn-primary.isActive 1
+                            button.btn.btn-primary 2
+                            button.btn.btn-primary 3
+                            button.btn.btn-primary Trang cuối
+
+                            
+                    
+

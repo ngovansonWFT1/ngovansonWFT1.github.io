@@ -184,13 +184,18 @@
             .logo-center
                 img.img-fluid(src="./../images/menu/logoS.png" alt="logo")
             .menu-right
-                a(href="") Trang chủ
-                a(href="") Liên hệ
+                a(href="/template-part/index.html") Trang chủ
+                    hr
+                
+                a(href="/template-part/contact-us.html") Liên hệ
+                    hr
     nav(aria-label='breadcrumb')
         .container
             ol.breadcrumb
                 li.breadcrumb-item
-                    a(href='#') Home
+                    a(href='#') Trang chủ
+                li.breadcrumb-item
+                    a(href='#') Danh mục sản phẩm
                 li.breadcrumb-item.active(aria-current='page') Library
 
 .sub-menu-small-screen
@@ -207,7 +212,9 @@
         nav(aria-label='breadcrumb')
             ol.breadcrumb
                 li.breadcrumb-item
-                    a(href='#') Home
+                    a(href='#') Trang chủ
+                li.breadcrumb-item
+                    a(href='#') Danh mục sản phẩm
                 li.breadcrumb-item.active(aria-current='page') Library
         .layer-background-under
         .sub-list-menu-mobile

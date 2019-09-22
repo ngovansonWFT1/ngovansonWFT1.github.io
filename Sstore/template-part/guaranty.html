@@ -154,13 +154,16 @@
             </ul>
           </div>
           <div class="logo-center"><img class="img-fluid" src="./../images/menu/logoS.png" alt="logo"></div>
-          <div class="menu-right"><a href="">Trang chủ</a><a href="">Liên hệ</a></div>
+          <div class="menu-right"><a href="/template-part/index.html">Trang chủ
+              <hr></a><a href="/template-part/contact-us.html">Liên hệ
+              <hr></a></div>
         </div>
       </div>
       <nav aria-label="breadcrumb">
         <div class="container">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Danh mục sản phẩm</a></li>
             <li class="breadcrumb-item active" aria-current="page">Library</li>
           </ol>
         </div>
@@ -178,7 +181,8 @@
         </div>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Danh mục sản phẩm</a></li>
             <li class="breadcrumb-item active" aria-current="page">Library</li>
           </ol>
         </nav>
@@ -366,12 +370,14 @@
                   <h6>Tình trạng sản phẩm</h6>
                   <div class="radio-check">
                     <div class="form-check">
-                      <input class="form-check-input" id="use" type="radio" name="exampleRadios" checked="">
-                      <label class="form-check-label" for="use">Còn sử dụng được</label>
+                      <label>
+                        <input type="radio" name="status" checked/>Còn sử dụng được<span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" id="no-use" type="radio" name="exampleRadios">
-                      <label class="form-check-label" for="no-use">Không thể sử dụng được</label>
+                      <label>
+                        <input type="radio" name="status"/>Không thể sử dụng được<span class="checkmark"></span>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -379,12 +385,14 @@
                   <h6>Bao bì sản phẩm</h6>
                   <div class="radio-check">
                     <div class="form-check">
-                      <input class="form-check-input" id="have" type="radio" name="exampleRadios1" checked="">
-                      <label class="form-check-label" for="have">Còn bao bì</label>
+                      <label>
+                        <input type="radio" name="cover" checked/>Còn bao bì<span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" id="no-have" type="radio" name="exampleRadios1">
-                      <label class="form-check-label" for="no-have">Mất bao bì</label>
+                      <label>
+                        <input type="radio" name="cover"/>Mất bao bì<span class="checkmark"></span>
+                      </label>
                     </div>
                   </div>
                 </div>

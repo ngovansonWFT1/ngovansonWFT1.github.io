@@ -1,5 +1,27 @@
 *{}
 
+.block-card.slick-initialized.slick-slider {
+    height: 368px;
+}
+
+.product-sale .block-card .slick-prev:before,
+.product-sale .block-card .slick-next:before,
+.product-mobival-hard-disk .block-card .slick-prev:before,
+.product-mobival-hard-disk .block-card .slick-next:before,
+.product-ram .block-card .slick-prev:before,
+.product-ram .block-card .slick-next:before
+{
+    color: black;
+}
+
+
+
+.slick-slide {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    /* width: 254px!important; */
+}
+
 .brand-appearence-like.slick-initialized.slick-slider {
     margin-top: 1rem;
 }
@@ -149,6 +171,18 @@ h5.card-title {
 .block-img {
     position: relative;
     height: 203px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.block-img:hover > img {
+    transform: scale(1.1);
+}
+
+.block-img img {
+    transition: 0.4s;
 }
 
 .block-img .card-img-top {
@@ -284,8 +318,9 @@ section.feature-product {
 
 /* CSS for slide-hot-product */
 
-.slide-hot-product button.slick-prev.slick-arrow {
-    left: 0px;
+.only-image-cover button.slick-prev.slick-arrow {
+    left: 0;
+    z-index: 1;
 }
 
 .slide-hot-product button.slick-next.slick-arrow::before {
@@ -296,7 +331,7 @@ section.feature-product {
     content: url(./../images/home-page/prev-icon.png);
 }
 
-.slide-hot-product button.slick-next.slick-arrow {
+.only-image-cover button.slick-next.slick-arrow {
     right: 60px;
 }
 

@@ -66,4 +66,24 @@ $(document).ready(function(){
         $('.sub-menu-level-1').slideUp();
     })
 
+    let url = $(location).attr('pathname');
+    if (url.match('index')) {
+        $('.menu-right a:first-child').children().addClass('ws');
+        $('ol.breadcrumb li:nth-child(2)').css('display','none')
+        $('ol.breadcrumb li:nth-child(3)').css('display','none')
+    } else {
+        $('.menu-right a:first-child').children().removeClass('ws')
+    }
+
+    if (url.match('contact-us')) {
+        $('.menu-right a:last-child').children().addClass('ws')
+        $('ol.breadcrumb li:nth-child(2)').text('Liên hệ')
+        $('ol.breadcrumb li:nth-child(3)').css('display','none')
+    } else {
+        $('.menu-right a:last-child').children().removeClass('ws')
+    }
+
+    
+
+
 });

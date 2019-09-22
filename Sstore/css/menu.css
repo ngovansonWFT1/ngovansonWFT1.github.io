@@ -1,5 +1,18 @@
 *{}
 
+hr {
+    border: 2px solid #ffffff;
+    width: 70%;
+    margin: auto;
+    transform: translateY(12px);
+    visibility: hidden;
+}
+
+hr.ws {
+    visibility: visible;
+    transition: 0.4s;
+}
+
 .wraper-menutop.fixed-top nav {
     background-color: #EFF0F5;
     margin-top: 2rem;
@@ -58,11 +71,6 @@ ol.breadcrumb {
     transform: rotate(0deg);
 }
 
-.click-sub-menu::after {
-}
-
-.click-sub-menu::after {
-}
 
 li.sub-menu-list-item .click-sub-menu >a {
     text-transform: uppercase;
@@ -117,8 +125,6 @@ li.sub-menu-list-item {
     padding-bottom: 0.5rem;
 }
 
-li.sub-menu-list-item::after {
-}
 
 ul.sub-menu-list-item-level-2 > span {
     font-family: 'Proxima Nova Semibold';
@@ -200,6 +206,17 @@ ul.sub-menu-list-item-level-2 > span {
 
 .menu-main .container .list-menu-left ul.menu-list-cover li.menu-list-item .menu-level-2 ul li {
     margin-bottom: 0.5rem;
+    transition: 0.4s;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.menu-main .container .list-menu-left ul.menu-list-cover li.menu-list-item .menu-level-2 ul li:hover {
+    background-color: lightblue;
+}
+
+.menu-main .container .list-menu-left ul.menu-list-cover li.menu-list-item .menu-level-2 ul li:hover a {
+    color: #ffffff;
 }
 
 ul.menu-list-item-level-2 span {
@@ -262,6 +279,15 @@ ul.menu-list-item-level-2 span {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    transition: 0.4s;
+}
+.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item:hover {
+    background-color: #008744;
+}
+
+.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item:hover > a {
+    color: #ffffff;
+    
 }
 
 .menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item.active {
@@ -273,23 +299,30 @@ ul.menu-list-item-level-2 span {
     color: #ffffff;
     
 }
-
-.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item.active:nth-child(1)::before {
+.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item:nth-child(1):hover::before {
     content: url(./../images/menu/icon2.0.png);
+    
 }
-.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item.active:nth-child(2)::before {
+.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item:nth-child(2):hover::before {
     content: url(./../images/menu/icon2.1.png);
 }
-.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item.active:nth-child(3)::before {
+.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item:nth-child(3):hover::before {
     content: url(./../images/menu/icon2.2.png);
 }
-.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item.active:nth-child(4)::before {
+.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item:nth-child(4):hover::before {
     content: url(./../images/menu/icon2.3.png);
 }
 
-.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item.active:nth-child(5)::before {
+.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item:nth-child(5):hover::before {
     content: url(./../images/menu/icon2.4.png);
 }
+
+.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item:hover::after {
+    content: url(./../images/menu/arrow-2.png);
+}
+
+
+ 
 
 
 .menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item.active::after {
@@ -333,7 +366,7 @@ ul.menu-list-item-level-2 span {
 .menu-main .container .list-menu-left ul.menu-list-cover li.menu-list-item .menu-level-2 {
     position: absolute;
     top: 3.75rem;
-    left: 23rem;
+    left: -123rem;
     width: 47.5rem;
     height: 18.75rem;
     display: flex!important;
@@ -342,12 +375,11 @@ ul.menu-list-item-level-2 span {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     z-index: 11;
     background-color: #ffffff;
-    cursor: pointer;
-    visibility: hidden;
+    /* cursor: pointer; */
 }
 .menu-main .container .list-menu-left ul.menu-list-cover li.menu-list-item.active .menu-level-2.active-done {
-    visibility: visible;
-    transition: 0.3s;
+    transition: 0.7s;
+    left: 23rem;
 }
 
 .menu-main .container .list-menu-left ul.menu-list-cover {width: 21.875rem;}
@@ -356,12 +388,17 @@ li {
     list-style-type: none;
 }
 
+.breadcrumb-item+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
 li.breadcrumb-item.active {width: 200px;display: flex;justify-content: flex-start;align-items: center;}
 
 .breadcrumb-item+.breadcrumb-item::before {
     content: url(./../images/menu/arrow-1.png);
     height: 1rem;
-    margin-top: -1rem;
+    transform: translateY(-6px);
 }
 
 li.sub-menu-list-item > a {

@@ -16,28 +16,38 @@ block content
                             .form-check
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Samsung")/ Samsung
+                                    span.checkmark
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Crucial")/ Crucial
+                                    span.checkmark
                                 label
-                                    input(type='radio' name='brand' value="name" data-filter="Sandisk")/ Sandisk
+                                    input(type='radio' name='brand' value="name" data-filter="Trancend")/ Trancend
+                                    span.checkmark
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Kingston")/ Kingston
+                                    span.checkmark
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Intel")/ Intel
+                                    span.checkmark
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Western Digital")/ Western Digital
+                                    span.checkmark
                         .filter-by-size-standard.filter-prd
                             .title-standard
                                 h4 Chuẩn ổ cứng
                             .form-check
                                 label
                                     input(type='radio' name="standard" value="standard" data-filter="2.5inch")/ 2.5 inch
+                                    span.checkmark
                                 label
                                     input(type='radio' name="standard" value="standard" data-filter="mSata")/ mSata
+                                    span.checkmark
                                 label
                                     input(type='radio' name="standard" value="standard" data-filter="M.2 Sata")/ M.2 Sata
+                                    span.checkmark
                                 label
                                     input(type='radio' name="standard" value="standard" data-filter="M.2 PCIe")/ M.2 PCIe
+                                    span.checkmark
                                 
                         .filter-by-price.filter-prd
                             .title-price
@@ -45,28 +55,38 @@ block content
                             .form-check
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[500000,1000000])/ 500.000 - 1.000.000
+                                    span.checkmark
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[1000000,1500000])/ 1.000.000 - 1.500.000
+                                    span.checkmark
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[1500000,2000000])/ 1.500.000 - 2.000.000
+                                    span.checkmark
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[2000000,3000000])/ 2.000.000 - 3.000.000
+                                    span.checkmark
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[3000000,5000000])/ 3.000.000 - 5.000.000
+                                    span.checkmark
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[5000000,10000000])/ 5.000.000 - 10.000.000
+                                    span.checkmark
                         .filter-by-capacity.filter-prd
                             .title-capacity
                                 h4 Dung lượng
                             .form-check
                                 label
                                     input(type='radio' name="memory" value="memory" data-filter=[120, 128])/ 120 -128GB
+                                    span.checkmark
                                 label
                                     input(type='radio' name="memory" value="memory" data-filter=[240, 256])/ 240 - 256GB
+                                    span.checkmark
                                 label
                                     input(type='radio' name="memory" value="memory" data-filter=[480, 512])/ 480 - 512GB
+                                    span.checkmark
                                 label
                                     input(type='radio' name="memory" value="memory" data-filter=[960, 1000])/ 960GB - 1TB
+                                    span.checkmark
                                
                         
                 .col-md-9
@@ -90,20 +110,291 @@ block content
                                             a.dropdown-item(href='#' data-sort-by="price" data-filter="ASC") Giá tăng dần
                                             a.dropdown-item(href='#' data-sort-by="price" data-filter="DESC") Giá giảm dần
                         .grid-product-list
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/1.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 23%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 500.000 đ
+                                                del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2.5inch
+                                        .price 500000
+                                        .memory 120
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/2.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Kingston A400 SATA 3 120GB SA400S37/120G
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 550.000 đ
+                                                //- del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2.5inch
+                                        .price 550000
+                                        .memory 120
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/3.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 20%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 550.000 đ
+                                                del 690.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard M.2 Sata
+                                        .price 550000
+                                        .memory 120
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/4.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 700.000 đ
+                                                del 990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2.5inch
+                                        .price 700000
+                                        .memory 240
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/5.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 23%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 720.000 đ
+                                                //- del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard mSata
+                                        .price 720000
+                                        .memory 120
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/6.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 26%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 850.000 đ
+                                                del 1.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 850000
+                                        .memory 128
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/7.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.030.000 đ
+                                                //- del 770.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 1030000
+                                        .memory 256
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/8.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 25%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.090.000 đ
+                                                del 1.450.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2.5inch
+                                        .price 1090000
+                                        .memory 250
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/9.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 21%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Western Digital Blue 3D-NAND M.2 2280 SATA III 250GB WDS250G2B0B
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.090.000 đ
+                                                //- del 2.990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard M.2 Sata
+                                        .price 1090000
+                                        .memory 250
 
                             .block-card
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/10.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 25%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Crucial MX500 3D-NAND M.2 2280 SATA III 250GB CT250MX500SSD4
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -112,25 +403,29 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 1.090.000 đ
+                                                del 1.450.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .brand Crucial
+                                        .standard M.2 Sata
+                                        .price 1090000
+                                        .memory 250
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
+                                        img.card-img-top(src='./../images/product-list/ssd/11.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Samsung 860 Evo 250GB 2.5-Inch SATA III MZ-76E250BW
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -139,97 +434,19 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 1.150.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                         .filter-hidden(style={display:'none'})
                                             .brand Samsung
                                             .standard 2.5inch
-                                            .price 1830000
-                                            .memory 500
+                                            .price 1150000
+                                            .memory 250
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/12.jpg' alt='ssd')
                                         //- .layer-sale
                                         //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                         //-     .sale-percent
@@ -238,7 +455,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") SSD Kingston KC2000 M.2 PCIe Gen3 x4 NVMe 250GB SKC2000M8/250G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -247,25 +464,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.090.000 đ
+                                                p 1.440.000 đ
                                                 //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .brand Kingston
+                                        .standard M.2 PCIe
+                                        .price 1440000
+                                        .memory 250
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/13.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 21%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Western Digital Black SN750 PCIe Gen3 x4 NVMe M.2 250GB WDS250G3X0C
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -274,16 +494,19 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 1.570.000 đ
+                                                del 1.990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .brand Western Digital
+                                        .standard M.2 PCIe
+                                        .price 1570000
+                                        .memory 250
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/14.jpg' alt='ssd')
                                         //- .layer-sale
                                         //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                         //-     .sale-percent
@@ -292,7 +515,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") SSD Crucial P1 500GB NVMe 3D-NAND M.2 PCIe Gen3 x4 CT500P1SSD8
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -301,25 +524,58 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.090.000 đ
+                                                p 1.590.000 đ
                                                 //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .standard M.2 PCIe
+                                        .price 1590000
+                                        .memory 500
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/15.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 15%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="")  SSD Samsung 970 EVO Plus PCIe NVMe V-NAND M.2 2280 250GB MZ-V7S250BW
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.700.000 đ
+                                                del 1.999.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 1700000
+                                        .memory 250
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/16.jpg' alt='ssd')
                                         //- .layer-sale
                                         //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                         //-     .sale-percent
-                                        //-         p 16%
+                                        //-         p 11%
                                         //-         h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") SSD Intel 660P 512GB 3D-NAND QLC M.2 NVMe PCIe Gen3.0 x4 SSDPEKNW512G8X1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -328,162 +584,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                p 1.750.000 đ
+                                                //- del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
-
-                            .block-card
+                                        .brand Intel
+                                        .standard M.2 PCIe
+                                        .price 1750000
+                                        .memory 512
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                        .filter-hidden(style={display:'none'})
-                                            .brand Samsung
-                                            .standard 2.5inch
-                                            .price 1830000
-                                            .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/17.jpg' alt='ssd')
                                         //- .layer-sale
                                         //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                         //-     .sale-percent
-                                        //-         p 16%
+                                        //-         p 33%
                                         //-         h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") SSD Seagate Barracuda 510 M.2 PCIe Gen3 x4 NVMe 256GB ZP256CM30041
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -492,52 +614,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                p 1.700.000 đ
+                                                //- del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .brand Seagate
+                                        .standard M.2 PCIe
+                                        .price 1700000
+                                        .memory 256
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/18.jpg' alt='ssd')
                                         //- .layer-sale
                                         //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                         //-     .sale-percent
-                                        //-         p 16%
+                                        //-         p 11%
                                         //-         h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") SSD Transcend M.2 2242 SATA III 512GB MTS430S 3D-NAND TS512GMTS430S
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -546,54 +644,30 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                p 2.350.000 đ
+                                                //- del 5.000.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .brand Trancend
+                                        .standard M.2 Sata
+                                        .price 2350000
+                                        .memory 512
                             
                             .block-card
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/1.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 23%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -602,133 +676,208 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 500.000 đ
+                                                del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
+                                        .brand Crucial
                                         .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .price 500000
+                                        .memory 120
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                        .filter-hidden(style={display:'none'})
-                                            .brand Samsung
-                                            .standard 2.5inch
-                                            .price 1830000
-                                            .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/2.jpg' alt='ssd')
                                         //- .layer-sale
                                         //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                         //-     .sale-percent
-                                        //-         p 16%
+                                        //-         p 29%
                                         //-         h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") SSD Kingston A400 SATA 3 120GB SA400S37/120G
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 550.000 đ
+                                                //- del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2.5inch
+                                        .price 550000
+                                        .memory 120
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/3.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 20%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 550.000 đ
+                                                del 690.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard M.2 Sata
+                                        .price 550000
+                                        .memory 120
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/4.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 700.000 đ
+                                                del 990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2.5inch
+                                        .price 700000
+                                        .memory 240
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/5.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 23%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 720.000 đ
+                                                //- del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard mSata
+                                        .price 720000
+                                        .memory 120
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/6.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 26%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 850.000 đ
+                                                del 1.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 850000
+                                        .memory 128
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/7.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.030.000 đ
+                                                //- del 770.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 1030000
+                                        .memory 256
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/8.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 25%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -738,51 +887,27 @@ block content
                                                 i.far.fa-star
                                             .price-product
                                                 p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                del 1.450.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard 2.5inch
                                         .price 1090000
-                                        .memory 120
+                                        .memory 250
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/9.jpg' alt='ssd')
                                         //- .layer-sale
                                         //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                         //-     .sale-percent
-                                        //-         p 16%
+                                        //-         p 21%
                                         //-         h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") SSD Western Digital Blue 3D-NAND M.2 2280 SATA III 250GB WDS250G2B0B
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -792,53 +917,29 @@ block content
                                                 i.far.fa-star
                                             .price-product
                                                 p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                //- del 2.990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
+                                        .brand Western Digital
+                                        .standard M.2 Sata
                                         .price 1090000
-                                        .memory 120
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .memory 250
 
                             .block-card
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/10.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 25%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Crucial MX500 3D-NAND M.2 2280 SATA III 250GB CT250MX500SSD4
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -847,25 +948,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 1.090.000 đ
+                                                del 1.450.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .brand Crucial
+                                        .standard M.2 Sata
+                                        .price 1090000
+                                        .memory 250
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
+                                        img.card-img-top(src='./../images/product-list/ssd/11.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Samsung 860 Evo 250GB 2.5-Inch SATA III MZ-76E250BW
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -874,97 +978,19 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 1.150.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                         .filter-hidden(style={display:'none'})
                                             .brand Samsung
                                             .standard 2.5inch
-                                            .price 1830000
-                                            .memory 500
+                                            .price 1150000
+                                            .memory 250
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/12.jpg' alt='ssd')
                                         //- .layer-sale
                                         //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                         //-     .sale-percent
@@ -973,7 +999,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") SSD Kingston KC2000 M.2 PCIe Gen3 x4 NVMe 250GB SKC2000M8/250G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -982,25 +1008,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.090.000 đ
+                                                p 1.440.000 đ
                                                 //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .brand Kingston
+                                        .standard M.2 PCIe
+                                        .price 1440000
+                                        .memory 250
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/13.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 21%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Western Digital Black SN750 PCIe Gen3 x4 NVMe M.2 250GB WDS250G3X0C
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1009,25 +1038,58 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 1.570.000 đ
+                                                del 1.990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
+                                        .brand Western Digital
+                                        .standard M.2 PCIe
+                                        .price 1570000
+                                        .memory 250
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/14.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Crucial P1 500GB NVMe 3D-NAND M.2 PCIe Gen3 x4 CT500P1SSD8
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.590.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard M.2 PCIe
+                                        .price 1590000
                                         .memory 500
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
+                                        img.card-img-top(src='./../images/product-list/ssd/15.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 15%
+                                                h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="")  SSD Samsung 970 EVO Plus PCIe NVMe V-NAND M.2 2280 250GB MZ-V7S250BW
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1036,25 +1098,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                p 1.700.000 đ
+                                                del 1.999.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 1700000
+                                        .memory 250
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/16.jpg' alt='ssd')
                                         //- .layer-sale
                                         //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                         //-     .sale-percent
-                                        //-         p 16%
+                                        //-         p 11%
                                         //-         h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") SSD Intel 660P 512GB 3D-NAND QLC M.2 NVMe PCIe Gen3.0 x4 SSDPEKNW512G8X1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1063,355 +1128,849 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                p 1.750.000 đ
+                                                //- del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .brand Intel
+                                        .standard M.2 PCIe
+                                        .price 1750000
+                                        .memory 512
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/17.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 33%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Seagate Barracuda 510 M.2 PCIe Gen3 x4 NVMe 256GB ZP256CM30041
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.700.000 đ
+                                                //- del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Seagate
+                                        .standard M.2 PCIe
+                                        .price 1700000
+                                        .memory 256
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ssd/18.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") SSD Transcend M.2 2242 SATA III 512GB MTS430S 3D-NAND TS512GMTS430S
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.350.000 đ
+                                                //- del 5.000.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Trancend
+                                        .standard M.2 Sata
+                                        .price 2350000
+                                        .memory 512
+                            
+                                
                         .list-product-appearence
-                            .page-1
+                            .page-1.page
                                 .block-appearence-list
                                     .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                        img.img-fluid(src="./../images/product-list/ssd/1.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 23%
+                                                h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
                                         span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        span
+                                            del 650.000 đ
+                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 380 MB/s Bảo hành: 3 năm
                                         a.btn.btn-primary(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
+                                        .brand Crucial
                                         .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .price 500000
+                                        .memory 120
                                 .block-appearence-list
                                     .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                        img.img-fluid(src="./../images/product-list/ssd/2.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                            a(href="") SSD Kingston A400 SATA 3 120GB SA400S37/120G
+                                        span 550.000 đ
+                                        //- span
+                                        //-     del 1.250.000 đ
+                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 380 MB/s Bảo hành: 3 năm
                                         a.btn.btn-primary(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
+                                        .brand Kingston
                                         .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .price 550000
+                                        .memory 120
                                 .block-appearence-list
                                     .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                        img.img-fluid(src="./../images/product-list/ssd/3.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 20%
+                                                h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                            a(href="") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
+                                        span 550.000 đ
+                                        span
+                                            del 690.000đ
+                                        p  Chuẩn SSD: M.2 2280 SATA III Tốc độ đọc: 560 MB/s Tốc độ ghi: 475 MB/s Bảo hành 3 năm
                                         a.btn.btn-primary(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .brand Kingston
+                                        .standard M.2 Sata
+                                        .price 550000
+                                        .memory 550000
                                 .block-appearence-list
                                     .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                        img.img-fluid(src="./../images/product-list/ssd/4.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
+                                        span 700.000 đ
+                                        span
+                                            del 990 .000đ
+                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 380 MB/s Bảo hành: 3 năm
                                         a.btn.btn-primary(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
+                                        .brand Crucial
                                         .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .price 700000
+                                        .memory 240
                                 .block-appearence-list
                                     .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                        img.img-fluid(src="./../images/product-list/ssd/5.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 23%
+                                        //-         h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                            a(href="") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
+                                        span 720.000 đ
+                                        //- span
+                                        //-     del 650.000đ
+                                        p Chuẩn SSD: mSATA Tốc độ đọc: 520 MB/s Tốc độ ghi: ~320 MB/s Bảo hành chính hãng 5 năm 1 đổi 1
                                         a.btn.btn-primary(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .brand Kingston
+                                        .standard mSata
+                                        .price 720000
+                                        .memory 120
                                 .block-appearence-list
                                     .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
+                                        img.img-fluid(src="./../images/product-list/ssd/6.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 26%
+                                                h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                            .page-2
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                            .page-3
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                            .page-4
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .block-appearence-list
-                                    .left-only-img
-                                        img.img-fluid(src="./../images/product-list/1.png", alt="ssd")
-                                    .right-infor-price
-                                        h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        span 500.000 đ
-                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 540 MB/s Tốc độ ghi: 500 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                            a(href="") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
 
+                                        span 850.000 đ
+                                        span
+                                            del 1.150.000đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 850000
+                                        .memory 128
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/7.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
+                                        span 1.030.000 đ
+                                        //- span
+                                        //-     del 770.000đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 1030000
+                                        .memory 256
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/8.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 25%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
+                                        span 1.090.000 đ
+                                        span
+                                            del 1.450.000đ
+                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2.5inch
+                                        .price 1090000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/9.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 21%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Western Digital Blue 3D-NAND M.2 2280 SATA III 250GB WDS250G2B0B
+                                        span 1.090.000 đ
+                                        //- span
+                                        //-     del 2.990.000đ
+                                        p Chuẩn SSD: M.2 2280 SATA III Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard M.2 Sata
+                                        .price 1090000
+                                        .memory 250
+                            .page-2.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/10.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 25%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Crucial MX500 3D-NAND M.2 2280 SATA III 250GB CT250MX500SSD4
+
+                                        span 1.090.000 đ
+                                        span
+                                            del 1.450.000 đ
+                                        p Chuẩn SSD: M.2 2280 SATA III Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard M.2 Sata
+                                        .price 1090000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/11.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Samsung 860 Evo 250GB 2.5-Inch SATA III MZ-76E250BW
+
+                                        span 1.150.000 đ
+                                        //- span
+                                        //-     del 1.490.000 đ
+                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard 2.5 inch
+                                        .price 1150000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/12.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Kingston KC2000 M.2 PCIe Gen3 x4 NVMe 250GB SKC2000M8/250G
+                                        span 1.440.000 đ
+                                        //- span
+                                        //-     del 700.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard M.2 PCIe
+                                        .price 1440000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/13.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 21%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Western Digital Black SN750 PCIe Gen3 x4 NVMe M.2 250GB WDS250G3X0C
+                                        span 1.570.000 đ
+                                        span
+                                            del 1.990.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard M.2 PCIe
+                                        .price 1570000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/14.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Crucial P1 500GB NVMe 3D-NAND M.2 PCIe Gen3 x4 CT500P1SSD8
+                                        span 1.590.000 đ
+                                        //- span
+                                        //-     del 1.150.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard M.2 PCIe
+                                        .price 1590000
+                                        .memory 500
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/15.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 15%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Samsung 970 EVO Plus PCIe NVMe V-NAND M.2 2280 250GB MZ-V7S250BW
+                                        span 1.700.000 đ
+                                        span
+                                            del 1.999.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 1700000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/16.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Intel 660P 512GB 3D-NAND QLC M.2 NVMe PCIe Gen3.0 x4 SSDPEKNW512G8X1
+                                        span 1.750.000 đ
+                                        //- span
+                                        //-     del 1.890.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Intel
+                                        .standard M.2 PCIe
+                                        .price 1750000
+                                        .memory 512
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/17.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 33%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Seagate Barracuda 510 M.2 PCIe Gen3 x4 NVMe 256GB ZP256CM30041
+
+                                        span 1.700.000 đ
+                                        //- span
+                                        //-     del 1.250.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Seagate
+                                        .standard M.2 PCIe
+                                        .price 1700000
+                                        .memory 256
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/18.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Transcend M.2 2242 SATA III 512GB MTS430S 3D-NAND TS512GMTS430S
+                                        span 2.350.000 đ
+                                        //- span
+                                        //-     del 5.000.000 đ
+                                        p Chuẩn SSD: M.2 2280 SATA III Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Trancend
+                                        .standard M.2 Sata
+                                        .price 2350000
+                                        .memory 512
+                            .page-3.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/1.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 23%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
+                                        span 500.000 đ
+                                        span
+                                            del 650.000 đ
+                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 380 MB/s Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2.5inch
+                                        .price 500000
+                                        .memory 120
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/2.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Kingston A400 SATA 3 120GB SA400S37/120G
+                                        span 550.000 đ
+                                        //- span
+                                        //-     del 1.250.000 đ
+                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 380 MB/s Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2.5inch
+                                        .price 550000
+                                        .memory 120
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/3.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 20%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
+                                        span 550.000 đ
+                                        span
+                                            del 690.000đ
+                                        p  Chuẩn SSD: M.2 2280 SATA III Tốc độ đọc: 560 MB/s Tốc độ ghi: 475 MB/s Bảo hành 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard M.2 Sata
+                                        .price 550000
+                                        .memory 550000
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/4.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
+                                        span 700.000 đ
+                                        span
+                                            del 990 .000đ
+                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 380 MB/s Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2.5inch
+                                        .price 700000
+                                        .memory 240
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/5.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 23%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
+                                        span 720.000 đ
+                                        //- span
+                                        //-     del 650.000đ
+                                        p Chuẩn SSD: mSATA Tốc độ đọc: 520 MB/s Tốc độ ghi: ~320 MB/s Bảo hành chính hãng 5 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard mSata
+                                        .price 720000
+                                        .memory 120
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/6.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 26%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
+
+                                        span 850.000 đ
+                                        span
+                                            del 1.150.000đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 850000
+                                        .memory 128
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/7.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 29%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
+                                        span 1.030.000 đ
+                                        //- span
+                                        //-     del 770.000đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 1030000
+                                        .memory 256
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/8.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 25%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
+                                        span 1.090.000 đ
+                                        span
+                                            del 1.450.000đ
+                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2.5inch
+                                        .price 1090000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/9.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 21%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Western Digital Blue 3D-NAND M.2 2280 SATA III 250GB WDS250G2B0B
+                                        span 1.090.000 đ
+                                        //- span
+                                        //-     del 2.990.000đ
+                                        p Chuẩn SSD: M.2 2280 SATA III Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard M.2 Sata
+                                        .price 1090000
+                                        .memory 250
+                            
+                            .page-4.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/10.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 25%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Crucial MX500 3D-NAND M.2 2280 SATA III 250GB CT250MX500SSD4
+
+                                        span 1.090.000 đ
+                                        span
+                                            del 1.450.000 đ
+                                        p Chuẩn SSD: M.2 2280 SATA III Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard M.2 Sata
+                                        .price 1090000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/11.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Samsung 860 Evo 250GB 2.5-Inch SATA III MZ-76E250BW
+
+                                        span 1.150.000 đ
+                                        //- span
+                                        //-     del 1.490.000 đ
+                                        p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard 2.5 inch
+                                        .price 1150000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/12.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Kingston KC2000 M.2 PCIe Gen3 x4 NVMe 250GB SKC2000M8/250G
+                                        span 1.440.000 đ
+                                        //- span
+                                        //-     del 700.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard M.2 PCIe
+                                        .price 1440000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/13.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 21%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Western Digital Black SN750 PCIe Gen3 x4 NVMe M.2 250GB WDS250G3X0C
+                                        span 1.570.000 đ
+                                        span
+                                            del 1.990.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard M.2 PCIe
+                                        .price 1570000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/14.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Crucial P1 500GB NVMe 3D-NAND M.2 PCIe Gen3 x4 CT500P1SSD8
+                                        span 1.590.000 đ
+                                        //- span
+                                        //-     del 1.150.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard M.2 PCIe
+                                        .price 1590000
+                                        .memory 500
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/15.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 15%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Samsung 970 EVO Plus PCIe NVMe V-NAND M.2 2280 250GB MZ-V7S250BW
+                                        span 1.700.000 đ
+                                        span
+                                            del 1.999.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard M.2 PCIe
+                                        .price 1700000
+                                        .memory 250
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/16.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Intel 660P 512GB 3D-NAND QLC M.2 NVMe PCIe Gen3.0 x4 SSDPEKNW512G8X1
+                                        span 1.750.000 đ
+                                        //- span
+                                        //-     del 1.890.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Intel
+                                        .standard M.2 PCIe
+                                        .price 1750000
+                                        .memory 512
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/17.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 33%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Seagate Barracuda 510 M.2 PCIe Gen3 x4 NVMe 256GB ZP256CM30041
+
+                                        span 1.700.000 đ
+                                        //- span
+                                        //-     del 1.250.000 đ
+                                        p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Seagate
+                                        .standard M.2 PCIe
+                                        .price 1700000
+                                        .memory 256
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ssd/18.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") SSD Transcend M.2 2242 SATA III 512GB MTS430S 3D-NAND TS512GMTS430S
+                                        span 2.350.000 đ
+                                        //- span
+                                        //-     del 5.000.000 đ
+                                        p Chuẩn SSD: M.2 2280 SATA III Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Trancend
+                                        .standard M.2 Sata
+                                        .price 2350000
+                                        .memory 512
+                        
                         .page-number
                             button.btn.btn-primary.isActive 1
                             button.btn.btn-primary 2

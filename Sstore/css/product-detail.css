@@ -96,12 +96,13 @@ section.description-product-detail .bagde-title {
 .action-button button.btn.btn-primary {
     background-color: #F57224;
     border: 0;
+    margin-right: 1rem;
 }
 
 .action-button {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 .action-button .btn h5 {
@@ -133,6 +134,10 @@ section.description-product-detail .bagde-title {
     border: 1px solid #444444;
     border-radius: 5px;
     margin: auto;
+}
+
+.detail-wrapper .quantity .quantity-option {
+    margin: unset;
 }
 
 .quantity .quantity-option .asc button, .quantity .quantity-option .desc button {
@@ -183,19 +188,19 @@ span.brand span {
 
 .title {}
 
-button.slick-next.slick-arrow {
+.img-product-small button.slick-next.slick-arrow {
     transform: translate(-7px, -27px);
 }
 
-button.slick-prev.slick-arrow {transform: translate(7px, -27px);}
+.img-product-small button.slick-prev.slick-arrow {transform: translate(7px, -27px);}
 
 .img-product-small .slick-list.draggable {height: 100px;}
 
-button.slick-next.slick-arrow::before {
+.img-product-small button.slick-next.slick-arrow::before {
     content: url(./../images/product-detail/arrow-right.png);
 }
 
-button.slick-prev.slick-arrow::before {
+.img-product-small button.slick-prev.slick-arrow::before {
     content: url(./../images/product-detail/arrow-left.png);
 }
 

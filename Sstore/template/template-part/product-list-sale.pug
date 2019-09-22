@@ -16,28 +16,52 @@ block content
                             .form-check
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Samsung")/ Samsung
+                                    span.checkmark
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Crucial")/ Crucial
+                                    span.checkmark
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Sandisk")/ Sandisk
+                                    span.checkmark
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Kingston")/ Kingston
+                                    span.checkmark
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Intel")/ Intel
+                                    span.checkmark
                                 label
                                     input(type='radio' name='brand' value="name" data-filter="Western Digital")/ Western Digital
-                        .filter-by-size-standard.filter-prd
-                            .title-standard
-                                h4 Chuẩn ổ cứng
-                            .form-check
+                                    span.checkmark
                                 label
-                                    input(type='radio' name="standard" value="standard" data-filter="2.5inch")/ 2.5 inch
+                                    input(type='radio' name='brand' value="name" data-filter="Apacer")/ Apacer
+                                    span.checkmark
                                 label
-                                    input(type='radio' name="standard" value="standard" data-filter="mSata")/ mSata
+                                    input(type='radio' name='brand' value="name" data-filter="Seagate")/ Seagate
+                                    span.checkmark
                                 label
-                                    input(type='radio' name="standard" value="standard" data-filter="M.2 Sata")/ M.2 Sata
+                                    input(type='radio' name='brand' value="name" data-filter="Lexar")/ Lexar
+                                    span.checkmark
                                 label
-                                    input(type='radio' name="standard" value="standard" data-filter="M.2 PCIe")/ M.2 PCIe
+                                    input(type='radio' name='brand' value="name" data-filter="Corsair")/ Corsair
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="G.Skill")/ G.Skill
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Adata")/ Adata
+                                    span.checkmark
+                        //- .filter-by-size-standard.filter-prd
+                        //-     .title-standard
+                        //-         h4 Chuẩn ổ cứng
+                        //-     .form-check
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="2.5inch")/ 2.5 inch
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="mSata")/ mSata
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="M.2 Sata")/ M.2 Sata
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="M.2 PCIe")/ M.2 PCIe
                                 
                         .filter-by-price.filter-prd
                             .title-price
@@ -45,28 +69,34 @@ block content
                             .form-check
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[500000,1000000])/ 500.000 - 1.000.000
+                                    span.checkmark
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[1000000,1500000])/ 1.000.000 - 1.500.000
+                                    span.checkmark
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[1500000,2000000])/ 1.500.000 - 2.000.000
+                                    span.checkmark
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[2000000,3000000])/ 2.000.000 - 3.000.000
+                                    span.checkmark
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[3000000,5000000])/ 3.000.000 - 5.000.000
+                                    span.checkmark
                                 label
                                     input(type='radio' name="price" value="price" data-filter=[5000000,10000000])/ 5.000.000 - 10.000.000
-                        .filter-by-capacity.filter-prd
-                            .title-capacity
-                                h4 Dung lượng
-                            .form-check
-                                label
-                                    input(type='radio' name="memory" value="memory" data-filter=[120, 128])/ 120 -128GB
-                                label
-                                    input(type='radio' name="memory" value="memory" data-filter=[240, 256])/ 240 - 256GB
-                                label
-                                    input(type='radio' name="memory" value="memory" data-filter=[480, 512])/ 480 - 512GB
-                                label
-                                    input(type='radio' name="memory" value="memory" data-filter=[960, 1000])/ 960GB - 1TB
+                                    span.checkmark
+                        //- .filter-by-capacity.filter-prd
+                        //-     .title-capacity
+                        //-         h4 Dung lượng
+                        //-     .form-check
+                        //-         label
+                        //-             input(type='radio' name="memory" value="memory" data-filter=[120, 128])/ 120 -128GB
+                        //-         label
+                        //-             input(type='radio' name="memory" value="memory" data-filter=[240, 256])/ 240 - 256GB
+                        //-         label
+                        //-             input(type='radio' name="memory" value="memory" data-filter=[480, 512])/ 480 - 512GB
+                        //-         label
+                        //-             input(type='radio' name="memory" value="memory" data-filter=[960, 1000])/ 960GB - 1TB
                                
                         
                 .col-md-9
@@ -93,17 +123,18 @@ block content
 
                             .block-card
                                 .card
+                                    
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/1.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 23%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -112,25 +143,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 500.000 đ
+                                                del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
+                                        .brand Crucial
                                         .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .price 500000
+                                        .memory 120
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ram/1.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 44%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ram Laptop Apacer DDR3L 4GB Bus 1600Mhz 1.35v DV.04G2K.KAM
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -139,25 +173,148 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 420.000 đ
+                                                del 750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 1600
+                                        .price 420000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/1.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 30%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury Black 8GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 880.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 880000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/3.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 17%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ổ cứng di động Seagate Backup Plus Slim 1TB
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.450.000 đ
+                                                del 1.750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Seagate
+                                        .standard 2.5inch
+                                        .price 1450000
+                                        .memory 1000
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/1.jpg' alt='thẻ nhớ SanDisk')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 38%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Thẻ Nhớ MicroSDHC SanDisk Ultra 16GB 80MB/s 533x
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 80.000 đ
+                                                del 130.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Sandisk
+                                        .standard 
+                                        .price 130000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/2.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 33%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Thẻ nhớ MicroSDHC Kingston Canvas Select 16GB Class 10 U1 80MB/s SDCS/16GB
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 80.000 đ
+                                                del 120.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                         .filter-hidden(style={display:'none'})
-                                            .brand Samsung
-                                            .standard 2.5inch
-                                            .price 1830000
-                                            .memory 500
+                                            .brand Kingston
+                                            .standard 
+                                            .price 80000
+                                            .memory 16
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/5.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 9%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ổ cứng di động Western Digital My Passport 1TB WDBYNN0010B (Phiên bản mới)
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -166,25 +323,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 1.545.000 đ
+                                                del 1.690.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
+                                        .brand Western Digital
                                         .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .price 1545000
+                                        .memory 1000
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ram-pc/2.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 29%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ram PC Crucial Ballistix Sport LT 8GB Bus 2666 DDR4 CL16
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -193,79 +353,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                p 890.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .standard 2666
+                                        .price 890000
+                                        .memory 8
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ram/2.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 40%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ram Laptop Apacer DDR3 4GB Bus 1600Mhz 1.5v DS.04G2K.KAM
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -274,81 +383,30 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                                p 450.000 đ
+                                                del 750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Apacer
+                                            .standard 1600
+                                            .price 450000
+                                            .memory 4
 
                             .block-card
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/3.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 20%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -357,160 +415,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 550.000 đ
+                                                del 690.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                        .filter-hidden(style={display:'none'})
-                                            .brand Samsung
-                                            .standard 2.5inch
-                                            .price 1830000
-                                            .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
+                                        .brand Kingston
+                                        .standard M.2 Sata
+                                        .price 550000
                                         .memory 120
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ram/5.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 23%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ram G.Skill Ripjaws DDR3L 4GB Bus 1600MHz 1.35v F3-1600C11S-4GRSL
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -519,25 +445,148 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 500.000 đ
+                                                del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 500000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/4.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 24%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 8GB (1x8GB) Bus 3000Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.250.000 đ
+                                                del 1.650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 1250000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/6.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 28%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Predator DDR4 RGB 8GB Bus 3200 Black CL16 XMP (8GB x 1)
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                del 1.790.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 3200
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/6.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 18%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ổ cứng di động Western Digital Elements 1.5TB WDBU6Y0015BBK-WESN
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.550.000 đ
+                                                del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard 2.5inch
+                                        .price 1550000
+                                        .memory 1500
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 19%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Thẻ Nhớ MicroSDXC Samsung EVO Plus U3 64GB 100MB/s MB-MC64G
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 260.000 đ
+                                                del 320.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .standard 
+                                        .price 260000
+                                        .memory 64
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
+                                        img.card-img-top(src='./../images/product-list/microSD/7.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 22%
+                                                h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") Thẻ Nhớ MicroSDXC Lexar U3 V30 A2 512GB 633x 100MB/s LSDMI512BBAP633A
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -546,25 +595,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                p 1.399.000 đ
+                                                del 1.790.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .brand Lexar
+                                        .standard 
+                                        .price 1399000
+                                        .memory 512
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/8.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 14%
+                                                h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
+                                                a(href="") Ổ cứng di động chống Sock Apacer AC630 USB 3.1 2TB AP2TBAC630T-1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -573,27 +625,60 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                p 1.850.000 đ
+                                                del 2.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Crucial
+                                        .brand Apacer
                                         .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .price 1850000
+                                        .memory 2000
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/9.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 21%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance RGB Pro DDR4 KIT 16GB (2x8GB) Bus 3000Mhz C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.350.000 đ
+                                                del 2.990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 3000
+                                        .price 2350000
+                                        .memory 16
                             
                             .block-card
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/4.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 29%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -602,25 +687,148 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 700.000 đ
+                                                del 990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Crucial
+                                        .standard 2.5inch
+                                        .price 700000
+                                        .memory 240
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/7.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Corsair DDR3L 4GB Bus 1600 SODIMM 1.35v ( CMSO4GX3M1C1600C11 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 550.000 đ
+                                                del 770.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 550000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/10.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 18%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 16GB Bus 3000 Black CL16 XMP
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.450.000 đ
+                                                del 2.990.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 2450000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/15.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 9%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Corsair Vengeance LPX 32GB (1x32GB) Bus 2666 DDR4 C16 
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 4.150.000 đ
+                                                del 4.550.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 4150000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/13.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 22%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ổ cứng di động SSD Samsung T5 Portable 250Gb USB3.1 Xanh
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.550.000 đ
+                                                del 3.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Samsung
                                         .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .price 2550000
+                                        .memory 250
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/microSD/10.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 36%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Thẻ nhớ MicroSDXC SanDisk Ultra A1 128GB 100MB/s
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -629,25 +837,58 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 440.000 đ
+                                                del 690.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Sandisk
+                                        .standard 
+                                        .price 440000
+                                        .memory 128
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/11.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 43%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Thẻ Nhớ MicroSDXC Samsung EVO Plus 256GB 100MB/s
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 855.000 đ
+                                                del 1.490.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                         .filter-hidden(style={display:'none'})
                                             .brand Samsung
-                                            .standard 2.5inch
-                                            .price 1830000
-                                            .memory 500
+                                            .standard 
+                                            .price 855000
+                                            .memory 256
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/16.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 11%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ổ cứng di động Adata HD710P 1Tb USB3.0 - Xanh
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -656,25 +897,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 1.690.000 đ
+                                                del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
+                                        .brand Adata
                                         .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .price 1690000
+                                        .memory 1000
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ram-pc/18.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 11%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ram PC G.SKILL Trident Z full length RGB DDR4 32GB Bus 3000 Black CL16 XMP
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -683,162 +927,31 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 4.450.000 đ
+                                                del 5.000.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .brand G.Skill
+                                        .standard 3000
+                                        .price 4450000
+                                        .memory 32
 
                             .block-card
+                                
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ssd/1.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 23%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -847,25 +960,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 500.000 đ
+                                                del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
+                                        .brand Crucial
                                         .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .price 500000
+                                        .memory 120
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ram/1.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 44%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ram Laptop Apacer DDR3L 4GB Bus 1600Mhz 1.35v DV.04G2K.KAM
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -874,25 +990,148 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 420.000 đ
+                                                del 750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 1600
+                                        .price 420000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram-pc/1.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 30%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram PC Kingston HyperX Fury Black 8GB Bus 2666 DDR4 CL16 DIMM XMP Non-ECC
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 880.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 880000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/3.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 17%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ổ cứng di động Seagate Backup Plus Slim 1TB
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.450.000 đ
+                                                del 1.750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Seagate
+                                        .standard 2.5inch
+                                        .price 1450000
+                                        .memory 1000
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/1.jpg' alt='thẻ nhớ SanDisk')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 38%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Thẻ Nhớ MicroSDHC SanDisk Ultra 16GB 80MB/s 533x
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 80.000 đ
+                                                del 130.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Sandisk
+                                        .standard 
+                                        .price 130000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/2.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 33%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Thẻ nhớ MicroSDHC Kingston Canvas Select 16GB Class 10 U1 80MB/s SDCS/16GB
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 80.000 đ
+                                                del 120.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                         .filter-hidden(style={display:'none'})
-                                            .brand Samsung
-                                            .standard 2.5inch
-                                            .price 1830000
-                                            .memory 500
+                                            .brand Kingston
+                                            .standard 
+                                            .price 80000
+                                            .memory 16
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/5.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 9%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ổ cứng di động Western Digital My Passport 1TB WDBYNN0010B (Phiên bản mới)
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -901,25 +1140,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
+                                                p 1.545.000 đ
+                                                del 1.690.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
-                                        .brand Samsung
+                                        .brand Western Digital
                                         .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
+                                        .price 1545000
+                                        .memory 1000
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ram-pc/2.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 29%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ram PC Crucial Ballistix Sport LT 8GB Bus 2666 DDR4 CL16
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -928,79 +1170,28 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
-                                        .layer-sale
-                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                            .sale-percent
-                                                p 16%
-                                                h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
+                                                p 890.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                        .standard 2666
+                                        .price 890000
+                                        .memory 8
                                 .card
                                     .block-img
-                                        img.card-img-top(src='./../images/home-page/5.jpg' alt='ssd')
+                                        img.card-img-top(src='./../images/product-list/ram/2.jpg' alt='ssd')
                                         .layer-sale
                                             img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
                                             .sale-percent
-                                                p 16%
+                                                p 40%
                                                 h5 giảm
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                                                a(href="") Ram Laptop Apacer DDR3 4GB Bus 1600Mhz 1.5v DS.04G2K.KAM
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1009,67 +1200,17 @@ block content
                                                 i.fas.fa-star
                                                 i.far.fa-star
                                             .price-product
-                                                p 1.830.000 đ
-                                                del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Samsung
-                                        .standard 2.5inch
-                                        .price 1830000
-                                        .memory 500
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
-                                .card
-                                    .block-img
-                                        img.card-img-top(src='./../images/home-page/6.jpg' alt='ssd')
-                                        //- .layer-sale
-                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
-                                        //-     .sale-percent
-                                        //-         p 16%
-                                        //-         h5 giảm
-                                    .card-body
-                                        .product-title
-                                            h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB  CT120BX500SSD1
-                                        .rating-price
-                                            .rating
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.fas.fa-star
-                                                i.far.fa-star
-                                            .price-product
-                                                p 1.090.000 đ
-                                                //- del 2.190.000 đ
-                                    .filter-hidden(style={display:'none'})
-                                        .brand Crucial
-                                        .standard 2.5inch
-                                        .price 1090000
-                                        .memory 120
+                                                p 450.000 đ
+                                                del 750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Apacer
+                                            .standard 1600
+                                            .price 450000
+                                            .memory 4
+
                         .list-product-appearence
                             .page-1
                                 .block-appearence-list

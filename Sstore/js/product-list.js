@@ -26,17 +26,34 @@ $(function() {
         $('.layout-and-sort .list-icon').removeClass('add-background');
     })
 
-    let $grid = $('.block-card').isotope({
-        itemSelector: '.card',
-        layoutMode: 'fitRows',
-        fitRows: {
-        gutter: 19
-        },
-        getSortData: {
-            name: '.card-title a',
-            price: '.price parseInt'
-        }
-    });
+    // let $grid = $('.block-card').isotope({
+    //     itemSelector: '.card',
+    //     layoutMode: 'fitRows',
+    //     fitRows: {
+    //     gutter: 19
+    //     },
+    //     masonry: {
+    //         columnWidth: 262,
+    //         fitWidth: true
+    //       },
+    //     getSortData: {
+    //         name: '.card-title a',
+    //         price: '.price parseInt'
+    //     }
+    // });
+
+    // let $grid1 = $('.page').isotope({
+    //     itemSelector: '.block-appearence-list',
+    //     layoutMode: 'fitRows',
+    //     fitRows: {
+    //     gutter: 19
+    //     },
+    //     getSortData: {
+    //         name: '.card-title a',
+    //         price: '.price parseInt'
+    //     }
+    // });
+
     // let filterFns = {
     //     name: function(){
     //         let name = $(this).find('.brand').text();
@@ -50,6 +67,33 @@ $(function() {
 
     // }
     $('.form-check input').on( 'click', function() {
+        let $grid = $('.block-card').isotope({
+            itemSelector: '.card',
+            layoutMode: 'fitRows',
+            fitRows: {
+            gutter: 19
+            },
+            masonry: {
+                columnWidth: 262,
+                fitWidth: true
+              },
+            getSortData: {
+                name: '.card-title a',
+                price: '.price parseInt'
+            }
+        });
+    
+        let $grid1 = $('.page').isotope({
+            itemSelector: '.block-appearence-list',
+            layoutMode: 'fitRows',
+            fitRows: {
+            gutter: 19
+            },
+            getSortData: {
+                name: '.card-title a',
+                price: '.price parseInt'
+            }
+        });
         let value = $(this).data('filter');
         let filterFns = {
             name: function() {
@@ -78,12 +122,40 @@ $(function() {
         // use filterFn if matches value
         filterValue = filterFns[ filterValue ] || filterValue;
         $grid.isotope({ filter: filterValue });
+        $grid1.isotope({ filter: filterValue });
       });
 
   
       
       // sort items on button click
       $('.dropdown-menu .dropdown-item').click( function() {
+        let $grid = $('.block-card').isotope({
+            itemSelector: '.card',
+            layoutMode: 'fitRows',
+            fitRows: {
+            gutter: 19
+            },
+            masonry: {
+                columnWidth: 262,
+                fitWidth: true
+              },
+            getSortData: {
+                name: '.card-title a',
+                price: '.price parseInt'
+            }
+        });
+    
+        let $grid1 = $('.page').isotope({
+            itemSelector: '.block-appearence-list',
+            layoutMode: 'fitRows',
+            fitRows: {
+            gutter: 19
+            },
+            getSortData: {
+                name: '.card-title a',
+                price: '.price parseInt'
+            }
+        });
         let sortByValue = $(this).attr('data-sort-by');
         let fil = $(this).data('filter');
         let bol = true;
@@ -95,6 +167,10 @@ $(function() {
         }
 
         $grid.isotope({ 
+            sortBy: sortByValue,
+            sortAscending: bol
+        });
+        $grid1.isotope({ 
             sortBy: sortByValue,
             sortAscending: bol
         });

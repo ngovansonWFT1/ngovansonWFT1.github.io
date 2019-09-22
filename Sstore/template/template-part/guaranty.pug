@@ -52,26 +52,37 @@ block content
                                 h6 Tình trạng sản phẩm
                                 .radio-check
                                     .form-check
+                                        label
+                                            input(type='radio' name="status" checked)/ Còn sử dụng được
+                                            span.checkmark
                                         
-                                        input#use.form-check-input(type='radio' name='exampleRadios' checked='')
-                                        label.form-check-label(for='use')
-                                            | Còn sử dụng được
+                                        //- input#use.form-check-input(type='radio' name='exampleRadios' checked='')
+                                        //- label.form-check-label(for='use')
+                                        //-     | Còn sử dụng được
                                     .form-check
-                                        input#no-use.form-check-input(type='radio' name='exampleRadios' )
-                                        label.form-check-label(for='no-use')
-                                            | Không thể sử dụng được
+                                        label
+                                            input(type='radio' name="status")/ Không thể sử dụng được
+                                            span.checkmark
+                                        //- input#no-use.form-check-input(type='radio' name='exampleRadios' )
+                                        //- label.form-check-label(for='no-use')
+                                        //-     | Không thể sử dụng được
                             .form-group
                                 h6 Bao bì sản phẩm
                                 .radio-check
                                     .form-check
-                                        
-                                        input#have.form-check-input(type='radio' name='exampleRadios1'  checked='')
-                                        label.form-check-label(for='have')
-                                            | Còn bao bì
+                                        label
+                                            input(type='radio' name="cover" checked)/ Còn bao bì
+                                            span.checkmark
+                                        //- input#have.form-check-input(type='radio' name='exampleRadios1'  checked='')
+                                        //- label.form-check-label(for='have')
+                                        //-     | Còn bao bì
                                     .form-check
-                                        input#no-have.form-check-input(type='radio' name='exampleRadios1' )
-                                        label.form-check-label(for='no-have')
-                                            | Mất bao bì
+                                        label
+                                            input(type='radio' name="cover")/ Mất bao bì
+                                            span.checkmark
+                                        //- input#no-have.form-check-input(type='radio' name='exampleRadios1' )
+                                        //- label.form-check-label(for='no-have')
+                                        //-     | Mất bao bì
                             .form-group
                                 label(for='note') Mô tả chi tiết và ghi chú thêm:
                                 textarea#note.form-control(rows='10')

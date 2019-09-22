@@ -7,6 +7,20 @@ $(function () {
         adaptiveHeight: true
     })
 
+    $('.product-sale .block-card').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4
+    });
+
+
+
+
+    
+
+
+
+
     $('.dropdown-menu.sale-prd a').click(function () {
         $('.dropdown-menu.sale-prd a').removeClass('checked')
         $(this).addClass('checked')
@@ -43,7 +57,7 @@ $(function () {
     });
 
     $('.brand-appearence-like').slick({
-        slidesToShow: 5,
+        slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
