@@ -1,16 +1,37 @@
 *{}
 
+.detail-wrapper .price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.detail-wrapper .price p {
+    margin-bottom: 0;
+    margin-right: 3rem;
+}
+
+.detail-wrapper .price .sale-detail {
+    font-size: 1.1rem;
+}
+
+section.comment {
+    padding-bottom: 10rem;
+}
+
 section.description-product-detail {
-    padding-bottom: 3rem;
+    padding-bottom: 10rem;
+    background-color: #E4EDF0;
 }
 
 section.comment .bagde-title {
-    transform: translateY(0);
+    transform: translateY(-1.25rem);
     margin-bottom: 3rem;
 }
 
 section.description-product-detail .bagde-title {
-    transform: translateY(0);
+    transform: translateY(-1.25rem);
     margin-bottom: 3rem;
 }
 
@@ -21,6 +42,10 @@ section.description-product-detail .bagde-title {
 
 .only-img {
     margin: auto;
+    width: 100%;
+}
+
+.only-img img {
     width: 100%;
 }
 
@@ -100,7 +125,7 @@ section.description-product-detail .bagde-title {
 }
 
 .action-button {
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -194,7 +219,7 @@ span.brand span {
 
 .img-product-small button.slick-prev.slick-arrow {transform: translate(7px, -27px);}
 
-.img-product-small .slick-list.draggable {height: 100px;}
+.img-product-small .slick-list.draggable {height: 100px;overflow: hidden;}
 
 .img-product-small button.slick-next.slick-arrow::before {
     content: url(./../images/product-detail/arrow-right.png);
@@ -227,7 +252,7 @@ ul.slick-dots {
     border: 1px solid #dadada;
     width: 65px!important;
     height: 65px;
-    margin-right: 20px;
+    margin-right: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,7 +262,7 @@ ul.slick-dots {
 
 section.product-price-detail {
     margin-top: 300px;
-    padding-bottom: 3rem;
+    padding-bottom: 10rem;
 }
 
 section.product-price-detail .title h4 {

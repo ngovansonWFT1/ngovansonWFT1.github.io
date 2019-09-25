@@ -299,6 +299,8 @@ ul.menu-list-item-level-2 span {
 .menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     background-color: #ffffff;
+    position: relative;
+    z-index: 11;
 }
 
 .menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item {
@@ -418,7 +420,7 @@ li.menu-list-item.active {}
 
 .menu-main .container .list-menu-left ul.menu-list-cover li.menu-list-item .menu-level-2 {
     position: absolute;
-    top: 3.75rem;
+    top: 0;
     left: -123rem;
     width: 47.5rem;
     height: 18.75rem;

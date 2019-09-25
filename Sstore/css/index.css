@@ -1,6 +1,17 @@
 *{}
 
 
+.block-card-sale .card:hover .layer-hover,
+.block-card-ssd .card:hover .layer-hover,
+.block-card-mobi .card:hover .layer-hover,
+.block-card-microsd .card:hover .layer-hover,
+.block-card-ram .card:hover .layer-hover,
+.block-card-rampc .card:hover .layer-hover
+{
+    margin-bottom: 0;
+}
+
+
 
 .block-card-ssd .card,
 .block-card-mobi .card,
