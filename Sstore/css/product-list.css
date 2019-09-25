@@ -1,5 +1,13 @@
 *{}
 
+.alert.alert-warning {
+    width: 100%;
+}
+
+.grid-product-list, .list-product-appearence {
+    min-height: 900px;
+}
+
 .button-buy a {
     background-color: #02C874;
     border: 0;

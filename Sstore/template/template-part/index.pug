@@ -39,20 +39,27 @@ block content
         .container
             .bagde-title
                 h4 Sản phẩm giảm giá
-            .sort-product-by-brand
-                p Sắp xếp theo
-                .dropdown
-                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.sale-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                        | Samsung
-                    .dropdown-menu.sale-prd(aria-labelledby='dropdownMenuButton')
-                        a.dropdown-item(href='#') Samsung
-                        a.dropdown-item(href='#') Crucial
-                        a.dropdown-item(href='#') Flextor
-                        a.dropdown-item(href='#') Western
-                        a.dropdown-item(href='#') Kingston
+            //- .sort-product-by-brand
+            //-     p Sắp xếp theo
+            //-     .dropdown
+            //-         button#dropdownMenuButton1.btn.btn-secondary.dropdown-toggle.sale-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            //-             | Samsung
+            //-         .dropdown-menu.sale-prd#sale(aria-labelledby='dropdownMenuButton')
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Samsung
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Crucial
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Adata
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Western Digital
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Kingston
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Apacer
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Corsair
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") G.Skill
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Sandisk
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Toshiba
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Trancend
+            //-             a.dropdown-item.sale-item(href='#' data-sort-by="name") Lexar
             .row
                 .col-md-12
-                    .block-card
+                    .block-card-sale
                         .card
                             
                             .block-img
@@ -306,18 +313,18 @@ block content
                 h4 Ổ cứng thể rắn SSD
             .sort-product-by-brand
                 p Sắp xếp theo
-                .dropdown
-                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.ssd-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                        | Samsung
+                .dropdown#dr1
+                    button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.ssd-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        | Mặc định
                     .dropdown-menu.ssd-prd(aria-labelledby='dropdownMenuButton')
-                        a.dropdown-item(href='#') Samsung
-                        a.dropdown-item(href='#') Crucial
-                        a.dropdown-item(href='#') Flextor
-                        a.dropdown-item(href='#') Western
-                        a.dropdown-item(href='#') Kingston
+                        a.dropdown-item(href='#' data-sort-by= "all" data-filter="all") Mặc định
+                        a.dropdown-item(href='#' data-sort-by="name" data-filter="ASC") A - Z
+                        a.dropdown-item(href='#' data-sort-by="name" data-filter="DESC") Z - A
+                        a.dropdown-item(href='#' data-sort-by="price" data-filter="ASC") Giá tăng dần
+                        a.dropdown-item(href='#' data-sort-by="price" data-filter="DESC") Giá giảm dần
             .row
                 .col-md-12
-                    .block-card
+                    .block-card-ssd
                         .card
                             .block-img
                                 img.card-img-top(src='./../images/product-list/ssd/1.jpg' alt='ssd')
@@ -570,18 +577,18 @@ block content
                 h4 Ổ cứng di động
             .sort-product-by-brand
                 p Sắp xếp theo
-                .dropdown
-                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.mobi-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                        | Toshiba
+                .dropdown#dr2
+                    button#dropdownMenuButton3.btn.btn-secondary.dropdown-toggle.mobi-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        | Mặc định
                     .dropdown-menu.mobi-prd(aria-labelledby='dropdownMenuButton')
-                        a.dropdown-item(href='#') Toshiba
-                        a.dropdown-item(href='#') Adata
-                        a.dropdown-item(href='#') Seagate
-                        a.dropdown-item(href='#') Western
-                        a.dropdown-item(href='#') Trancend
+                        a.dropdown-item(href='#' data-sort-by= "all" data-filter="all") Mặc định
+                        a.dropdown-item(href='#' data-sort-by="name" data-filter="ASC") A - Z
+                        a.dropdown-item(href='#' data-sort-by="name" data-filter="DESC") Z - A
+                        a.dropdown-item(href='#' data-sort-by="price" data-filter="ASC") Giá tăng dần
+                        a.dropdown-item(href='#' data-sort-by="price" data-filter="DESC") Giá giảm dần
             .row
                 .col-md-12
-                    .block-card
+                    .block-card-mobi
                         .card
                             .block-img
                                 img.card-img-top(src='./../images/product-list/hard-disk-mobi/1.jpg' alt='ssd')
@@ -834,18 +841,18 @@ block content
                 h4 Thẻ nhớ điện thoại
             .sort-product-by-brand
                 p Sắp xếp theo
-                .dropdown
-                    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.microsd-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                        | Samsung
+                .dropdown#dr3
+                    button#dropdownMenuButton4.btn.btn-secondary.dropdown-toggle.microsd-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        | Mặc định
                     .dropdown-menu.microsd-prd(aria-labelledby='dropdownMenuButton')
-                        a.dropdown-item(href='#') Samsung
-                        a.dropdown-item(href='#') Toshiba
-                        a.dropdown-item(href='#') Sandisk
-                        a.dropdown-item(href='#') Lexar
-                        a.dropdown-item(href='#') Kingston
+                        a.dropdown-item(href='#' data-sort-by= "all" data-filter="all") Mặc định
+                        a.dropdown-item(href='#' data-sort-by="name" data-filter="ASC") A - Z
+                        a.dropdown-item(href='#' data-sort-by="name" data-filter="DESC") Z - A
+                        a.dropdown-item(href='#' data-sort-by="price" data-filter="ASC") Giá tăng dần
+                        a.dropdown-item(href='#' data-sort-by="price" data-filter="DESC") Giá giảm dần
             .row
                 .col-md-12
-                    .block-card
+                    .block-card-microsd
                         .card
                             .block-img
                                 img.card-img-top(src='./../images/product-list/microSD/1.jpg' alt='thẻ nhớ SanDisk')
@@ -1105,18 +1112,18 @@ block content
                 #pills-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab')
                     .sort-product-by-brand
                         p Sắp xếp theo
-                        .dropdown
-                            button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.ram-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                                | Apacer
+                        .dropdown#dr4
+                            button#dropdownMenuButton5.btn.btn-secondary.dropdown-toggle.ram-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                | Mặc định
                             .dropdown-menu.ram-prd(aria-labelledby='dropdownMenuButton')
-                                a.dropdown-item(href='#') Apacer
-                                a.dropdown-item(href='#') Corsair
-                                a.dropdown-item(href='#') G.Skill
-                                a.dropdown-item(href='#') Kingston
-                                a.dropdown-item(href='#') Samsung
+                                a.dropdown-item(href='#' data-sort-by= "all" data-filter="all") Mặc định
+                                a.dropdown-item(href='#' data-sort-by="name" data-filter="ASC") A - Z
+                                a.dropdown-item(href='#' data-sort-by="name" data-filter="DESC") Z - A
+                                a.dropdown-item(href='#' data-sort-by="price" data-filter="ASC") Giá tăng dần
+                                a.dropdown-item(href='#' data-sort-by="price" data-filter="DESC") Giá giảm dần
                     .row
                         .col-md-12
-                            .block-card
+                            .block-card-ram
                                 .card
                                     .block-img
                                         img.card-img-top(src='./../images/product-list/ram/1.jpg' alt='ssd')
@@ -1365,18 +1372,18 @@ block content
                 #pills-profile.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab')
                     .sort-product-by-brand
                         p Sắp xếp theo
-                        .dropdown
-                            button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.ram-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                                | Apacer
-                            .dropdown-menu.ram-prd(aria-labelledby='dropdownMenuButton')
-                                a.dropdown-item(href='#') Apacer
-                                a.dropdown-item(href='#') Corsair
-                                a.dropdown-item(href='#') G.Skill
-                                a.dropdown-item(href='#') Kingston
-                                a.dropdown-item(href='#') Samsung
+                        .dropdown#dr5
+                            button#dropdownMenuButton6.btn.btn-secondary.dropdown-toggle.ram-pc-prd(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                | Mặc định
+                            .dropdown-menu.rampc-prd(aria-labelledby='dropdownMenuButton')
+                                a.dropdown-item(href='#' data-sort-by= "all" data-filter="all") Mặc định
+                                a.dropdown-item(href='#' data-sort-by="name" data-filter="ASC") A - Z
+                                a.dropdown-item(href='#' data-sort-by="name" data-filter="DESC") Z - A
+                                a.dropdown-item(href='#' data-sort-by="price" data-filter="ASC") Giá tăng dần
+                                a.dropdown-item(href='#' data-sort-by="price" data-filter="DESC") Giá giảm dần
                     .row
                         .col-md-12
-                            .block-card
+                            .block-card-rampc
                                 .card
                                     .block-img
                                         img.card-img-top(src='./../images/product-list/ram-pc/1.jpg' alt='ssd')

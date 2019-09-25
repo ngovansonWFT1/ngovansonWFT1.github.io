@@ -36,6 +36,14 @@
     width: 75%;
 }
 
+.infor-footer-right .contact-footer .contain-icon-social a img:hover {
+    transform: scale(1.15);
+}
+
+.infor-footer-right .contact-footer .contain-icon-social a img {
+    transition: 0.4s;
+}
+
 .infor-footer-right .contact-footer .contain-icon-social a {
     display: block;
     width: 40px;
@@ -52,6 +60,14 @@
     background-color: #2F2F2F;
     padding-top: 55px;
     padding-bottom: 2rem;
+}
+
+.infor-footer a {
+    transition: 0.3s;
+}
+
+.infor-footer a:hover {
+    color: gold;
 }
 
 .infor-footer p {

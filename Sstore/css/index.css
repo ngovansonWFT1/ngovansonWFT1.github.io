@@ -1,15 +1,83 @@
 *{}
 
+
+
+.block-card-ssd .card,
+.block-card-mobi .card,
+.block-card-microsd .card,
+.block-card-ram .card,
+.block-card-rampc .card{
+    width: 262px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.block-card-ssd,
+.block-card-mobi,
+.block-card-microsd,
+.block-card-ram,
+.block-card-rampc
+ {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+ul#pills-tab li.nav-item {
+    width: 130px;
+    text-align: center;
+    margin-right: 1.5rem;
+}
+
+ul#pills-tab li.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-pills .nav-link.active {
+    color: #444444;
+    background-color: #ffffff;
+    border-bottom: 3px solid #02C874;
+    border-radius: 0;
+}
+
+.nav-pills .nav-link.active:hover {
+    border-bottom: 0;
+}
+
+.nav-pills .nav-link {
+    position: relative;
+}
+
+.nav-pills .nav-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.nav-pills .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #FF2C93;
+}
+
+ul#pills-tab {
+    display: flex;
+    justify-content: center;
+}
+
 .block-card.slick-initialized.slick-slider {
     height: 368px;
 }
 
-.product-sale .block-card .slick-prev:before,
-.product-sale .block-card .slick-next:before,
-.product-mobival-hard-disk .block-card .slick-prev:before,
-.product-mobival-hard-disk .block-card .slick-next:before,
-.product-ram .block-card .slick-prev:before,
-.product-ram .block-card .slick-next:before
+.product-sale .block-card-sale .slick-prev:before,
+.product-sale .block-card-sale .slick-next:before
 {
     color: black;
 }
@@ -82,7 +150,7 @@ section.product-hard-disk-ssd {
 /* CSS for product-sale */
 
 section.product-sale {
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
 }
 
 .see-more-product {
@@ -93,7 +161,29 @@ section.product-sale {
 
 .see-more-product a {
     color: blue;
+    position: relative;
+    /* padding-bottom: 0.5rem; */
 }
+
+.see-more-product a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.see-more-product a:hover::after {
+    width: 90%;
+    left: 0;
+    background: blue;
+}
+
+.see-more-product a::after {}
 
 .price-product {
     display: flex;
@@ -194,7 +284,14 @@ h5.card-title {
     margin-top: 2rem;
 }
 
-.sort-product-by-brand .dropdown button#dropdownMenuButton {
+.sort-product-by-brand .dropdown button#dropdownMenuButton,
+.sort-product-by-brand .dropdown button#dropdownMenuButton1,
+.sort-product-by-brand .dropdown button#dropdownMenuButton2,
+.sort-product-by-brand .dropdown button#dropdownMenuButton3,
+.sort-product-by-brand .dropdown button#dropdownMenuButton4,
+.sort-product-by-brand .dropdown button#dropdownMenuButton5,
+.sort-product-by-brand .dropdown button#dropdownMenuButton6
+ {
     background-color: #ffffff;
     color: #5B5B5B;
     font-size: 1rem;
@@ -208,11 +305,40 @@ h5.card-title {
     width: 14.125rem;
 }
 
-.sort-product-by-brand .dropdown button#dropdownMenuButton:active {
+
+.sort-product-by-brand .dropdown button#dropdownMenuButton:active,
+.sort-product-by-brand .dropdown button#dropdownMenuButton1:active,
+.sort-product-by-brand .dropdown button#dropdownMenuButton2:active,
+.sort-product-by-brand .dropdown button#dropdownMenuButton3:active,
+.sort-product-by-brand .dropdown button#dropdownMenuButton4:active,
+.sort-product-by-brand .dropdown button#dropdownMenuButton5:active,
+.sort-product-by-brand .dropdown button#dropdownMenuButton6:active
+ {
     outline: none;
+    box-shadow: none;
 }
 
-.sort-product-by-brand .dropdown button#dropdownMenuButton::after {
+
+.sort-product-by-brand .dropdown button#dropdownMenuButton:focus,
+.sort-product-by-brand .dropdown button#dropdownMenuButton1:focus,
+.sort-product-by-brand .dropdown button#dropdownMenuButton2:focus,
+.sort-product-by-brand .dropdown button#dropdownMenuButton3:focus,
+.sort-product-by-brand .dropdown button#dropdownMenuButton4:focus,
+.sort-product-by-brand .dropdown button#dropdownMenuButton5:focus,
+.sort-product-by-brand .dropdown button#dropdownMenuButton6:focus
+ {
+    outline: none;
+    box-shadow: none;
+}
+
+.sort-product-by-brand .dropdown button#dropdownMenuButton::after,
+.sort-product-by-brand .dropdown button#dropdownMenuButton1::after,
+.sort-product-by-brand .dropdown button#dropdownMenuButton2::after,
+.sort-product-by-brand .dropdown button#dropdownMenuButton3::after,
+.sort-product-by-brand .dropdown button#dropdownMenuButton4::after,
+.sort-product-by-brand .dropdown button#dropdownMenuButton5::after,
+.sort-product-by-brand .dropdown button#dropdownMenuButton6::after
+ {
     content: url(./../images/menu/arrow-down.png);
     border: 0;
 }
@@ -239,6 +365,7 @@ h5.card-title {
     padding: 0.625rem;
     text-align: center;
     transform: translateY(-1.5rem);
+    margin-bottom: 4rem;
 }
 
 .bagde-title h4 {
