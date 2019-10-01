@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./../css/payment.css">
     <link rel="stylesheet" href="./../css/guaranty.css">
     <link rel="stylesheet" href="./../css/policy-restore.css">
+    <link rel="stylesheet" href="./../css/policy-security.css">
     <link rel="stylesheet" href="./../css/about-us.css">
     <link rel="stylesheet" href="./../css/payment-method.css">
     <link rel="stylesheet" href="./../css/recruitment.css">
@@ -285,16 +286,16 @@
               <div class="click-sub-menu"><a href=""> Best seller</a></div>
               <div class="sub-menu-level-2">
                 <ul class="sub-menu-list-item-level-2"> <span>Top SSD   </span>
-                  <li class="sub-menu-list-item-child"><a href="">Xem chi tiết</a></li>
+                  <li class="sub-menu-list-item-child"><a href="/template-part/top-ssd.html">Xem chi tiết</a></li>
                 </ul>
                 <ul class="sub-menu-list-item-level-2"> <span>Top ram máy tính  </span>
-                  <li class="sub-menu-list-item-child"><a href="">Xem chi tiết</a></li>
+                  <li class="sub-menu-list-item-child"><a href="/template-part/top-ram.html">Xem chi tiết</a></li>
                 </ul>
                 <ul class="sub-menu-list-item-level-2"> <span>Top thẻ nhớ   </span>
-                  <li class="sub-menu-list-item-child"><a href="">Xem chi tiết</a></li>
+                  <li class="sub-menu-list-item-child"><a href="/template-part/top-microsd.html">Xem chi tiết</a></li>
                 </ul>
                 <ul class="sub-menu-list-item-level-2"> <span>Top ổ cứng di động</span>
-                  <li class="sub-menu-list-item-child"><a href="">Xem chi tiết</a></li>
+                  <li class="sub-menu-list-item-child"><a href="/template-part/top-mobi-disk.html">Xem chi tiết</a></li>
                 </ul>
               </div>
             </li>
@@ -312,74 +313,108 @@
         </div>
       </div>
     </div>
-    <section class="cart">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-top">
-              <h4>Giỏ hàng</h4>
-            </div>
-            <div class="table-cart-detail">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Ảnh sản phẩm</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Đơn giá</th>
-                    <th>Số lượng</th>
-                    <th>Thành tiền</th>
-                    <th>Xóa</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr> 
-                    <td> <img src="./../images/cart/1.jpg" alt="mobi-hard-disk"></td>
-                    <td>
-                      <p>Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S</p>
-                    </td>
-                    <td>
-                      <p> <span>2250000</span><span>đ</span></p>
-                    </td>
-                    <td> 
-                      <div class="quantity">
-                        <div class="quantity-option">
-                          <div class="asc">
-                            <button class="btn btn-primary">+</button>
-                          </div>
-                          <div class="screen">
-                            <p>1</p>
-                          </div>
-                          <div class="desc">
-                            <button class="btn btn-primary">-</button>
+    <div class="middle-body">
+      <section class="cart">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-top">
+                <h4>Giỏ hàng</h4>
+              </div>
+              <div class="table-cart-detail">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Ảnh sản phẩm</th>
+                      <th>Tên sản phẩm</th>
+                      <th>Đơn giá</th>
+                      <th>Số lượng</th>
+                      <th>Thành tiền</th>
+                      <th>Xóa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr> 
+                      <td> <img src="./../images/cart/1.jpg" alt="mobi-hard-disk"></td>
+                      <td>
+                        <p>Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S</p>
+                      </td>
+                      <td>
+                        <p> <span>2250000</span><span>đ</span></p>
+                      </td>
+                      <td> 
+                        <div class="quantity">
+                          <div class="quantity-option">
+                            <div class="asc">
+                              <button class="btn btn-primary">+</button>
+                            </div>
+                            <div class="screen">
+                              <p>1</p>
+                            </div>
+                            <div class="desc">
+                              <button class="btn btn-primary">-</button>
+                            </div>
                           </div>
                         </div>
+                      </td>
+                      <td>
+                        <p><span>2250000</span><span>đ</span></p>
+                      </td>
+                      <td>
+                        <button class="btn btn-warning"><i class="fas fa-times"></i></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="4">
+                        <p>Tổng tiền</p>
+                      </td>
+                      <td colspan="2">
+                        <p> <span>2250000</span><span>đ</span></p>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="table-res">
+                <div class="list-res-pr">
+                  <div class="block-img"><img class="img-fluid" src="./../images/cart/1.jpg" alt="mobi-hard-disk"></div>
+                  <div class="infor-res-pr">
+                    <p>Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S</p><span class="price-res">Giá<span>2250000</span><span>đ</span></span>
+                  </div>
+                  <div class="action-btn">
+                    <div class="quantity">
+                      <div class="quantity-option">
+                        <div class="asc">
+                          <button class="btn btn-primary">+</button>
+                        </div>
+                        <div class="screen">
+                          <p>1</p>
+                        </div>
+                        <div class="desc">
+                          <button class="btn btn-primary">-</button>
+                        </div>
                       </div>
-                    </td>
-                    <td>
-                      <p><span>2250000</span><span>đ</span></p>
-                    </td>
-                    <td>
-                      <button class="btn btn-warning"><i class="fas fa-times"></i></button>
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td colspan="4">
-                      <p>Tổng tiền</p>
-                    </td>
-                    <td colspan="2">
-                      <p> <span>2250000</span><span>đ</span></p>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
+                    </div>
+                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                  </div>
+                </div>
+                <div class="sum-price">
+                  <div class="left-content">
+                    <p>Tổng tiền:</p>
+                  </div>
+                  <div class="right-content">
+                    <p>2250000</p><span>đ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="action-button-cart"><a class="btn btn-primary" href="/template-part/index.html">Tiếp tục mua hàng</a><a class="btn btn-info" href="/template-part/payment.html">Thực hiện thanh toán</a></div>
             </div>
-            <div class="action-button-cart"><a class="btn btn-primary" href="">Tiếp tục mua hàng</a><a class="btn btn-info" href="">Thực hiện thanh toán</a></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <div class="footer">
       <div class="infor-footer">
         <div class="container">
@@ -389,20 +424,20 @@
                 <div class="about-footer">
                   <h5>Giới thiệu</h5>
                   <div class="content-infor">
-                    <p><a href="">Trang chủ</a></p>
-                    <p><a href="">Về chúng tôi</a></p>
-                    <p><a href="">Điều khoản giao dịch</a></p>
-                    <p><a href="">Bảo mật thông tin</a></p>
-                    <p><a href="">Tuyển dụng</a></p>
+                    <p><a href="/template-part/index.html">Trang chủ</a></p>
+                    <p><a href="/template-part/about-us.html">Về chúng tôi</a></p>
+                    <p><a href="/template-part/rule-buy-product.html">Điều khoản giao dịch</a></p>
+                    <p><a href="/template-part/policy-security.html">Bảo mật thông tin</a></p>
+                    <p><a href="/template-part/recrument.html">Tuyển dụng</a></p>
                   </div>
                 </div>
                 <div class="policy-footer">
                   <h5>Chính sách</h5>
                   <div class="content-policy">
-                    <p><a href="">Chính sách giao nhận</a></p>
-                    <p><a href="">Chính sách đổi trả</a></p>
-                    <p><a href="">Phương thức thanh toán</a></p>
-                    <p><a href="">Chế độ bảo hành</a></p>
+                    <p><a href="/template-part/policy-delivery.html">Chính sách giao nhận</a></p>
+                    <p><a href="/template-part/policy-restore.html">Chính sách đổi trả</a></p>
+                    <p><a href="/template-part/pay-ment-method.html">Phương thức thanh toán</a></p>
+                    <p><a href="/template-part/policy-guaranty.html">Chế độ bảo hành</a></p>
                   </div>
                 </div>
                 <div class="support-footer">
@@ -410,8 +445,8 @@
                   <div class="content-support">
                     <p>Hotline: 0976.747.562</p>
                     <p>Email: ngoson2910@gmail.com</p>
-                    <p><a href="">Gửi yêu cầu đổi hàng</a></p>
-                    <p><a href="">Gửi yêu cầu bảo hành</a></p>
+                    <p><a href="/template-part/change-return.html">Gửi yêu cầu đổi hàng</a></p>
+                    <p><a href="/template-part/guaranty.html">Gửi yêu cầu bảo hành</a></p>
                   </div>
                 </div>
               </div>
@@ -422,12 +457,12 @@
                   <h5>Địa chỉ</h5>
                   <div class="content-support">
                     <p>Ngõ 322, đường Mỹ Đình, Từ Liêm, Hà Nội</p>
-                    <p> <a href="">Tìm đường</a></p>
+                    <p> <a href="https://www.google.com/maps/place/322+M%E1%BB%B9+%C4%90%C3%ACnh+1,+M%E1%BB%B9+%C4%90%C3%ACnh,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0231008,105.7717776,17z/data=!3m1!4b1!4m5!3m4!1s0x313454aef9e4ee2f:0x9e0873fb6f91fad6!8m2!3d21.0230958!4d105.7739663?hl=vi-VN">Tìm đường</a></p>
                   </div>
                 </div>
                 <div class="contact-footer">
                   <h5>Liên hệ với chúng tôi</h5>
-                  <div class="contain-icon-social"><a href=""><img class="img-fluid" src="./../images/footer/facebook.svg" alt="icon-facebook"></a><a href=""><img class="img-fluid" src="./../images/footer/instagram.svg" alt="icon-instagram"></a><a href=""><img class="img-fluid" src="./../images/footer/youtube.svg" alt="icon-youtube"></a><a href=""><img class="img-fluid" src="./../images/footer/google-plus.svg" alt="icon-google-plus"></a></div>
+                  <div class="contain-icon-social"><a href="https://www.facebook.com/sonso.kungfu"><img class="img-fluid" src="./../images/footer/facebook.svg" alt="icon-facebook"></a><a href=""><img class="img-fluid" src="./../images/footer/instagram.svg" alt="icon-instagram"></a><a href=""><img class="img-fluid" src="./../images/footer/youtube.svg" alt="icon-youtube"></a><a href=""><img class="img-fluid" src="./../images/footer/google-plus.svg" alt="icon-google-plus"></a></div>
                 </div>
               </div>
             </div>
@@ -437,7 +472,7 @@
       <div class="copy-right-footer">
         <p class="text-center">© 2019- Bản quyền của Sstore</p>
       </div>
-      <div class="back-to-top"><a href=""><img src="./../images/footer/back-to-top.png" alt="back-to-top"></a></div>
+      <div class="back-to-top"><a href="#"><img src="./../images/footer/back-to-top.png" alt="back-to-top"></a></div>
     </div>
     <div id="fb-root"></div>
     <script src="./../libs/Jquery/jquery-3.4.1.min.js"></script>

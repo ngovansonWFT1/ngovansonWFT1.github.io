@@ -1,0 +1,589 @@
+extends layout.pug
+
+block header 
+    title Sstore - Top Ổ cứng di động bán chạy
+
+block content
+    section.product-list
+        .container
+            .row
+                .col-lg-3
+                    .filter-product
+
+                        .filter-by-brand.filter-prd
+                            .title-brand
+                                h4 Thương hiệu
+                            .form-check
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Samsung")/ Samsung
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Lacie")/ Lacie
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Sandisk")/ Sandisk
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Kingston")/ Kingston
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Apacer")/ Apacer
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Western Digital")/ Western Digital
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Adata")/ Adata
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Toshiba")/ Toshiba
+                                    span.checkmark
+                        //- .filter-by-size-standard.filter-prd
+                        //-     .title-standard
+                        //-         h4 Chuẩn ổ cứng
+                        //-     .form-check
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="2.5inch")/ 2.5 inch
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="mSata")/ mSata
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="M.2 Sata")/ M.2 Sata
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="M.2 PCIe")/ M.2 PCIe
+                                
+                        .filter-by-price.filter-prd
+                            .title-price
+                                h4 Giá sản phẩm
+                            .form-check
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[500000,1000000])/ 500.000 - 1.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[1000000,1500000])/ 1.000.000 - 1.500.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[1500000,2000000])/ 1.500.000 - 2.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[2000000,3000000])/ 2.000.000 - 3.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[3000000,5000000])/ 3.000.000 - 5.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[5000000,10000000])/ 5.000.000 - 10.000.000
+                                    span.checkmark
+                        .filter-by-capacity.filter-prd
+                            .title-capacity
+                                h4 Dung lượng
+                            .form-check
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[200, 1000])/ 200GB -1TB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[1000, 2000])/ 1TB - 2TB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[2000, 3000])/ 2TB - 3TB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[3000, 4000])/ 3TB - 4TB
+                                    span.checkmark
+                               
+                        
+                .col-lg-9
+                    .product-list-filtered
+                        .title-top-change-layout-prd
+                            .title-product
+                                h5 Top Ổ cứng di động
+                            .layout-and-sort
+                                .list-icon 
+                                    img(src="./../images/product-list/list-disactive.svg", alt="list-icon")
+                                .grid-icon
+                                    img(src="./../images/product-list/grid-active.svg", alt="grid-icon")
+                                .sort-product-by-brand
+                                    .dropdown
+                                        button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                            | Mặc định
+                                        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                            a.dropdown-item(href='#' data-sort-by= "all" data-filter="all") Mặc định
+                                            a.dropdown-item(href='#' data-sort-by="name" data-filter="ASC") A - Z
+                                            a.dropdown-item(href='#' data-sort-by="name" data-filter="DESC") Z - A
+                                            a.dropdown-item(href='#' data-sort-by="price" data-filter="ASC") Giá tăng dần
+                                            a.dropdown-item(href='#' data-sort-by="price" data-filter="DESC") Giá giảm dần
+                        .grid-product-list
+
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/1.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động 1TB chống Sock Apacer AC631 Military-Grade USB 3.1 Gen 1 AP1TBAC631U-1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.199.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 2.5inch
+                                        .price 1199000
+                                        .memory 1000
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/2.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động chống Sock Apacer AC630 USB 3.1 1TB AP1TBAC630T-1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Apacer
+                                            .standard 2.5inch
+                                            .price 1290000
+                                            .memory 1000
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/3.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 17%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động Seagate Backup Plus Slim 1TB
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.450.000 đ
+                                                del 1.750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Seagate
+                                        .standard 2.5inch
+                                        .price 1450000
+                                        .memory 1000
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/4.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động Transcend StoreJet Slim 25M3S 1TB TS1TSJ25M3S
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.450.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Trancend
+                                        .standard 2.5inch
+                                        .price 1450000
+                                        .memory 1000
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 9%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động Western Digital My Passport 1TB WDBYNN0010B (Phiên bản mới)
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.545.000 đ
+                                                del 1.690.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard 2.5inch
+                                        .price 1545000
+                                        .memory 1000
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/6.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 18%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động Western Digital Elements 1.5TB WDBU6Y0015BBK-WESN
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.550.000 đ
+                                                del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard 2.5inch
+                                        .price 1550000
+                                        .memory 1500
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/7.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 18%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động 2TB chống Sock Apacer AC631 Military-Grade USB 3.1 Gen 1 AP2TBAC631U-1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.770.000 đ
+                                                del 2.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 2.5inch
+                                        .price 1770000
+                                        .memory 2000
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/8.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 14%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động chống Sock Apacer AC630 USB 3.1 2TB AP2TBAC630T-1
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.850.000 đ
+                                                del 2.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 2.5inch
+                                        .price 1850000
+                                        .memory 2000
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/hard-disk-mobi/9.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động 2TB LaCie Porsche Design Mobile Drive P'9227 USB 3.1 Type-C
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.790.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Lacie
+                                        .standard 2.5inch
+                                        .price 2790000
+                                        .memory 2000
+
+                            
+                        .list-product-appearence
+                            .page-1.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/hard-disk-mobi/1.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động 1TB chống Sock Apacer AC631 Military-Grade USB 3.1 Gen 1 AP1TBAC631U-1
+                                        span 1.190.000 đ
+                                        //- span
+                                        //-     del 130.000 đ
+                                        p Loại: Ổ cứng di động gắn ngoài Dung lượng: 1 TB Tốc độ đọc: USB 3.1 Gen 1 Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 
+                                        .price 1190000
+                                        .memory 1000
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/hard-disk-mobi/2.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 33%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động chống Sock Apacer AC630 USB 3.1 1TB AP1TBAC630T-1
+                                        span 1.290.000 đ
+                                        //- span
+                                        //-     del 120.000 đ
+                                        p Loại: Ổ cứng di động gắn ngoài Dung lượng: 1 TB Tốc độ đọc: USB 3.1 Gen 1 Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 
+                                        .price 1290000
+                                        .memory 1000
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/hard-disk-mobi/3.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 17%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động Seagate Backup Plus Slim 1TB
+                                        span 1.450.000 đ
+                                        span
+                                            del 1.750.000đ
+                                        p Loại: Ổ cứng di động gắn ngoài Dung lượng: 1 TB Tốc độ đọc: USB 3.1 Gen 1 Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Seagate
+                                        .standard 
+                                        .price 1450000
+                                        .memory 1000
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/hard-disk-mobi/4.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động Transcend StoreJet Slim 25M3S 1TB TS1TSJ25M3S
+                                        span 1.450.000 đ
+                                        //- span
+                                        //-     del 700.000đ
+                                        p Loại: Ổ cứng di động gắn ngoài Dung lượng: 1 TB Tốc độ đọc: USB 3.1 Gen 1 Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Trancend
+                                        .standard 
+                                        .price 1450000
+                                        .memory 1000
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/hard-disk-mobi/5.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 9%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động Western Digital My Passport 1TB WDBYNN0010B (Phiên bản mới)
+                                        span 1.545.000 đ
+                                        span
+                                            del 1.690.000đ
+                                        p Loại: Ổ cứng di động gắn ngoài Dung lượng: 1 TB Tốc độ đọc: USB 3.1 Gen 1 Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digiatal
+                                        .standard 
+                                        .price 1545000
+                                        .memory 1000
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/hard-disk-mobi/6.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 18%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động Western Digital Elements 1.5TB WDBU6Y0015BBK-WESN
+                                        span 1.550.000 đ
+                                        span
+                                            del 1.890.000đ
+                                        p Loại: Ổ cứng di động gắn ngoài Dung lượng: 1.5 TB Tốc độ đọc: USB 3.1 Gen 1 Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard
+                                        .price 1550000
+                                        .memory 1500
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/hard-disk-mobi/7.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 18%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động 2TB chống Sock Apacer AC631 Military-Grade USB 3.1 Gen 1 AP2TBAC631U-1
+                                        span 1.770.000 đ
+                                        span
+                                            del 2.150.000đ
+                                        p Loại: Ổ cứng di động gắn ngoài Dung lượng: 1 TB Tốc độ đọc: USB 3.1 Gen 1 Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard
+                                        .price 1770000
+                                        .memory 1000
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/hard-disk-mobi/8.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 14%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động chống Sock Apacer AC630 USB 3.1 2TB AP2TBAC630T-1
+                                        span 1.850.000 đ
+                                        span
+                                            del 2.150.000đ
+                                        p Loại: Ổ cứng di động gắn ngoài Dung lượng: 2 TB Tốc độ đọc: USB 3.1 Gen 1 Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard
+                                        .price 1850000
+                                        .memory 2000
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/hard-disk-mobi/9.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 27%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-mobi-hardisk.html") Ổ cứng di động 2TB LaCie Porsche Design Mobile Drive P'9227 USB 3.1 Type-C STFD2000400
+                                        span 2.790.000 đ
+                                        //- span
+                                        //-     del 165.000đ
+                                        p Loại: Ổ cứng di động gắn ngoài Dung lượng: 2 TB Tốc độ đọc: USB 3.1 Gen 1 Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Lacie
+                                        .standard
+                                        .price 2790000
+                                        .memory 2000
+                            
+                        //- .page-number
+                        //-     button.btn.btn-primary.isActive 1
+                        //-     button.btn.btn-primary 2
+                        //-     button.btn.btn-primary 3
+                        //-     button.btn.btn-primary Trang cuối
+
+                            
+                    
+

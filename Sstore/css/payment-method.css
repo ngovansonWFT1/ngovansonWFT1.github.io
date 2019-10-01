@@ -1,5 +1,12 @@
 *{}
 
+section.payment-method h3 {
+    font-family: 'Proxima Nova Semibold';
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .acount-banking {
     width: 100%;
     border: 1px solid #02C874;

@@ -73,3 +73,7 @@
     a:hover {
         text-decoration: none;
     }
+
+    .middle-body {
+        min-height: calc(100vh - 410px);
+    }

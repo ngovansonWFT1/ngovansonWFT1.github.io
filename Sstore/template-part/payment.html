@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./../css/payment.css">
     <link rel="stylesheet" href="./../css/guaranty.css">
     <link rel="stylesheet" href="./../css/policy-restore.css">
+    <link rel="stylesheet" href="./../css/policy-security.css">
     <link rel="stylesheet" href="./../css/about-us.css">
     <link rel="stylesheet" href="./../css/payment-method.css">
     <link rel="stylesheet" href="./../css/recruitment.css">
@@ -285,16 +286,16 @@
               <div class="click-sub-menu"><a href=""> Best seller</a></div>
               <div class="sub-menu-level-2">
                 <ul class="sub-menu-list-item-level-2"> <span>Top SSD   </span>
-                  <li class="sub-menu-list-item-child"><a href="">Xem chi tiết</a></li>
+                  <li class="sub-menu-list-item-child"><a href="/template-part/top-ssd.html">Xem chi tiết</a></li>
                 </ul>
                 <ul class="sub-menu-list-item-level-2"> <span>Top ram máy tính  </span>
-                  <li class="sub-menu-list-item-child"><a href="">Xem chi tiết</a></li>
+                  <li class="sub-menu-list-item-child"><a href="/template-part/top-ram.html">Xem chi tiết</a></li>
                 </ul>
                 <ul class="sub-menu-list-item-level-2"> <span>Top thẻ nhớ   </span>
-                  <li class="sub-menu-list-item-child"><a href="">Xem chi tiết</a></li>
+                  <li class="sub-menu-list-item-child"><a href="/template-part/top-microsd.html">Xem chi tiết</a></li>
                 </ul>
                 <ul class="sub-menu-list-item-level-2"> <span>Top ổ cứng di động</span>
-                  <li class="sub-menu-list-item-child"><a href="">Xem chi tiết</a></li>
+                  <li class="sub-menu-list-item-child"><a href="/template-part/top-mobi-disk.html">Xem chi tiết</a></li>
                 </ul>
               </div>
             </li>
@@ -312,118 +313,122 @@
         </div>
       </div>
     </div>
-    <section class="payment">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="infor-puchare">
-              <h4>Thông tin mua hàng</h4>
-              <form>
-                <div class="form-group">
-                  <input class="form-control" id="name" type="text" aria-describedby="name" placeholder="Họ tên">
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="email" type="email" aria-describedby="email" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="phone" type="text" placeholder="Số ĐT">
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="address" type="text" placeholder="Địa chỉ">
-                </div>
-                <div class="form-group">
-                  <div class="province-select">
-                    <label for="province">Tỉnh thành</label>
-                    <select class="form-control" id="province">
-                      <option>--- Chọn tỉnh thành ---</option>
-                    </select>
+    <div class="middle-body">
+      <section class="payment">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="infor-puchare">
+                <h4>Thông tin mua hàng</h4>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" aria-describedby="name" placeholder="Họ tên">
                   </div>
-                </div>
-                <div class="form-group">
-                  <div class="district-select">
-                    <label for="district">Quận huyện</label>
-                    <select class="form-control" id="district">
-                      <option>--- Chọn Quận/Huyện ---</option>
-                    </select>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" aria-describedby="email" placeholder="Email">
                   </div>
-                </div>
-                <div class="form-group form-check">
-                  <input class="form-check-input" id="exampleCheck1" type="checkbox">
-                  <label class="form-check-label" for="exampleCheck1">Giao hàng đến địa chỉ khác           </label>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" id="note" rows="10" placeholder="Ghi chú"></textarea>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="payment-method">
-              <div class="infor">
-                <h4>Thanh toán</h4>
-              </div>
-              <div class="choose-method">
-                <div class="form-check">
-                  <input class="form-check-input" id="exampleRadios1" type="radio" name="exampleRadios" value="option1" checked="">
-                  <label class="form-check-label" for="exampleRadios1">Thanh toán khi giao hàng</label>
-                </div>
-                <div class="guide-payment-delivery">
-                  <p>Bạn sẽ nhận hàng và thanh toán với nhân viên giao hàng.Lưu ý: nhân viên giao hàng thuộc đối tác của Sstore chỉ cho phép kiểm tra hàng, không hỗ trợ kĩ thuật, lắp đặt. Khi nhận hàng cần kiểm tra bao bì, nếu có dấu hiệu bất thường xin vui lòng báo lại cho Sstore qua hotline 0976 747 562.</p>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" id="exampleRadios2" type="radio" name="exampleRadios" value="option2">
-                  <label class="form-check-label" for="exampleRadios2">Chuyển khoản qua ngân hàng</label>
-                </div>
-                <div class="guide-payment-bank">
-                  <p>*** <strong>Số TK :</strong>32310000283558</p>
-                  <p> <strong>Chủ TK: </strong>Ngô Văn Sơn</p>
-                  <p> <strong>Ngân hàng:</strong> BIDV chi nhánh Hà Nội ***</p>
-                  <p>Sau khi chuyển khoản vui lòng báo cho giám đốc 0976 747 562, để tiến hành xác thực đặt hàng.</p>
-                </div>
-              </div>
-            </div>
-            <div class="payment-confirm">
-              <div class="infor"> 
-                <h4>Đơn hàng</h4>
-              </div>
-              <div class="order-product">
-                <div class="detail-order"><img src="./../images/payment/1.jpg" alt="hard-disk">
-                  <div class="name-detail">
-                    <p>Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S</p>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="text" placeholder="Số ĐT">
                   </div>
-                  <div class="price-detail">
-                    <p>2.250.000 đ</p>
+                  <div class="form-group">
+                    <input class="form-control" id="address" type="text" placeholder="Địa chỉ">
                   </div>
-                </div>
-                <div class="order-cost">
-                  <div class="provitional">
-                    <p>Tạm tính</p>
-                    <p>2.250.000 đ</p>
-                  </div>
-                  <div class="transport-cost">
-                    <p>Chi phí vận chuyển</p>
-                    <p>30.000 đ</p>
-                  </div>
-                </div>
-                <div class="summary-order">
-                  <p>Tổng cộng</p>
-                  <p>2.280.000 đ</p>
-                </div>
-                <div class="action-after"><a href=""> <i class="fas fa-chevron-left"></i>Quay lại giỏ hàng</a><a class="btn btn-info" href="#ex1" rel="modal:open">Đặt ngay</a>
-                  <div class="modal" id="ex1">
-                    <div class="title">
-                      <h4>Đặt hàng thành công</h4>
+                  <div class="form-group">
+                    <div class="province-select">
+                      <label for="province">Tỉnh thành</label>
+                      <select class="form-control" id="province">
+                        <option>--- Chọn tỉnh thành ---</option>
+                      </select>
                     </div>
-                    <div class="img-cart"><img class="img-fluid" src="./../images/payment/2.jpg" alt=""></div>
-                    <p>Cảm ơn bạn đã cho chúng tôi có cơ hội được phục vụ!<br>Chúng tôi sẽ liên hệ với bạn để xác nhận đơn hàng!<br>Tư vấn bán hàng: 0976 747 562</p><a href="#" rel=""> <i class="fas fa-chevron-left"></i>Quay lại trang chủ</a>
+                  </div>
+                  <div class="form-group">
+                    <div class="district-select">
+                      <label for="district">Quận huyện</label>
+                      <select class="form-control" id="district">
+                        <option>--- Chọn Quận/Huyện ---</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" id="exampleCheck1" type="checkbox">
+                    <label class="form-check-label" for="exampleCheck1">Giao hàng đến địa chỉ khác           </label>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" id="note" rows="10" placeholder="Ghi chú"></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="payment-method">
+                <div class="infor">
+                  <h4>Thanh toán</h4>
+                </div>
+                <div class="choose-method">
+                  <div class="form-check">
+                    <label>
+                      <input class="form-check-input" id="exampleRadios1" type="radio" name="exampleRadios" value="option1" checked=""/>Thanh toán khi giao hàng<span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="guide-payment-delivery">
+                    <p>Bạn sẽ nhận hàng và thanh toán với nhân viên giao hàng.Lưu ý: nhân viên giao hàng thuộc đối tác của Sstore chỉ cho phép kiểm tra hàng, không hỗ trợ kĩ thuật, lắp đặt. Khi nhận hàng cần kiểm tra bao bì, nếu có dấu hiệu bất thường xin vui lòng báo lại cho Sstore qua hotline 0976 747 562.</p>
+                  </div>
+                  <div class="form-check">
+                    <label>
+                      <input class="form-check-input" id="exampleRadios2" type="radio" name="exampleRadios" value="option2"/>Chuyển khoản qua ngân hàng<span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="guide-payment-bank">
+                    <p>*** <strong>Số TK :</strong>32310000283558</p>
+                    <p> <strong>Chủ TK: </strong>Ngô Văn Sơn</p>
+                    <p> <strong>Ngân hàng:</strong> BIDV chi nhánh Hà Nội ***</p>
+                    <p>Sau khi chuyển khoản vui lòng báo cho giám đốc 0976 747 562, để tiến hành xác thực đặt hàng.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-confirm">
+                <div class="infor"> 
+                  <h4>Đơn hàng</h4>
+                </div>
+                <div class="order-product">
+                  <div class="detail-order"><img src="./../images/payment/1.jpg" alt="hard-disk">
+                    <div class="name-detail">
+                      <p>Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S</p>
+                    </div>
+                    <div class="price-detail">
+                      <p>2.250.000 đ</p>
+                    </div>
+                  </div>
+                  <div class="order-cost">
+                    <div class="provitional">
+                      <p>Tạm tính</p>
+                      <p>2.250.000 đ</p>
+                    </div>
+                    <div class="transport-cost">
+                      <p>Chi phí vận chuyển</p>
+                      <p>30.000 đ</p>
+                    </div>
+                  </div>
+                  <div class="summary-order">
+                    <p>Tổng cộng</p>
+                    <p>2.280.000 đ</p>
+                  </div>
+                  <div class="action-after"><a href="/template-part/cart.html"> <i class="fas fa-chevron-left"></i>Quay lại giỏ hàng</a><a class="btn btn-info" href="#ex1" rel="modal:open">Đặt ngay</a>
+                    <div class="modal" id="ex1">
+                      <div class="title">
+                        <h4>Đặt hàng thành công</h4>
+                      </div>
+                      <div class="img-cart"><img class="img-fluid" src="./../images/payment/2.jpg" alt=""></div>
+                      <p>Cảm ơn bạn đã cho chúng tôi có cơ hội được phục vụ!<br>Chúng tôi sẽ liên hệ với bạn để xác nhận đơn hàng!<br>Tư vấn bán hàng: 0976 747 562</p><a href="/template-part/index.html" rel=""> <i class="fas fa-chevron-left"></i>Quay lại trang chủ</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <div class="footer">
       <div class="infor-footer">
         <div class="container">
@@ -433,20 +438,20 @@
                 <div class="about-footer">
                   <h5>Giới thiệu</h5>
                   <div class="content-infor">
-                    <p><a href="">Trang chủ</a></p>
-                    <p><a href="">Về chúng tôi</a></p>
-                    <p><a href="">Điều khoản giao dịch</a></p>
-                    <p><a href="">Bảo mật thông tin</a></p>
-                    <p><a href="">Tuyển dụng</a></p>
+                    <p><a href="/template-part/index.html">Trang chủ</a></p>
+                    <p><a href="/template-part/about-us.html">Về chúng tôi</a></p>
+                    <p><a href="/template-part/rule-buy-product.html">Điều khoản giao dịch</a></p>
+                    <p><a href="/template-part/policy-security.html">Bảo mật thông tin</a></p>
+                    <p><a href="/template-part/recrument.html">Tuyển dụng</a></p>
                   </div>
                 </div>
                 <div class="policy-footer">
                   <h5>Chính sách</h5>
                   <div class="content-policy">
-                    <p><a href="">Chính sách giao nhận</a></p>
-                    <p><a href="">Chính sách đổi trả</a></p>
-                    <p><a href="">Phương thức thanh toán</a></p>
-                    <p><a href="">Chế độ bảo hành</a></p>
+                    <p><a href="/template-part/policy-delivery.html">Chính sách giao nhận</a></p>
+                    <p><a href="/template-part/policy-restore.html">Chính sách đổi trả</a></p>
+                    <p><a href="/template-part/pay-ment-method.html">Phương thức thanh toán</a></p>
+                    <p><a href="/template-part/policy-guaranty.html">Chế độ bảo hành</a></p>
                   </div>
                 </div>
                 <div class="support-footer">
@@ -454,8 +459,8 @@
                   <div class="content-support">
                     <p>Hotline: 0976.747.562</p>
                     <p>Email: ngoson2910@gmail.com</p>
-                    <p><a href="">Gửi yêu cầu đổi hàng</a></p>
-                    <p><a href="">Gửi yêu cầu bảo hành</a></p>
+                    <p><a href="/template-part/change-return.html">Gửi yêu cầu đổi hàng</a></p>
+                    <p><a href="/template-part/guaranty.html">Gửi yêu cầu bảo hành</a></p>
                   </div>
                 </div>
               </div>
@@ -466,12 +471,12 @@
                   <h5>Địa chỉ</h5>
                   <div class="content-support">
                     <p>Ngõ 322, đường Mỹ Đình, Từ Liêm, Hà Nội</p>
-                    <p> <a href="">Tìm đường</a></p>
+                    <p> <a href="https://www.google.com/maps/place/322+M%E1%BB%B9+%C4%90%C3%ACnh+1,+M%E1%BB%B9+%C4%90%C3%ACnh,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0231008,105.7717776,17z/data=!3m1!4b1!4m5!3m4!1s0x313454aef9e4ee2f:0x9e0873fb6f91fad6!8m2!3d21.0230958!4d105.7739663?hl=vi-VN">Tìm đường</a></p>
                   </div>
                 </div>
                 <div class="contact-footer">
                   <h5>Liên hệ với chúng tôi</h5>
-                  <div class="contain-icon-social"><a href=""><img class="img-fluid" src="./../images/footer/facebook.svg" alt="icon-facebook"></a><a href=""><img class="img-fluid" src="./../images/footer/instagram.svg" alt="icon-instagram"></a><a href=""><img class="img-fluid" src="./../images/footer/youtube.svg" alt="icon-youtube"></a><a href=""><img class="img-fluid" src="./../images/footer/google-plus.svg" alt="icon-google-plus"></a></div>
+                  <div class="contain-icon-social"><a href="https://www.facebook.com/sonso.kungfu"><img class="img-fluid" src="./../images/footer/facebook.svg" alt="icon-facebook"></a><a href=""><img class="img-fluid" src="./../images/footer/instagram.svg" alt="icon-instagram"></a><a href=""><img class="img-fluid" src="./../images/footer/youtube.svg" alt="icon-youtube"></a><a href=""><img class="img-fluid" src="./../images/footer/google-plus.svg" alt="icon-google-plus"></a></div>
                 </div>
               </div>
             </div>
@@ -481,7 +486,7 @@
       <div class="copy-right-footer">
         <p class="text-center">© 2019- Bản quyền của Sstore</p>
       </div>
-      <div class="back-to-top"><a href=""><img src="./../images/footer/back-to-top.png" alt="back-to-top"></a></div>
+      <div class="back-to-top"><a href="#"><img src="./../images/footer/back-to-top.png" alt="back-to-top"></a></div>
     </div>
     <div id="fb-root"></div>
     <script src="./../libs/Jquery/jquery-3.4.1.min.js"></script>

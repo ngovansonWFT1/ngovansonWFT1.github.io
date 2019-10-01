@@ -30,6 +30,20 @@ $(document).ready(function(){
             $('.wraper-menutop.fixed-top nav').removeClass('breadcrumb-fix')
             $('.wraper-menutop.fixed-top').removeClass('desc-height')
         }
+    });
+
+    $(window).scroll(function() {
+        if($('html').scrollTop() > 250) {
+            $('.contain-button-nav').addClass('display-none');
+            
+            $('.only-button-quickly-search').addClass('display-none');
+            
+
+        } else {
+            $('.contain-button-nav').removeClass('display-none');
+            $('.only-button-quickly-search').removeClass('display-none');
+            
+        }
     })
 
 
@@ -115,7 +129,7 @@ $(document).ready(function(){
         $('.menu-right a:last-child').children().removeClass('ws')
     }
 
-    if (url.match('payment-method')) {
+    if (url.match('pay-ment-method')) {
         $('.menu-right a:last-child').children().addClass('ws')
         $('ol.breadcrumb li:nth-child(2)').text('Phương thức thanh toán')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
@@ -171,10 +185,26 @@ $(document).ready(function(){
         $('.menu-right a:last-child').children().removeClass('ws')
     }
 
+    if (url.match('recrument')) {
+        $('.menu-right a:last-child').children().addClass('ws')
+        $('ol.breadcrumb li:nth-child(2)').text('Tuyển dụng')
+        $('ol.breadcrumb li:nth-child(3)').css('display','none')
+    } else {
+        $('.menu-right a:last-child').children().removeClass('ws')
+    }
+
     // Page-product
     if (url.match('product-list')) {
         $('.menu-right a:last-child').children().addClass('ws')
         $('ol.breadcrumb li:nth-child(2)').text('Ổ cứng SSD')
+        $('ol.breadcrumb li:nth-child(3)').css('display','none')
+    } else {
+        $('.menu-right a:last-child').children().removeClass('ws')
+    }
+
+    if (url.match('top-ssd')) {
+        $('.menu-right a:last-child').children().addClass('ws')
+        $('ol.breadcrumb li:nth-child(2)').text('Top SSD')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
     } else {
         $('.menu-right a:last-child').children().removeClass('ws')
@@ -196,6 +226,15 @@ $(document).ready(function(){
         $('.menu-right a:last-child').children().removeClass('ws')
     }
 
+    if (url.match('top-ram')) {
+        $('.menu-right a:last-child').children().addClass('ws')
+        $('ol.breadcrumb li:nth-child(2)').text('Top Ram')
+        $('ol.breadcrumb li:nth-child(3)').css('display','none')
+    } else {
+        $('.menu-right a:last-child').children().removeClass('ws')
+    }
+
+
     if (url.match('product-list-ram-pc')) {
         $('.menu-right a:last-child').children().addClass('ws')
         $('ol.breadcrumb li:nth-child(2)').text('Ram PC')
@@ -212,9 +251,25 @@ $(document).ready(function(){
         $('.menu-right a:last-child').children().removeClass('ws')
     }
 
-    if (url.match('product-list-microsd')) {
+    if (url.match('top-mobi-disk')) {
+        $('.menu-right a:last-child').children().addClass('ws')
+        $('ol.breadcrumb li:nth-child(2)').text('Top Ổ cứng di động')
+        $('ol.breadcrumb li:nth-child(3)').css('display','none')
+    } else {
+        $('.menu-right a:last-child').children().removeClass('ws')
+    }
+
+    if (url.match('product-list-microSD')) {
         $('.menu-right a:last-child').children().addClass('ws')
         $('ol.breadcrumb li:nth-child(2)').text('Thẻ nhớ')
+        $('ol.breadcrumb li:nth-child(3)').css('display','none')
+    } else {
+        $('.menu-right a:last-child').children().removeClass('ws')
+    }
+
+    if (url.match('top-microsd')) {
+        $('.menu-right a:last-child').children().addClass('ws')
+        $('ol.breadcrumb li:nth-child(2)').text('Top Thẻ nhớ')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
     } else {
         $('.menu-right a:last-child').children().removeClass('ws')
@@ -248,7 +303,7 @@ $(document).ready(function(){
     if (url.match('product-detail-mobi-hardisk')) {
         $('.menu-right a:last-child').children().addClass('ws')
         $('ol.breadcrumb li:nth-child(2)').text('Ổ cứng di động')
-        $('ol.breadcrumb li:nth-child(3)').text('Ổ cứng di động 1TB chống Sock Apacer AC631')
+        $('ol.breadcrumb li:nth-child(3)').text('Ổ cứng di động Apacer')
     } else {
         $('.menu-right a:last-child').children().removeClass('ws')
     }

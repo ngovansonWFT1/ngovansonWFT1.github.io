@@ -10,8 +10,46 @@ $(function () {
     $('.product-sale .block-card-sale').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4
-    });
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 420,
+                settings: {
+                  slidesToShow: 1.15,
+                  slidesToScroll: 1
+                }
+              },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1.5,
+                slidesToScroll: 1
+              }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 2.5,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 1199,
+                settings: {
+                  slidesToShow: 3.5,
+                  slidesToScroll: 1
+                }
+              }
+            
+          ]
+        });
 
 
 
@@ -75,6 +113,26 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 5
+                }
+            }
+        ]
     });
     
 

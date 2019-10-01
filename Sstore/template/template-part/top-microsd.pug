@@ -1,0 +1,581 @@
+extends layout.pug
+
+block header 
+    title Sstore - Top Thẻ nhớ bán chạy
+
+block content
+    section.product-list
+        .container
+            .row
+                .col-lg-3
+                    .filter-product
+
+                        .filter-by-brand.filter-prd
+                            .title-brand
+                                h4 Thương hiệu
+                            .form-check
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Samsung")/ Samsung
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Toshiba")/ Toshiba
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Sandisk")/ Sandisk
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Kingston")/ Kingston
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Lexar")/ Lexar
+                                    span.checkmark
+                                
+                        //- .filter-by-size-standard.filter-prd
+                        //-     .title-standard
+                        //-         h4 Chuẩn ổ cứng
+                        //-     .form-check
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="2.5inch")/ 2.5 inch
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="mSata")/ mSata
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="M.2 Sata")/ M.2 Sata
+                        //-         label
+                        //-             input(type='radio' name="standard" value="standard" data-filter="M.2 PCIe")/ M.2 PCIe
+                                
+                        .filter-by-price.filter-prd
+                            .title-price
+                                h4 Giá sản phẩm
+                            .form-check
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[50000,100000])/ 50.000 - 100.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[100000,150000])/ 100.000 - 150.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[150000,300000])/ 150.000 - 300.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[300000,800000])/ 300.000 - 800.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[800000,1000000])/ 800.000 - 1.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[1000000,1500000])/ 1.000.000 - 1.500.000
+                                    span.checkmark
+                        .filter-by-capacity.filter-prd
+                            .title-capacity
+                                h4 Dung lượng
+                            .form-check
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[16, 32])/ 16 -32GB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[32, 64])/ 32 - 64GB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[64, 128])/ 64 - 128GB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[128, 256])/ 128 - 256GB
+                                    span.checkmark
+                               
+                        
+                .col-lg-9
+                    .product-list-filtered
+                        .title-top-change-layout-prd
+                            .title-product
+                                h5 Thẻ nhớ
+                            .layout-and-sort
+                                .list-icon 
+                                    img(src="./../images/product-list/list-disactive.svg", alt="list-icon")
+                                .grid-icon
+                                    img(src="./../images/product-list/grid-active.svg", alt="grid-icon")
+                                .sort-product-by-brand
+                                    .dropdown
+                                        button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                            | Mặc định
+                                        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                            a.dropdown-item(href='#' data-sort-by= "all" data-filter="all") Mặc định
+                                            a.dropdown-item(href='#' data-sort-by="name" data-filter="ASC") A - Z
+                                            a.dropdown-item(href='#' data-sort-by="name" data-filter="DESC") Z - A
+                                            a.dropdown-item(href='#' data-sort-by="price" data-filter="ASC") Giá tăng dần
+                                            a.dropdown-item(href='#' data-sort-by="price" data-filter="DESC") Giá giảm dần
+                        .grid-product-list
+
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/1.jpg' alt='thẻ nhớ SanDisk')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 38%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ MicroSDHC SanDisk Ultra 16GB 80MB/s 533x
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 80.000 đ
+                                                del 130.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Sandisk
+                                        .standard 
+                                        .price 130000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/2.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 33%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-microsd.html") Thẻ nhớ MicroSDHC Kingston Canvas Select 16GB Class 10 U1 80MB/s SDCS/16GB
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 80.000 đ
+                                                del 120.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Kingston
+                                            .standard 
+                                            .price 80000
+                                            .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/3.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ MicroSDHC SanDisk Ultra 32GB 80MB/s 533x
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 115.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Sandisk
+                                        .standard 
+                                        .price 115000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/4.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-microsd.html") Thẻ nhớ MicroSDHC SanDisk Ultra A1 16GB 98MB/s
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 110.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Sandisk
+                                        .standard 
+                                        .price 110000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 19%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ MicroSDXC Samsung EVO Plus U3 64GB 100MB/s MB-MC64G
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 260.000 đ
+                                                del 320.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard 
+                                        .price 260000
+                                        .memory 64
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/6.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 27%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 120.000 đ
+                                                del 165.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard 
+                                        .price 120
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/7.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 22%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ MicroSDXC Lexar U3 V30 A2 512GB 633x 100MB/s LSDMI512BBAP633A
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.399.000 đ
+                                                del 1.790.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Lexar
+                                        .standard 
+                                        .price 1399000
+                                        .memory 512
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/8.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ 32GB TOSHIBA Chính Hãng - 32GB TOSHIBA
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 295.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Toshiba
+                                        .standard 
+                                        .price 295000
+                                        .memory 32
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/microSD/9.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ Kingston Micro SDXC 64GB (80MB/s) - Hàng Nhập Khẩu
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 195.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 
+                                        .price 195000
+                                        .memory 64
+
+                            
+                        .list-product-appearence
+                            .page-1
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/microSD/1.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 38%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ MicroSDHC SanDisk Ultra 16GB 80MB/s 533x
+                                        span 80.000 đ
+                                        span
+                                            del 130.000 đ
+                                        p Loại sản phẩm: microSD Dung lượng: 16 GB Tốc độ đọc: 80 MB/s Tốc độ Ghi: 10 MB/s Bảo hành: 5 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Sandisk
+                                        .standard 
+                                        .price 80000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/microSD/2.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 33%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-microsd.html") Thẻ nhớ MicroSDHC Kingston Canvas Select 16GB Class 10 U1 80MB/s SDCS/16GB
+                                        span 80.000 đ
+                                        span
+                                            del 120.000 đ
+                                        p Loại sản phẩm: microSD Dung lượng: 16 GB Tốc độ đọc: 80 MB/s Tốc độ Ghi: 10 MB/s Bảo hành: 5 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 
+                                        .price 80000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/microSD/3.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ MicroSDHC SanDisk Ultra 32GB 80MB/s 533x
+                                        span 115.000 đ
+                                        //- span
+                                        //-     del 700.000đ
+                                        p Loại sản phẩm: microSD Dung lượng: 32 GB Tốc độ đọc: 80 MB/s Tốc độ Ghi: 10 MB/s Bảo hành: 5 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Sandisk
+                                        .standard 
+                                        .price 115000
+                                        .memory 32
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/microSD/4.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-microsd.html") Thẻ nhớ MicroSDHC SanDisk Ultra A1 16GB 98MB/s
+                                        span 110.000 đ
+                                        //- span
+                                        //-     del 700.000đ
+                                        p Loại sản phẩm: microSD Dung lượng: 16 GB Tốc độ đọc: 80 MB/s Tốc độ Ghi: 10 MB/s Bảo hành: 5 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Sandisk
+                                        .standard 
+                                        .price 110000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/microSD/5.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 19%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ MicroSDXC Samsung EVO Plus U3 64GB 100MB/s MB-MC64G
+                                        span 260.000 đ
+                                        span
+                                            del 320.000đ
+                                        p Loại sản phẩm: microSD Dung lượng: 64 GB Tốc độ đọc: 80 MB/s Tốc độ Ghi: 10 MB/s Bảo hành: 5 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard 
+                                        .price 260000
+                                        .memory 64
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/microSD/6.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 27%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ MicroSDHC Samsung EVO Plus U1 32GB 95MB/s
+                                        span 120.000 đ
+                                        span
+                                            del 165.000đ
+                                        p Loại sản phẩm: microSD Dung lượng: 64 GB Tốc độ đọc: 80 MB/s Tốc độ Ghi: 10 MB/s Bảo hành: 5 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Samsung
+                                        .standard
+                                        .price 120000
+                                        .memory 64
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/microSD/7.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 22%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ MicroSDXC Lexar U3 V30 A2 512GB 633x 100MB/s LSDMI512BBAP633A
+                                        span 1.399.000 đ
+                                        span
+                                            del 1.790.000đ
+                                        p Loại sản phẩm: microSD Dung lượng: 512 GB Tốc độ đọc: 80 MB/s Tốc độ Ghi: 10 MB/s Bảo hành: 5 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Lexar
+                                        .standard
+                                        .price 1399000
+                                        .memory 512
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/microSD/8.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 27%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ 32GB TOSHIBA Chính Hãng - 32GB TOSHIBA
+                                        span 295.000 đ
+                                        //- span
+                                        //-     del 165.000đ
+                                        p Loại sản phẩm: microSD Dung lượng: 32 GB Tốc độ đọc: 80 MB/s Tốc độ Ghi: 10 MB/s Bảo hành: 5 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Toshiba
+                                        .standard
+                                        .price 295000
+                                        .memory 32
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/microSD/9.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 27%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="/template-part/product-detail-microsd.html") Thẻ Nhớ Kingston Micro SDXC 64GB (80MB/s) - Hàng Nhập Khẩu
+                                        span 195.000 đ
+                                        //- span
+                                        //-     del 165.000đ
+                                        p Loại sản phẩm: microSD Dung lượng: 64 GB Tốc độ đọc: 80 MB/s Tốc độ Ghi: 10 MB/s Bảo hành: 5 năm
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard
+                                        .price 195000
+                                        .memory 64
+                            
+                        //- .page-number
+                        //-     button.btn.btn-primary.isActive 1
+                        //-     button.btn.btn-primary 2
+                        //-     button.btn.btn-primary 3
+                        //-     button.btn.btn-primary Trang cuối
+
+                            
+                    
+

@@ -21,6 +21,7 @@ html(lang="vi")
         link(rel="stylesheet", href="./../css/payment.css")
         link(rel="stylesheet", href="./../css/guaranty.css")
         link(rel="stylesheet", href="./../css/policy-restore.css")
+        link(rel="stylesheet", href="./../css/policy-security.css")
         link(rel="stylesheet", href="./../css/about-us.css")
         link(rel="stylesheet", href="./../css/payment-method.css")
         link(rel="stylesheet", href="./../css/recruitment.css")
@@ -30,8 +31,9 @@ html(lang="vi")
             title Sstore
     body
         include menu.pug
-        block content
-
+        .middle-body
+            block content
+        
         include footer.pug
         #fb-root
 

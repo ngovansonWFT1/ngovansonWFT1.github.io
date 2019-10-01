@@ -5,7 +5,7 @@ ul.level-4 {
 }
 
 ul.level-3 {
-    padding-left: 2.5rem;
+    padding-left: 1rem;
 }
 
 ol.level-2 {
@@ -19,7 +19,7 @@ ul.level-4 > li {
 
 ul.level-3 > li {
     list-style-type: initial;
-    list-style-position: inside;
+    /* list-style-position: inside; */
     font-family: 'Proxima Nova Regular';
 }
 
@@ -44,18 +44,23 @@ section.policy-restore {
 
 section.policy-restore li {
     text-align: justify;
-    line-height: 3rem;
+    line-height: 2rem;
     font-size: 1rem;
 }
 
 section.policy-restore p {
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     font-family: 'Proxima Nova Regular';
-    line-height: 3rem;
+    /* line-height: 3rem; */
     text-align: justify;
     margin-bottom: 0;
-    text-indent: 1rem;
+    /* text-indent: 1rem; */
     font-size: 1rem;
+}
+
+ol.level-1 li:last-child > p {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 section.policy-restore h3 {

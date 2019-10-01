@@ -1,8 +1,18 @@
 *{}
 
+section.payment {
+    padding-bottom: 10rem;
+}
+
 .action-after a.btn.btn-info {
     text-transform: uppercase;
     padding: 0.5rem 2rem;
+    background-color: #25DAAE;
+    border: 0;
+}
+
+.action-after a.btn.btn-info:hover {
+    background-color: #ff0000;
 }
 
 #ex1 .title {
@@ -24,12 +34,6 @@
     margin-bottom: 1rem;
 }
 
-.modal a.close-modal {
-    /* overflow: visible; */
-}
-
-.jquery-modal.blocker.current {
-}
 
 div#ex1 {
     margin-top: 150px;
@@ -48,7 +52,34 @@ div#ex1 p {
     align-items: center;
 }
 
-.action-after a svg {
+.action-after a:first-child,
+.modal a:nth-child(4) {
+    position: relative;
+    color: blue;
+}
+
+.action-after a:first-child:hover::after,
+.modal a:nth-child(4):hover::after{
+    width: 100%;
+    left: 0;
+    background: blue;
+}
+
+.action-after a:first-child::after,
+.modal a:nth-child(4)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.action-after a svg,
+.modal a:nth-child(4) svg{
     margin-right: 0.5rem;
 }
 
@@ -94,15 +125,17 @@ div#ex1 p {
     border: 1px solid #02C874;
     border-radius: 5px;
     padding: 1.6rem 2rem;
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
 }
 
 .order-product.style-block {
     padding: 1rem;
+    padding-bottom: 2.6rem;
 }
 
 .guide-payment-delivery,.guide-payment-bank {
     background-color: #E4EDF0;
+    padding: 0.5rem 2rem;
 }
 
 .choose-method {}
@@ -111,6 +144,7 @@ div#ex1 p {
     margin-bottom: 1rem;
     font-weight: bold;
     font-size: 1.1rem;
+    margin-left: 0;
 }
 
 .form-check.border-bottom {
@@ -167,6 +201,7 @@ div#ex1 p {
     border: 1px solid #02C874;
     padding: 0.625rem;
     border-radius: 5px;
+    padding-bottom: 5rem;
 }
 
 .infor-puchare h4,
@@ -193,3 +228,121 @@ div#ex1 p {
 .payment-confirm {
     margin-top: 2.75rem;
 }   
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    *{}
+
+div#ex1 p {
+    text-align: left;
+}
+
+.img-cart {
+    width: 60px;
+}
+
+#ex1 .title h4 {
+    font-size: 1.2rem;
+}
+
+div#ex1 {
+    width: 90%;
+    margin-top: 0;
+    padding: 1rem 1rem;
+}
+
+.infor-puchare form {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.choose-method {
+    padding: 1rem 0.5rem;
+}
+
+.order-product {
+    padding: 1rem 0.5rem;
+}
+
+.payment-method {
+    margin-top: 3rem;
+}
+
+.infor-puchare {
+    margin-top: 0;
+}
+
+.choose-method .form-check {
+    margin-left: 0;
+}
+
+.action-after a.btn.btn-info {
+    padding: 0.5rem 1rem;
+}
+
+.detail-order .name-detail {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 75px;
+    width: 120px;
+}
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    *{}
+
+.infor-puchare {
+    margin-top: 0;
+}
+
+.payment-method {
+    margin-top: 2rem;
+}
+
+.choose-method .form-check {
+    margin-left: 0;
+}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    *{}
+
+.choose-method .form-check {
+    margin-left: 0;
+}
+
+.payment-method {
+    margin-top: 3rem;
+}
+
+.infor-puchare {
+    margin-top: 0;
+}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    *{}
+
+.detail-order, .order-cost {
+    padding-bottom: 0.5rem;
+}
+
+.choose-method .form-check {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+.choose-method  .form-check.border-bottom {
+    padding: 0.4rem;
+}
+
+.order-product {
+    padding-top: 1rem;
+}
+}

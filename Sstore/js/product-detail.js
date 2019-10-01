@@ -12,7 +12,23 @@ $(function() {
         asNavFor: '.img-product-big',
         dots: true,
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 1199.98,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          }
+        ]
       });
 
       let value = parseInt($('.screen').text())

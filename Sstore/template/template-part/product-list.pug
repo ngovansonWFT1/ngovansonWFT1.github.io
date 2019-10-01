@@ -7,7 +7,7 @@ block content
     section.product-list
         .container
             .row
-                .col-md-3
+                .col-lg-3
                     .filter-product
 
                         .filter-by-brand.filter-prd
@@ -87,9 +87,11 @@ block content
                                 label
                                     input(type='radio' name="memory" value="memory" data-filter=[960, 1000])/ 960GB - 1TB
                                     span.checkmark
-                               
+                          
                         
-                .col-md-9
+                .col-lg-9
+                    .button-filter(style={display:'none'})
+                        img.img-fluid(src="./../images/product-list/filter.png", alt="")    
                     .product-list-filtered
                         .title-top-change-layout-prd
                             .title-product
@@ -122,7 +124,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
+                                                a(href="/template-part/product-detail.html") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -135,7 +137,7 @@ block content
                                                 del 650.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard 2.5inch
@@ -152,7 +154,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Kingston A400 SATA 3 120GB SA400S37/120G
+                                                a(href="/template-part/product-detail.html") SSD Kingston A400 SATA 3 120GB SA400S37/120G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -165,7 +167,7 @@ block content
                                                 //- del 1.250.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard 2.5inch
@@ -182,7 +184,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
+                                                a(href="/template-part/product-detail.html") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -195,7 +197,7 @@ block content
                                                 del 690.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard M.2 Sata
@@ -212,7 +214,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
+                                                a(href="/template-part/product-detail.html") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -225,7 +227,7 @@ block content
                                                 del 990.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard 2.5inch
@@ -242,7 +244,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
+                                                a(href="/template-part/product-detail.html") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -255,7 +257,7 @@ block content
                                                 //- del 650.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard mSata
@@ -272,7 +274,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
+                                                a(href="/template-part/product-detail.html") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -285,7 +287,7 @@ block content
                                                 del 1.150.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Samsung
                                         .standard M.2 PCIe
@@ -302,7 +304,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
+                                                a(href="/template-part/product-detail.html") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -315,7 +317,7 @@ block content
                                                 //- del 770.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Samsung
                                         .standard M.2 PCIe
@@ -332,7 +334,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
+                                                a(href="/template-part/product-detail.html") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -345,7 +347,7 @@ block content
                                                 del 1.450.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard 2.5inch
@@ -362,7 +364,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Western Digital Blue 3D-NAND M.2 2280 SATA III 250GB WDS250G2B0B
+                                                a(href="/template-part/product-detail.html") SSD Western Digital Blue 3D-NAND M.2 2280 SATA III 250GB WDS250G2B0B
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -375,7 +377,7 @@ block content
                                                 //- del 2.990.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Western Digital
                                         .standard M.2 Sata
@@ -394,7 +396,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial MX500 3D-NAND M.2 2280 SATA III 250GB CT250MX500SSD4
+                                                a(href="/template-part/product-detail.html") SSD Crucial MX500 3D-NAND M.2 2280 SATA III 250GB CT250MX500SSD4
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -407,7 +409,7 @@ block content
                                                 del 1.450.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
@@ -425,7 +427,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 250GB 2.5-Inch SATA III MZ-76E250BW
+                                                a(href="/template-part/product-detail.html") SSD Samsung 860 Evo 250GB 2.5-Inch SATA III MZ-76E250BW
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -438,7 +440,7 @@ block content
                                                 //- del 2.190.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                         .filter-hidden(style={display:'none'})
                                             .brand Samsung
                                             .standard 2.5inch
@@ -455,7 +457,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Kingston KC2000 M.2 PCIe Gen3 x4 NVMe 250GB SKC2000M8/250G
+                                                a(href="/template-part/product-detail.html") SSD Kingston KC2000 M.2 PCIe Gen3 x4 NVMe 250GB SKC2000M8/250G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -468,7 +470,7 @@ block content
                                                 //- del 2.190.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard M.2 PCIe
@@ -485,7 +487,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Western Digital Black SN750 PCIe Gen3 x4 NVMe M.2 250GB WDS250G3X0C
+                                                a(href="/template-part/product-detail.html") SSD Western Digital Black SN750 PCIe Gen3 x4 NVMe M.2 250GB WDS250G3X0C
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -498,7 +500,7 @@ block content
                                                 del 1.990.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Western Digital
                                         .standard M.2 PCIe
@@ -515,7 +517,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial P1 500GB NVMe 3D-NAND M.2 PCIe Gen3 x4 CT500P1SSD8
+                                                a(href="/template-part/product-detail.html") SSD Crucial P1 500GB NVMe 3D-NAND M.2 PCIe Gen3 x4 CT500P1SSD8
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -528,7 +530,7 @@ block content
                                                 //- del 2.190.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard M.2 PCIe
@@ -545,7 +547,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="")  SSD Samsung 970 EVO Plus PCIe NVMe V-NAND M.2 2280 250GB MZ-V7S250BW
+                                                a(href="/template-part/product-detail.html")  SSD Samsung 970 EVO Plus PCIe NVMe V-NAND M.2 2280 250GB MZ-V7S250BW
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -558,7 +560,7 @@ block content
                                                 del 1.999.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Samsung
                                         .standard M.2 PCIe
@@ -575,7 +577,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Intel 660P 512GB 3D-NAND QLC M.2 NVMe PCIe Gen3.0 x4 SSDPEKNW512G8X1
+                                                a(href="/template-part/product-detail.html") SSD Intel 660P 512GB 3D-NAND QLC M.2 NVMe PCIe Gen3.0 x4 SSDPEKNW512G8X1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -588,7 +590,7 @@ block content
                                                 //- del 1.890.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Intel
                                         .standard M.2 PCIe
@@ -605,7 +607,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Seagate Barracuda 510 M.2 PCIe Gen3 x4 NVMe 256GB ZP256CM30041
+                                                a(href="/template-part/product-detail.html") SSD Seagate Barracuda 510 M.2 PCIe Gen3 x4 NVMe 256GB ZP256CM30041
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -618,7 +620,7 @@ block content
                                                 //- del 1.250.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Seagate
                                         .standard M.2 PCIe
@@ -635,7 +637,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Transcend M.2 2242 SATA III 512GB MTS430S 3D-NAND TS512GMTS430S
+                                                a(href="/template-part/product-detail.html") SSD Transcend M.2 2242 SATA III 512GB MTS430S 3D-NAND TS512GMTS430S
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -648,7 +650,7 @@ block content
                                                 //- del 5.000.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Trancend
                                         .standard M.2 Sata
@@ -667,7 +669,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
+                                                a(href="/template-part/product-detail.html") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -680,7 +682,7 @@ block content
                                                 del 650.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard 2.5inch
@@ -697,7 +699,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Kingston A400 SATA 3 120GB SA400S37/120G
+                                                a(href="/template-part/product-detail.html") SSD Kingston A400 SATA 3 120GB SA400S37/120G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -710,7 +712,7 @@ block content
                                                 //- del 1.250.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard 2.5inch
@@ -727,7 +729,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
+                                                a(href="/template-part/product-detail.html") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -740,7 +742,7 @@ block content
                                                 del 690.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard M.2 Sata
@@ -757,7 +759,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
+                                                a(href="/template-part/product-detail.html") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -770,7 +772,7 @@ block content
                                                 del 990.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard 2.5inch
@@ -787,7 +789,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
+                                                a(href="/template-part/product-detail.html") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -800,7 +802,7 @@ block content
                                                 //- del 650.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard mSata
@@ -817,7 +819,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
+                                                a(href="/template-part/product-detail.html") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -830,7 +832,7 @@ block content
                                                 del 1.150.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Samsung
                                         .standard M.2 PCIe
@@ -847,7 +849,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
+                                                a(href="/template-part/product-detail.html") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -860,7 +862,7 @@ block content
                                                 //- del 770.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Samsung
                                         .standard M.2 PCIe
@@ -877,7 +879,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
+                                                a(href="/template-part/product-detail.html") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -890,7 +892,7 @@ block content
                                                 del 1.450.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard 2.5inch
@@ -907,7 +909,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Western Digital Blue 3D-NAND M.2 2280 SATA III 250GB WDS250G2B0B
+                                                a(href="/template-part/product-detail.html") SSD Western Digital Blue 3D-NAND M.2 2280 SATA III 250GB WDS250G2B0B
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -920,7 +922,7 @@ block content
                                                 //- del 2.990.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Western Digital
                                         .standard M.2 Sata
@@ -939,7 +941,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial MX500 3D-NAND M.2 2280 SATA III 250GB CT250MX500SSD4
+                                                a(href="/template-part/product-detail.html") SSD Crucial MX500 3D-NAND M.2 2280 SATA III 250GB CT250MX500SSD4
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -952,7 +954,7 @@ block content
                                                 del 1.450.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="cart") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard M.2 Sata
@@ -969,7 +971,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Samsung 860 Evo 250GB 2.5-Inch SATA III MZ-76E250BW
+                                                a(href="/template-part/product-detail.html") SSD Samsung 860 Evo 250GB 2.5-Inch SATA III MZ-76E250BW
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -982,7 +984,7 @@ block content
                                                 //- del 2.190.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                         .filter-hidden(style={display:'none'})
                                             .brand Samsung
                                             .standard 2.5inch
@@ -999,7 +1001,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Kingston KC2000 M.2 PCIe Gen3 x4 NVMe 250GB SKC2000M8/250G
+                                                a(href="/template-part/product-detail.html") SSD Kingston KC2000 M.2 PCIe Gen3 x4 NVMe 250GB SKC2000M8/250G
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1012,7 +1014,7 @@ block content
                                                 //- del 2.190.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard M.2 PCIe
@@ -1029,7 +1031,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Western Digital Black SN750 PCIe Gen3 x4 NVMe M.2 250GB WDS250G3X0C
+                                                a(href="/template-part/product-detail.html") SSD Western Digital Black SN750 PCIe Gen3 x4 NVMe M.2 250GB WDS250G3X0C
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1042,7 +1044,7 @@ block content
                                                 del 1.990.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Western Digital
                                         .standard M.2 PCIe
@@ -1059,7 +1061,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Crucial P1 500GB NVMe 3D-NAND M.2 PCIe Gen3 x4 CT500P1SSD8
+                                                a(href="/template-part/product-detail.html") SSD Crucial P1 500GB NVMe 3D-NAND M.2 PCIe Gen3 x4 CT500P1SSD8
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1072,7 +1074,7 @@ block content
                                                 //- del 2.190.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard M.2 PCIe
@@ -1089,7 +1091,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="")  SSD Samsung 970 EVO Plus PCIe NVMe V-NAND M.2 2280 250GB MZ-V7S250BW
+                                                a(href="/template-part/product-detail.html")  SSD Samsung 970 EVO Plus PCIe NVMe V-NAND M.2 2280 250GB MZ-V7S250BW
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1102,7 +1104,7 @@ block content
                                                 del 1.999.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Samsung
                                         .standard M.2 PCIe
@@ -1119,7 +1121,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Intel 660P 512GB 3D-NAND QLC M.2 NVMe PCIe Gen3.0 x4 SSDPEKNW512G8X1
+                                                a(href="/template-part/product-detail.html") SSD Intel 660P 512GB 3D-NAND QLC M.2 NVMe PCIe Gen3.0 x4 SSDPEKNW512G8X1
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1132,7 +1134,7 @@ block content
                                                 //- del 1.890.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Intel
                                         .standard M.2 PCIe
@@ -1149,7 +1151,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Seagate Barracuda 510 M.2 PCIe Gen3 x4 NVMe 256GB ZP256CM30041
+                                                a(href="/template-part/product-detail.html") SSD Seagate Barracuda 510 M.2 PCIe Gen3 x4 NVMe 256GB ZP256CM30041
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1162,7 +1164,7 @@ block content
                                                 //- del 1.250.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Seagate
                                         .standard M.2 PCIe
@@ -1179,7 +1181,7 @@ block content
                                     .card-body
                                         .product-title
                                             h5.card-title
-                                                a(href="") SSD Transcend M.2 2242 SATA III 512GB MTS430S 3D-NAND TS512GMTS430S
+                                                a(href="/template-part/product-detail.html") SSD Transcend M.2 2242 SATA III 512GB MTS430S 3D-NAND TS512GMTS430S
                                         .rating-price
                                             .rating
                                                 i.fas.fa-star
@@ -1192,7 +1194,7 @@ block content
                                                 //- del 5.000.000 đ
                                     .layer-hover
                                         .button-buy
-                                            a.btn.btn-info(href="") Mua ngay
+                                            a.btn.btn-info(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Trancend
                                         .standard M.2 Sata
@@ -1212,12 +1214,12 @@ block content
                                                 h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
+                                            a(href="/template-part/product-detail.html") SSD Crucial BX500 3D NAND SATA III 2.5 inch 120GB CT120BX500SSD1
                                         span 500.000 đ
                                         span
                                             del 650.000 đ
                                         p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 380 MB/s Bảo hành: 3 năm
-                                        a.btn.btn-primary(href="") Mua ngay
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard 2.5inch
@@ -1233,12 +1235,12 @@ block content
                                         //-         h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Kingston A400 SATA 3 120GB SA400S37/120G
+                                            a(href="/template-part/product-detail.html") SSD Kingston A400 SATA 3 120GB SA400S37/120G
                                         span 550.000 đ
                                         //- span
                                         //-     del 1.250.000 đ
                                         p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 380 MB/s Bảo hành: 3 năm
-                                        a.btn.btn-primary(href="") Mua ngay
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard 2.5inch
@@ -1254,17 +1256,17 @@ block content
                                                 h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
+                                            a(href="/template-part/product-detail.html") SSD Kingston A400 M.2 2280 SATA 3 120GB SA400M8/120G
                                         span 550.000 đ
                                         span
                                             del 690.000đ
                                         p  Chuẩn SSD: M.2 2280 SATA III Tốc độ đọc: 560 MB/s Tốc độ ghi: 475 MB/s Bảo hành 3 năm
-                                        a.btn.btn-primary(href="") Mua ngay
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard M.2 Sata
                                         .price 550000
-                                        .memory 550000
+                                        .memory 120
                                 .block-appearence-list
                                     .left-only-img
                                         img.img-fluid(src="./../images/product-list/ssd/4.jpg", alt="ssd")
@@ -1275,12 +1277,12 @@ block content
                                                 h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
+                                            a(href="/template-part/product-detail.html") SSD Crucial BX500 3D NAND SATA III 2.5 inch 240GB CT240BX500SSD1
                                         span 700.000 đ
                                         span
                                             del 990 .000đ
                                         p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 380 MB/s Bảo hành: 3 năm
-                                        a.btn.btn-primary(href="") Mua ngay
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard 2.5inch
@@ -1296,12 +1298,12 @@ block content
                                         //-         h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
+                                            a(href="/template-part/product-detail.html") SSD Kingston UV500 3D-NAND mSATA SATA III 120GB SUV500MS/120G
                                         span 720.000 đ
                                         //- span
                                         //-     del 650.000đ
                                         p Chuẩn SSD: mSATA Tốc độ đọc: 520 MB/s Tốc độ ghi: ~320 MB/s Bảo hành chính hãng 5 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Kingston
                                         .standard mSata
@@ -1317,13 +1319,13 @@ block content
                                                 h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
+                                            a(href="/template-part/product-detail.html") SSD Samsung NVMe PM961 M.2 PCIe Gen3 x4 128GB
 
                                         span 850.000 đ
                                         span
                                             del 1.150.000đ
                                         p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Samsung
                                         .standard M.2 PCIe
@@ -1339,12 +1341,12 @@ block content
                                         //-         h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
+                                            a(href="/template-part/product-detail.html") SSD Samsung NVMe PM981 M.2 PCIe Gen3 x4 256GB MZVLB256HAHQ
                                         span 1.030.000 đ
                                         //- span
                                         //-     del 770.000đ
                                         p Chuẩn SSD: M.2 NVMe Gen3 x4 Tốc độ đọc: 2800 MB/s Tốc độ ghi: 600 MB/s Bảo hành 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Samsung
                                         .standard M.2 PCIe
@@ -1360,12 +1362,12 @@ block content
                                                 h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
+                                            a(href="/template-part/product-detail.html") SSD Crucial MX500 3D NAND SATA III 2.5 inch 250GB CT250MX500SSD1
                                         span 1.090.000 đ
                                         span
                                             del 1.450.000đ
                                         p Chuẩn SSD: 2.5 inches Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Crucial
                                         .standard 2.5inch
@@ -1381,12 +1383,12 @@ block content
                                         //-         h5 giảm
                                     .right-infor-price
                                         h5
-                                            a(href="") SSD Western Digital Blue 3D-NAND M.2 2280 SATA III 250GB WDS250G2B0B
+                                            a(href="/template-part/product-detail.html") SSD Western Digital Blue 3D-NAND M.2 2280 SATA III 250GB WDS250G2B0B
                                         span 1.090.000 đ
                                         //- span
                                         //-     del 2.990.000đ
                                         p Chuẩn SSD: M.2 2280 SATA III Tốc độ đọc: 500 MB/s Tốc độ ghi: 350 MB/s Bảo hành chính hãng 3 năm 1 đổi 1
-                                        a.btn.btn-primary(href="") Mua ngay
+                                        a.btn.btn-primary(href="/template-part/cart.html") Mua ngay
                                     .filter-hidden(style={display:'none'})
                                         .brand Western Digital
                                         .standard M.2 Sata

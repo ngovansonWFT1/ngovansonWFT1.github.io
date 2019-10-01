@@ -67,7 +67,27 @@
 }
 
 .notice.showed a {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    position: relative;
+    color: #2db0f1;
+}
+
+.notice.showed a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.notice.showed a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #2db0f1;
 }
 
 form button.btn.btn-primary {
@@ -77,6 +97,11 @@ form button.btn.btn-primary {
     padding: 0.5rem 2rem;
     background-color: #02C874;
     border: 0;
+    transition: 0.3s;
+}
+
+form button.btn.btn-primary:hover {
+    background-color: #F57224;
 }
 
 .form-group > label {
@@ -164,4 +189,53 @@ label.force::after {
 section.guaranty {
     margin-top: 300px;
     position: relative;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    *{}
+
+.notice {
+    width: 90%;
+    padding: 1rem 2rem;
+}
+
+.radio-check {
+    grid-template-columns: 1fr;
+}
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    *{}
+
+.notice {
+    width: 90%;
+}
+
+.radio-check {
+    grid-template-columns: 1fr;
+}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    *{}
+
+.notice {
+    width: 90%;
+}
+
+.radio-check {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    *{}
+
+.radio-check {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }

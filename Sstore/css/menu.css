@@ -414,9 +414,9 @@ ul.menu-list-item-level-2 span {
     content: url(./../images/menu/icon2.0.png);
 }
 
-.menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item.active:nth-child(3)::before {}
+/* .menu-main .container .list-menu-left ul.menu-list-cover .menu-level-1 li.menu-list-item.active:nth-child(3)::before {}
 
-li.menu-list-item.active {}
+li.menu-list-item.active {} */
 
 .menu-main .container .list-menu-left ul.menu-list-cover li.menu-list-item .menu-level-2 {
     position: absolute;
@@ -448,7 +448,7 @@ li {
     align-items: center;
 }
 
-li.breadcrumb-item.active {width: 200px;display: flex;justify-content: flex-start;align-items: center;}
+li.breadcrumb-item.active {width: 300px;display: flex;justify-content: flex-start;align-items: center;}
 
 .breadcrumb-item+.breadcrumb-item::before {
     content: url(./../images/menu/arrow-1.png);
@@ -542,6 +542,33 @@ li.sub-menu-list-item > a {
 @media (max-width: 575.98px) {
     *{}
 
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 0;
+}
+
+li.breadcrumb-item.active {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    /* height: 100px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 141px;
+    transform: translateY(-7px);
+}
+
+li.breadcrumb-item.active::before {
+    transform: translateY(10px);
+}
+
+    .only-button-quickly-search.display-none {
+        display: none;
+    }
+
+    .contain-button-nav.display-none {
+        display: none;
+    }
+
 
     ol.breadcrumb {
         padding-left: 1.5rem;
@@ -572,6 +599,11 @@ li.sub-menu-list-item > a {
 
     .sub-menu-small-screen {
         display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
     }
 
     .sub-menu-small-screen nav {
@@ -586,6 +618,14 @@ li.sub-menu-list-item > a {
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 767.98px) and (min-width: 576px) {
     *{}
+
+    .only-button-quickly-search.display-none {
+        display: none;
+    }
+
+    .contain-button-nav.display-none {
+        display: none;
+    }
 
     .sub-menu-small-screen nav {
         background-color: #eff0f5;
@@ -613,6 +653,11 @@ li.sub-menu-list-item > a {
 
     .sub-menu-small-screen {
         display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
     }
 
     .wraper-menutop.fixed-top {
@@ -624,11 +669,21 @@ li.sub-menu-list-item > a {
 @media (min-width: 768px) and (max-width: 991.98px) {
     *{}
 
-.sub-menu-level-2 {
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.sub-cover-by-menu {
+    padding-left: 2.1rem;
 }
+    .only-button-quickly-search.display-none {
+        display: none;
+    }
+
+    .contain-button-nav.display-none {
+        display: none;
+    }
+    .sub-menu-level-2 {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
     .sub-menu-small-screen nav {
         background-color: #eff0f5;
@@ -660,6 +715,11 @@ li.sub-menu-list-item > a {
 
     .sub-menu-small-screen {
         display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
     }
 
     .wraper-menutop.fixed-top {
@@ -671,15 +731,29 @@ li.sub-menu-list-item > a {
 @media (min-width: 992px) and (max-width: 1199.98px) {
     *{}
 
-.menu-main .container .list-menu-left ul.menu-list-cover li.menu-list-item.active .menu-level-2.active-done {
-    left: 20rem;
-    display: grid!important;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 1rem;
-    width: 42rem;
-    height: 28rem;
+li.breadcrumb-item.active {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    transform: translateY(-7px);
 }
+
+li.breadcrumb-item.active::before {
+    transform: translateY(10px);
+}
+
+    .menu-main .container .list-menu-left ul.menu-list-cover li.menu-list-item.active .menu-level-2.active-done {
+        left: 20rem;
+        display: grid!important;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 1rem;
+        width: 42rem;
+        height: 28rem;
+    }
 
     .wraper-menutop.fixed-top.desc-height {
         height: 5.5rem;

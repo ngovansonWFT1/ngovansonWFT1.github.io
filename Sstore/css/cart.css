@@ -1,5 +1,80 @@
 *{}
 
+.table-cart-detail {
+    min-height: 300px;
+}
+
+.right-content {
+    display: flex;
+}
+
+.table-res {
+    display: none;
+    min-height: 200px;
+}
+
+.sum-price {}
+
+.sum-price  .right-content p {
+    font-size: 1.25rem;
+    color: #ff0000;
+    font-family: 'Proxima Nova Semibold';
+    margin-right: 0.5rem;
+}
+
+.sum-price .right-content span {
+    font-size: 1.25rem;
+    color: #ff0000;
+    font-family: 'Proxima Nova Semibold';
+}
+
+.sum-price .left-content p {
+    text-transform: uppercase;
+    font-family: 'Proxima Nova Semibold';
+    font-size: 1.25rem;
+}
+
+.sum-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.action-btn button.btn.btn-danger {
+    border: 0;
+    margin: auto;
+    display: block;
+}
+
+.action-btn .quantity {
+    margin-bottom: 1rem;
+}
+
+.infor-res-pr {
+    padding: 1rem 1.5rem;
+}
+
+.infor-res-pr .price-res span {
+    color: #02C874;
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+}
+
+.infor-res-pr p {
+    font-size: 1.1rem;
+    font-family: 'Proxima Nova Semibold';
+}
+
+.list-res-pr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2d2d2d;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
 .action-button-cart {
     display: flex;
     justify-content: flex-end;
@@ -89,4 +164,105 @@ tfoot tr td:last-child p {
 section.cart {
     margin-top: 300px;
     margin-bottom: 3rem;
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    *{}
+
+.action-button-cart {
+    flex-flow: column;
+}
+
+.action-button-cart a {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.action-btn .quantity {
+    margin-top: 0;
+}
+
+.infor-res-pr p {
+    /* text-align: justify; */
+}
+
+.action-btn .quantity .quantity-option {
+    flex-flow: column;
+}
+
+.list-res-pr {
+    align-items: flex-start;
+}
+
+.infor-res-pr {
+    padding: 0.5rem;
+}
+
+.list-res-pr .block-img {
+    width: 362px;
+    align-items: flex-start;
+}
+
+.table-res {
+    display: block;
+}
+
+    .table-cart-detail {
+        min-height: unset;
+        overflow-x: scroll;
+        display: none;
+    }
+    
+    .table-cart-detail::-webkit-scrollbar-track {
+        background-color: #F5F5F5;
+    }
+    
+    .table-cart-detail::-webkit-scrollbar {
+        height: 5px;
+        background-color: #F5F5F5;
+    }
+    
+    .table-cart-detail::-webkit-scrollbar-thumb {
+        background-color: #F90;
+        background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%,rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    }
+    
+    .table-cart-detail table {
+        min-width: 600px;
+        height: 382px;
+        width: 2500px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    *{}
+
+.table-res {
+    display: block;
+}
+
+.table-cart-detail {
+    display: none;
+}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    *{}
+
+.table-cart-detail {
+    display: none;
+}
+
+.table-res {
+    display: block;
+}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
 }

@@ -26,6 +26,10 @@ $(function () {
         $('.layout-and-sort .list-icon').removeClass('add-background');
     })
 
+    $('.button-filter').click(function() {
+        $('section.product-list .col-lg-3').toggleClass('shown')
+    })
+
     // let $grid = $('.block-card').isotope({
     //     itemSelector: '.card',
     //     layoutMode: 'fitRows',
@@ -245,6 +249,21 @@ $(function () {
         $('.page-3').css('display', 'none')
         $('.page-1').css('display', 'none')
     })
+
+    // $(window).resize(function() {
+    //     x= window.outerWidth;
+    //     if( x >= 768 && x <= 992) {
+    //         $('.layout-and-sort .list-icon').css('display', 'none');
+    //         $('.layout-and-sort .grid-icon').css('display', 'none');
+    //         $('.grid-product-list').css('display', 'none');
+    //         $('.list-product-appearence').css('display', 'block');
+    //     } else {
+    //         $('.layout-and-sort .list-icon').css('display', 'flex');
+    //         $('.layout-and-sort .grid-icon').css('display', 'flex');
+    //         $('.grid-product-list').css('display', 'block');
+    //         $('.list-product-appearence').attr('display', 'none');
+    //     }
+    // })
 
 
 })

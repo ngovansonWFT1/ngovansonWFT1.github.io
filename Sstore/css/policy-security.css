@@ -1,39 +1,20 @@
 *{}
 
-section.contact-us {
-    padding-bottom: 10rem;
+.security p {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
 }
 
-.middle-body {
-    margin-top: 300px;
+.security ol.level-1 li:last-child > p {
+    margin-left: 0;
 }
-
-.hanoi {
-    padding-bottom: 2rem;
-}
-
-.contact-content {
-    padding-bottom: 2rem;
-}
-
-.contact-content h3, .hanoi h3 {
-    text-transform: uppercase;
-    font-family: 'Proxima Nova Semibold';
-}
-
-.contact-map iframe {
-    width: 100%;
-    height: 450px;
-}
-
-.contact-content h3, .hanoi h3 {text-align: left!important;}
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     *{}
 
-.contact-map iframe {
-    height: 350px;
+.security p {
+    padding-left: 0;
 }
 }
 
