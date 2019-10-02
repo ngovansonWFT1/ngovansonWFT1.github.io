@@ -378,8 +378,16 @@ label .checkmark:after {
 @media (max-width: 575.98px) {
     *{}
 
+.dropdown-menu.prod-l1 {
+    width: 11rem;
+}
+
+.sort-product-by-brand .dropdown button#dropdownMenuButton {
+    width: 11rem;
+}
+
 .grid-product-list {
-    min-height: unset;
+    min-height: 400px;
     overflow-x: scroll;
 }
 
@@ -481,7 +489,7 @@ section.product-list .container .row {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .grid-product-list {
-        min-height: unset;
+        min-height: 400px;
         overflow-x: scroll;
     }
     
@@ -570,7 +578,7 @@ section.product-list .container .row {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .grid-product-list {
-        min-height: unset;
+        min-height: 400px;
         overflow-x: scroll;
     }
     

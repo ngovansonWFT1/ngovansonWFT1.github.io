@@ -178,6 +178,7 @@ section.cart {
 .action-button-cart a {
     width: 100%;
     margin-bottom: 1rem;
+    margin-left: 0;
 }
 
 .action-btn .quantity {
