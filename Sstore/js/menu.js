@@ -98,222 +98,163 @@ $(document).ready(function(){
     }
 
     if (url.match('about-us')) {
-        $('.menu-right a:last-child').children().addClass('ws')
         $('ol.breadcrumb li:nth-child(2)').text('Giới thiệu')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
-    
+    } 
+
     if (url.match('cart')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+      
         $('ol.breadcrumb li:nth-child(2)').text('Giỏ hàng')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
+    } 
 
     if (url.match('change-return')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+       
         $('ol.breadcrumb li:nth-child(2)').text('Phiếu yêu cầu đổi trả')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('guaranty')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+      
         $('ol.breadcrumb li:nth-child(2)').text('Phiếu yêu cầu bảo hành')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
-
     if (url.match('pay-ment-method')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+       
         $('ol.breadcrumb li:nth-child(2)').text('Phương thức thanh toán')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
-
+    } 
     if (url.match('payment')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+      
         $('ol.breadcrumb li:nth-child(2)').text('Thanh toán')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
+    } 
 
     if (url.match('policy-delivery')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+       
         $('ol.breadcrumb li:nth-child(2)').text('Chính sách giao hàng')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
+    } 
 
     if (url.match('policy-guaranty')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+      
         $('ol.breadcrumb li:nth-child(2)').text('Chính sách bảo hành')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
+    } 
 
     if (url.match('policy-restore')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+    
         $('ol.breadcrumb li:nth-child(2)').text('Chính sách đổi trả')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
+    } 
 
     if (url.match('policy-security')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+     
         $('ol.breadcrumb li:nth-child(2)').text('Chính sách bảo mật thông tin')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('rule-buy-product')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+      
         $('ol.breadcrumb li:nth-child(2)').text('Điều khoản mua bán hàng hóa')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
+    } 
 
     if (url.match('recrument')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+       
         $('ol.breadcrumb li:nth-child(2)').text('Tuyển dụng')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     // Page-product
     if (url.match('product-list')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+      
         $('ol.breadcrumb li:nth-child(2)').text('Ổ cứng SSD')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
+    } 
 
     if (url.match('top-ssd')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+        
         $('ol.breadcrumb li:nth-child(2)').text('Top SSD')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
+    } 
 
     if (url.match('product-list-sale')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+       
         $('ol.breadcrumb li:nth-child(2)').text('Sản phẩm giảm giá')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('product-list-ram')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+       
         $('ol.breadcrumb li:nth-child(2)').text('Ram Laptop')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('top-ram')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+    
         $('ol.breadcrumb li:nth-child(2)').text('Top Ram')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
-
+    } 
 
     if (url.match('product-list-ram-pc')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+      
         $('ol.breadcrumb li:nth-child(2)').text('Ram PC')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
-    }
-
+    } 
     if (url.match('product-list-mobi-hard-disk')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+      
         $('ol.breadcrumb li:nth-child(2)').text('Ổ cứng di động')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('top-mobi-disk')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+      
         $('ol.breadcrumb li:nth-child(2)').text('Top Ổ cứng di động')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('product-list-microSD')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+        
         $('ol.breadcrumb li:nth-child(2)').text('Thẻ nhớ')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('top-microsd')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+       
         $('ol.breadcrumb li:nth-child(2)').text('Top Thẻ nhớ')
         $('ol.breadcrumb li:nth-child(3)').css('display','none')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('product-detail')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+      
         $('ol.breadcrumb li:nth-child(2)').text('Ổ cứng SSD')
         $('ol.breadcrumb li:nth-child(3)').text('SSD Samsung 860 Evo 500GB')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
 
     if (url.match('product-detail-ram')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+       
         $('ol.breadcrumb li:nth-child(2)').text('Ram Laptop')
         $('ol.breadcrumb li:nth-child(3)').text('Ram Laptop Apacer DDR3L 4GB')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('product-detail-rampc')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+       
         $('ol.breadcrumb li:nth-child(2)').text('Ram PC')
         $('ol.breadcrumb li:nth-child(3)').text('Ram PC G.SKILL Trident Z')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('product-detail-mobi-hardisk')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+    
         $('ol.breadcrumb li:nth-child(2)').text('Ổ cứng di động')
         $('ol.breadcrumb li:nth-child(3)').text('Ổ cứng di động Apacer')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
     if (url.match('product-detail-microsd')) {
-        $('.menu-right a:last-child').children().addClass('ws')
+       
         $('ol.breadcrumb li:nth-child(2)').text('Thẻ nhớ')
         $('ol.breadcrumb li:nth-child(3)').text('Thẻ Nhớ MicroSDHC SanDisk')
-    } else {
-        $('.menu-right a:last-child').children().removeClass('ws')
     }
 
 

@@ -88,10 +88,19 @@
     background-color: #F57224;
     border: 0;
     padding: 0.5rem 1rem;
+    transition: 0.4s;
+}
+
+.action-button-cart a.btn.btn-primary:hover {
+    background-color: #bc4b09;
 }
 
 .action-button-cart a:last-child {
     background-color: #02C874;
+}
+
+.action-button-cart a:last-child:hover {
+    background-color: #008744;
 }
 
 tfoot tr td p {

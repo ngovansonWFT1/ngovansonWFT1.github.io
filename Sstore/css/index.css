@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(54, 172, 189, 0.3);
+    background-color: #1bb8cd85;
     top: 375px;
     left: 0;
     transition: 0.4s;
@@ -47,7 +47,7 @@
     top: 375px;
     left: 0;
     z-index: 1;
-    background-color: rgba(54, 172, 189, 0.3);
+    background-color: #1bb8cd85;
     width: 100%;
     height: 100%;
     transition: 0.4s;
@@ -291,6 +291,15 @@ h5.card-title {
     color: #444444;
 }
 
+h5.card-title a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .block-img .layer-sale .sale-percent, .block-appearence-list .layer-sale .sale-percent {
     position: absolute;
     top: 0;
@@ -486,10 +495,10 @@ a.dropdown-item.checked::after {
 .block-img-top a img {
     width: 100%;
     height: 100%;
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     object-fit: cover;
     object-position: center;
 }
@@ -532,7 +541,7 @@ a.dropdown-item.checked::after {
 .img-feature-left a, .img-feature-middle a {
     display: block;
     position: relative;
-    padding-bottom: calc(100% * 1 / 1);
+    padding-bottom: calc(100% * 224/ 360);
 }
 
 .img-feature-left a img, .img-feature-middle a img {
@@ -596,6 +605,43 @@ section.slide-hot-product {
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     *{}
+
+.layer-cover p {
+    bottom: 50px;
+    font-size: 1.5rem;
+}
+
+p {}
+
+.layer-cover-1 {
+    top: 0;
+}
+
+.layer-cover-1 p {
+    bottom: 50px;
+    font-size: 1.5rem;
+}
+
+.block-img-top a {
+    padding-bottom: calc(100% * 220 / 360);
+}
+
+.block-img-top {
+    height: 220px;
+    margin-bottom: 2rem;
+}
+
+.layer-cover {
+    top: 0;
+}
+
+.img-feature-left a img, .img-feature-middle a img {
+    height: 224px;
+}
+
+.img-feature-left, .img-feature-middle {
+    height: 224px;
+}
 
 .card .layer-hover {
     margin-bottom: 0;
@@ -709,11 +755,11 @@ section.slide-hot-product {
     }
 
     .img-feature-right {
-        grid-gap: 1rem;
+        grid-gap: 0;
     }
 
     .img-feature-middle {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .img-feature-middle img {
@@ -721,7 +767,7 @@ section.slide-hot-product {
     }
 
     .img-feature-left {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         width: 100%;
     }
 
@@ -754,6 +800,36 @@ section.slide-hot-product {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     *{}
+
+.layer-cover-1 {
+    top: 0;
+}
+
+.layer-cover-1 p {
+    bottom: 30px;
+    font-size: 2rem;
+}
+
+.block-img-top {
+    height: 242px;
+}
+
+.block-img-top a {
+    padding-bottom: calc(100% *242 / 510);
+}
+
+.layer-cover {
+    top: 0;
+}
+
+.layer-cover p {
+    bottom: 30px;
+    font-size: 2rem;
+}
+
+.img-feature-left a, .img-feature-middle a {
+    padding-bottom: calc(100% * 367 / 510);
+}
 
 .card .layer-hover {
     margin-bottom: 0;
@@ -903,6 +979,44 @@ section.slide-hot-product {
 @media (min-width: 768px) and (max-width: 991.98px) {
     *{}
 
+.layer-cover-1 {
+    top: 0;
+}
+
+.layer-cover-1 p {
+    bottom: 20px;
+    font-size: 1rem;
+}
+
+.img-feature-right {
+    grid-gap: 0.625rem;
+}
+
+.block-img-top a {
+    padding-bottom: calc(100% * 100 / 210);
+}
+
+.block-img-top {
+    height: 100px;
+}
+
+.layer-cover {
+    top: 0;
+}
+
+.layer-cover p {
+    bottom: 20px;
+    font-size: 1rem;
+}
+
+.img-feature-left a, .img-feature-middle a {
+    padding-bottom: calc(100% * 210 / 210);
+}
+
+.img-feature-left, .img-feature-middle {
+    height: 210px;
+}
+
 .card .layer-hover {
     margin-bottom: 0;
 }
@@ -1004,6 +1118,48 @@ section.slide-hot-product {
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     *{}
+
+.layer-cover-1 {
+    top: 0;
+}
+
+.layer-cover-1 p {
+    bottom: 30px;
+    font-size: 1.25rem;
+}
+
+.img-feature-right {
+    grid-gap: 0.9rem;
+}
+
+.block-img-top {
+    height: 138px;
+}
+
+.block-img-top a {
+    padding-bottom: calc(100% * 138 / 290);
+}
+
+.layer-cover {
+    top: 0;
+}
+
+.layer-cover p {
+    bottom: 30px;
+    font-size: 1.25rem;
+}
+
+.img-feature-left a img, .img-feature-middle a img {
+    height: 290px;
+}
+
+.img-feature-left, .img-feature-middle {
+    height: 290px;
+}
+
+.img-feature-left a, .img-feature-middle a {
+    padding-bottom: calc(100% * 290 / 290);
+}
 
 .card .layer-hover {
     margin-bottom: 0;

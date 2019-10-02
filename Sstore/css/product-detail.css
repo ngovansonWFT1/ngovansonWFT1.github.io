@@ -28,11 +28,13 @@ section.description-product-detail {
 section.comment .bagde-title {
     transform: translateY(-1.25rem);
     margin-bottom: 3rem;
+    background-color: #008744;
 }
 
 section.description-product-detail .bagde-title {
     transform: translateY(-1.25rem);
     margin-bottom: 3rem;
+    background-color: #008744;
 }
 
 .description-product {
@@ -95,7 +97,7 @@ section.description-product-detail .bagde-title {
     padding-right: 1rem;
 }
 
-.infor-delivery p:first-child {/* margin-bottom: 0; */margin-top: 1rem;font-family: 'Proxima Nova Semibold';}
+.infor-delivery p:first-child {/* margin-bottom: 0; *//* margin-top: 1rem; */font-family: 'Proxima Nova Semibold';}
 
 .free-delivery {
     display: flex;
@@ -116,12 +118,22 @@ section.description-product-detail .bagde-title {
 .action-button button.btn.btn-secondary {
     background-color: #02C874;
     border: 0;
+    transition: 0.4s;
+}
+
+.action-button button.btn.btn-secondary:hover {
+    background-color: #008744;
 }
 
 .action-button .btn.btn-primary {
     background-color: #F57224;
     border: 0;
     margin-right: 1rem;
+    transition: 0.4s;
+}
+
+.action-button .btn.btn-primary:hover {
+    background-color: #bc4b09;
 }
 
 .action-button {
@@ -166,7 +178,7 @@ section.description-product-detail .bagde-title {
 }
 
 .quantity .quantity-option .asc button, .quantity .quantity-option .desc button {
-    background-color: #ffffff!important;
+    background-color: #ffffff;
     border: 1px solid #cacaca;
     border-radius: 0;
     width: 30px;
@@ -177,6 +189,12 @@ section.description-product-detail .bagde-title {
     box-shadow: 0 0 3px -1px;
     padding-top: 2px;
     color: #000000;
+    transition: 0.4s;
+}
+
+.quantity .quantity-option .asc button:hover, .quantity .quantity-option .desc button:hover {
+    color: #ffffff;
+    background-color: #02C874;
 }
 
 .quantity .quantity-option .desc button {
