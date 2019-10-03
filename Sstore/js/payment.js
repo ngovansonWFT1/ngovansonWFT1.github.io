@@ -1,7 +1,7 @@
 $(function() {
 
     $.ajax({
-        url: './../city-district.json',
+        url: './city-district.json',
         type: 'GET',
         dataType: 'json'
     }).done(function(data){
