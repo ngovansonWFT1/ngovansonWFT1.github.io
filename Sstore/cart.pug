@@ -1,0 +1,86 @@
+extends layout.pug
+block header
+    title Giỏ hàng
+
+
+block content
+    section.cart
+        .container
+            .row
+                .col-md-12
+                    .title-top
+                        h4 Giỏ hàng
+                    .table-cart-detail
+                        table
+                            thead
+                                tr
+                                    th Ảnh sản phẩm
+                                    th Tên sản phẩm
+                                    th Đơn giá
+                                    th Số lượng
+                                    th Thành tiền
+                                    th Xóa
+                            tbody
+                                tr 
+                                    td 
+                                        img(src="./../images/cart/1.jpg", alt="mobi-hard-disk")
+                                    td
+                                        p Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
+                                    td
+                                        p 
+                                            span 2250000
+                                            span đ
+                                    td 
+                                        .quantity
+                                            .quantity-option
+                                                .asc
+                                                    button.btn.btn-primary +
+                                                .screen
+                                                    p 1
+                                                .desc
+                                                    button.btn.btn-primary -
+                                    td
+                                        p
+                                            span 2250000
+                                            span đ
+                                    td
+                                        button.btn.btn-warning
+                                            i.fas.fa-times
+                            tfoot
+                                tr
+                                    td(colspan="4")
+                                        p Tổng tiền
+                                    td(colspan="2")
+                                        p 
+                                            span 2250000
+                                            span đ
+                    .table-res
+                        .list-res-pr
+                            .block-img
+                                img.img-fluid(src="./../images/cart/1.jpg" alt="mobi-hard-disk")
+                            .infor-res-pr
+                                p Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
+                                span.price-res Giá
+                                    span 2250000
+                                    span đ
+                            .action-btn
+                                .quantity
+                                    .quantity-option
+                                        .asc
+                                            button.btn.btn-primary +
+                                        .screen
+                                            p 1
+                                        .desc
+                                            button.btn.btn-primary -
+                                button.btn.btn-danger
+                                    i.fas.fa-trash-alt
+                        
+                        .sum-price
+                            .left-content
+                                p Tổng tiền:
+                            .right-content
+                                p 2250000
+                                span đ
+                    .action-button-cart
+                        a.btn.btn-primary(href="index.html") Tiếp tục mua hàng
+                        a.btn.btn-info(href="payment.html") Thực hiện thanh toán

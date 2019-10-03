@@ -1,0 +1,83 @@
+[
+    {
+
+            "province": "Hà Nội",
+            "district": [
+                "Quận Hoàn Kiếm",
+                "Quận Ba Đình",
+                "Quận Cầu Giấy",
+                "Quận Đống Đa",
+                "Quận Hà Đông",
+                "Quận Hai Bà Trưng",
+                "Quận Thanh Xuân",
+                "Quận Hoàng Mai",
+                "Quận Long Biên",
+                "Quận Tây Hồ",
+                "Thị xã Sơn Tây",
+                "Huyện Ba Vì",
+                "Huyện Chương Mỹ",
+                "Huyện Đan Phượng",
+                "Huyện Đông Anh",
+                "Huyện Gia Lâm",
+                "Huyện Hoài Đức",
+                "Huyện Mê Linh",
+                "Huyện Mỹ Đức",
+                "Huyện Phú Xuyên",
+                "Huyện Phúc Thọ",
+                "Huyện Quốc Oai ",
+                "Huyện Sóc Sơn",
+                "Huyện Thạch Thất",
+                "Huyện Thanh Oai",
+                "Huyện Thanh Trì",
+                "Huyện Thường Tín",
+                "Quận Bắc Từ Liêm",
+                "Quận Nam Từ Liêm"
+            ]
+
+    },
+    {
+        "province": "TP Hồ Chí Minh",
+        "district": [
+            "Quận 1",
+            "Quận 2",
+            "Quận 3",
+            "Quận 4",
+            "Quận 5",
+            "Quận 6",
+            "Quận 7",
+            "Quận 8",
+            "Quận 9",
+            "Quận 10",
+            "Quận 11",
+            "Quận 12",
+            "Quận Gò Vấp",
+            "Quận Tân Bình",
+            "Quận Tân Phú",
+            "Quận Bình Thạnh",
+            "Quận Phú Nhuận",
+            "Quận Thủ Đức", 
+            "Quận Bình Tân",
+            "Huyện Củ Chi",
+            "Huyện Hóc Môn",
+            "Huyện Bình Chánh",
+            "Huyện Nhà Bè",
+            "Huyện Cần Giờ"
+        ]
+    },
+    {
+        "province": "Thái Bình",
+        "district": [
+            "Thành phố Thái Bình",
+            "Huyện Đông Hưng",
+            "Huyện Hưng Hà",
+            "Huyện Kiến Xương",
+            "Huyện Quỳnh Phụ",
+            "Huyện Thái Thụy",
+            "Huyện Tiền Hải",
+            "Huyện Vũ Thư"
+        ]
+    }
+
+
+
+]

@@ -1,0 +1,1968 @@
+extends layout.pug
+
+block header 
+    title Sstore - Danh sách sản phẩm
+
+block content
+    section.product-list
+        .container
+            .row
+                .col-lg-3
+                    .filter-product
+
+                        .filter-by-brand.filter-prd
+                            .title-brand
+                                h4 Thương hiệu
+                            .form-check
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Apacer")/ Apacer
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Kingston")/ Kingston
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="G.Skill")/ G.Skill
+                                    span.checkmark
+                                label
+                                    input(type='radio' name='brand' value="name" data-filter="Corsair")/ Corsair
+                                    span.checkmark
+                               
+                        .filter-by-size-standard.filter-prd
+                            .title-standard
+                                h4 Bus Ram
+                            .form-check
+                                label
+                                    input(type='radio' name="standard" value="standard" data-filter=1333)/ 1333MHz
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="standard" value="standard" data-filter=1600)/ 1600MHz
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="standard" value="standard" data-filter=2133)/ 2133MHz
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="standard" value="standard" data-filter=2400)/ 2400MHz
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="standard" value="standard" data-filter=2666)/ 2666Mhz
+                                    span.checkmark
+                                
+                        .filter-by-price.filter-prd
+                            .title-price
+                                h4 Giá sản phẩm
+                            .form-check
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[200000,500000])/ 200.000 - 500.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[500000,1000000])/ 500.000 - 1.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[1000000,2000000])/ 1.000.000 - 2.000.000
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="price" value="price" data-filter=[2000000,3000000])/ 2.000.000 - 3.000.000
+                                    span.checkmark
+                                //- label
+                                //-     input(type='radio' name="price" value="price" data-filter=[3000000,5000000])/ 3.000.000 - 5.000.000
+                                //- label
+                                //-     input(type='radio' name="price" value="price" data-filter=[5000000,10000000])/ 5.000.000 - 10.000.000
+                        .filter-by-capacity.filter-prd
+                            .title-capacity
+                                h4 Dung lượng
+                            .form-check
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[0, 4])/ 4GB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[5, 8])/ 8GB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[9, 16])/ 16GB
+                                    span.checkmark
+                                label
+                                    input(type='radio' name="memory" value="memory" data-filter=[17, 32])/ 32GB
+                                    span.checkmark
+                               
+                        
+                .col-lg-9
+                    .product-list-filtered
+                        .title-top-change-layout-prd
+                            .title-product
+                                h5 RAM Laptop
+                            .layout-and-sort
+                                .list-icon 
+                                    img(src="./../images/product-list/list-disactive.svg", alt="list-icon")
+                                .grid-icon
+                                    img(src="./../images/product-list/grid-active.svg", alt="grid-icon")
+                                .sort-product-by-brand
+                                    .dropdown
+                                        button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                            | Mặc định
+                                        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                            a.dropdown-item(href='#' data-sort-by= "all" data-filter="all") Mặc định
+                                            a.dropdown-item(href='#' data-sort-by="name" data-filter="ASC") A - Z
+                                            a.dropdown-item(href='#' data-sort-by="name" data-filter="DESC") Z - A
+                                            a.dropdown-item(href='#' data-sort-by="price" data-filter="ASC") Giá tăng dần
+                                            a.dropdown-item(href='#' data-sort-by="price" data-filter="DESC") Giá giảm dần
+                        .grid-product-list
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/1.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 44%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="product-detail-ram.html") Ram Laptop Apacer DDR3L 4GB Bus 1600Mhz 1.35v DV.04G2K.KAM
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 420.000 đ
+                                                del 750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 1600
+                                        .price 420000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/2.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 40%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="product-detail-ram.html") Ram Laptop Apacer DDR3 4GB Bus 1600Mhz 1.5v DS.04G2K.KAM
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 450.000 đ
+                                                del 750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="cart.html") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Apacer
+                                            .standard 1600
+                                            .price 450000
+                                            .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/3.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 17%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="product-detail-ram.html") Ram G.Skill DDR3 4GB Bus 1600 1.5v F3-12800CL11S-4GBSQ
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 490.000 đ
+                                                //- del 1.750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 490000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/4.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="product-detail-ram.html") Ram Kingston DDR3L 4GB Bus 1600 SODIMM 1.35v ( KVR16LS11/4 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 500.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1600
+                                        .price 500000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 23%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="product-detail-ram.html") Ram G.Skill Ripjaws DDR3L 4GB Bus 1600MHz 1.35v F3-1600C11S-4GRSL
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 500.000 đ
+                                                del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 500000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/6.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 18%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="product-detail-ram.html") Ram Kingston DDR3 4GB Bus 1333 SODIMM 1.5v ( KVR13S9S8/4 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 520.000 đ
+                                                //- del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1333
+                                        .price 520000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/7.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="product-detail-ram.html") Ram Corsair DDR3L 4GB Bus 1600 SODIMM 1.35v ( CMSO4GX3M1C1600C11 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 550.000 đ
+                                                del 770.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 550000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/8.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 14%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="product-detail-ram.html") Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 560.000 đ
+                                                //- del 2.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 560000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/9.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 27%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="product-detail-ram.html") Ram Kingston DDR3L 8GB Bus 1600 SODIMM 1.35v ( KVR16LS11/8 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 870.000 đ
+                                                del 1.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1600
+                                        .price 870000
+                                        .memory 8
+
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/10.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="product-detail-ram.html") Ram G.Skill Ripjaws DDR4 16GB Bus 2133MHz 1.2v F4-2133C15S-16GRS
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.890.000 đ
+                                                //- del 2.190.000 đ
+                                        .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 2133
+                                        .price 1890000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/11.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM laptop Kingston KVR26S19S8/8 (1x8GB) DDR4 2666MHz
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 960.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Kingston
+                                            .standard 2666
+                                            .price 960000
+                                            .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/12.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM laptop G.SKILL RipJaws F4-2400C16S-4GRS (1x4GB) DDR4 2400MHz
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 590.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 2400
+                                        .price 590000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/13.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 22%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM laptop Kingston KCP424SS8/8FR (1x8GB) DDR4 2400MHz
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                //- del 3.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2400
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/14.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM Laptop 8GB Corsair Bus 2400MHz CMSX8GX4M1A2400C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2400
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/15.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM Laptop 16GB Corsair Bus 2666Mhz CMSX16GX4M1A2666C18
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.490.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 2490000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/16.png' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM DDR4 Apacer 8GB 2666Mhz CL19 for Notebook (ES.08G2V.GNH)
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.390.000 đ
+                                                //- del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 2666
+                                        .price 1390000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/17.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 33%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Laptop Kingston DDR4 8GB Bus 2400 KVR24S17S8/8
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 840.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2400
+                                        .price 840000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/18.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 13%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") (8GB DDR4 1x8G 2666) Ram G.skill Ripjaws Laptop - F4-2666C19S-8GRS
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.090.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 2666
+                                        .price 1090000
+                                        .memory 8
+                            
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/1.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 44%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Laptop Apacer DDR3L 4GB Bus 1600Mhz 1.35v DV.04G2K.KAM
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 420.000 đ
+                                                del 750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 1600
+                                        .price 420000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/2.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 40%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Laptop Apacer DDR3 4GB Bus 1600Mhz 1.5v DS.04G2K.KAM
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 450.000 đ
+                                                del 750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Apacer
+                                            .standard 1600
+                                            .price 450000
+                                            .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/3.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 17%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram G.Skill DDR3 4GB Bus 1600 1.5v F3-12800CL11S-4GBSQ
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 490.000 đ
+                                                //- del 1.750.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 490000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/4.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Kingston DDR3L 4GB Bus 1600 SODIMM 1.35v ( KVR16LS11/4 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 500.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1600
+                                        .price 500000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/5.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 23%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram G.Skill Ripjaws DDR3L 4GB Bus 1600MHz 1.35v F3-1600C11S-4GRSL
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 500.000 đ
+                                                del 650.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 500000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/6.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 18%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Kingston DDR3 4GB Bus 1333 SODIMM 1.5v ( KVR13S9S8/4 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 520.000 đ
+                                                //- del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1333
+                                        .price 520000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/7.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Corsair DDR3L 4GB Bus 1600 SODIMM 1.35v ( CMSO4GX3M1C1600C11 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 550.000 đ
+                                                del 770.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 550000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/8.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 14%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 560.000 đ
+                                                //- del 2.150.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 560000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/9.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 27%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Kingston DDR3L 8GB Bus 1600 SODIMM 1.35v ( KVR16LS11/8 )
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 870.000 đ
+                                                del 1.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1600
+                                        .price 870000
+                                        .memory 8
+
+                            .block-card
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/10.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram G.Skill Ripjaws DDR4 16GB Bus 2133MHz 1.2v F4-2133C15S-16GRS
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.890.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 2133
+                                        .price 1890000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/11.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM laptop Kingston KVR26S19S8/8 (1x8GB) DDR4 2666MHz
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 960.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                        .filter-hidden(style={display:'none'})
+                                            .brand Kingston
+                                            .standard 2666
+                                            .price 960000
+                                            .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/12.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM laptop G.SKILL RipJaws F4-2400C16S-4GRS (1x4GB) DDR4 2400MHz
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 590.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 2400
+                                        .price 590000
+                                        .memory 4
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/13.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 22%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM laptop Kingston KCP424SS8/8FR (1x8GB) DDR4 2400MHz
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                //- del 3.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2400
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/14.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM Laptop 8GB Corsair Bus 2400MHz CMSX8GX4M1A2400C16
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.290.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2400
+                                        .price 1290000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/15.jpg' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 16%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM Laptop 16GB Corsair Bus 2666Mhz CMSX16GX4M1A2666C18
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 2.490.000 đ
+                                                //- del 2.190.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 2490000
+                                        .memory 16
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/16.png' alt='ssd')
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") RAM DDR4 Apacer 8GB 2666Mhz CL19 for Notebook (ES.08G2V.GNH)
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.390.000 đ
+                                                //- del 1.890.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 2666
+                                        .price 1390000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/17.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 33%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") Ram Laptop Kingston DDR4 8GB Bus 2400 KVR24S17S8/8
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 840.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2400
+                                        .price 840000
+                                        .memory 8
+                                .card
+                                    .block-img
+                                        img.card-img-top(src='./../images/product-list/ram/18.jpg' alt='ssd')
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 13%
+                                                h5 giảm
+                                    .card-body
+                                        .product-title
+                                            h5.card-title
+                                                a(href="") (8GB DDR4 1x8G 2666) Ram G.skill Ripjaws Laptop - F4-2666C19S-8GRS
+                                        .rating-price
+                                            .rating
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.far.fa-star
+                                            .price-product
+                                                p 1.090.000 đ
+                                                del 1.250.000 đ
+                                    .layer-hover
+                                        .button-buy
+                                            a.btn.btn-info(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 2666
+                                        .price 1090000
+                                        .memory 8
+                            
+                                
+                        .list-product-appearence
+                            .page-1.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/1.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 44%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="product-detail-ram.html") Ram Laptop Apacer DDR3L 4GB Bus 1600Mhz 1.35v DV.04G2K.KAM
+                                        span 420.000 đ
+                                        span
+                                            del 750.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 1600
+                                        .price 420000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/2.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 40%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="product-detail-ram.html") Ram Laptop Apacer DDR3 4GB Bus 1600Mhz 1.5v DS.04G2K.KAM
+                                        span 450.000 đ
+                                        span
+                                            del 750.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 1600
+                                        .price 450000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/3.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 17%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="product-detail-ram.html") Ram G.Skill DDR3 4GB Bus 1600 1.5v F3-12800CL11S-4GBSQ
+                                        span 490.000 đ
+                                        //- span
+                                        //-     del 1.750.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 490000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/4.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="product-detail-ram.html") Ram Kingston DDR3L 4GB Bus 1600 SODIMM 1.35v ( KVR16LS11/4 )
+                                        span 550.000 đ
+                                        //- span
+                                        //-     del 700.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1600
+                                        .price 550000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/5.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 23%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="product-detail-ram.html") Ram G.Skill Ripjaws DDR3L 4GB Bus 1600MHz 1.35v F3-1600C11S-4GRSL
+                                        span 500.000 đ
+                                        span
+                                            del 650.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 500000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/6.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 18%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="product-detail-ram.html") Ram Kingston DDR3 4GB Bus 1333 SODIMM 1.5v ( KVR13S9S8/4 )
+                                        span 520.000 đ
+                                        //- span
+                                        //-     del 1.890.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1333 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1333
+                                        .price 520000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/7.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="product-detail-ram.html") Ram Corsair DDR3L 4GB Bus 1600 SODIMM 1.35v ( CMSO4GX3M1C1600C11 )
+                                        span 550.000 đ
+                                        span
+                                            del 770.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1333 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 550000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/8.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 14%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="product-detail-ram.html") Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
+                                        span 560.000 đ
+                                        //- span
+                                        //-     del 2.150.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 560000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/9.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 27%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="product-detail-ram.html") Ram Kingston DDR3L 8GB Bus 1600 SODIMM 1.35v ( KVR16LS11/8 )
+                                        span 870.000 đ
+                                        span
+                                            del 1.190.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="cart.html") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1600
+                                        .price 870000
+                                        .memory 8
+                            .page-2.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/10.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 36%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram G.Skill Ripjaws DDR4 16GB Bus 2133MHz 1.2v F4-2133C15S-16GRS
+                                        span 1.890.000 đ
+                                        //- span
+                                        //-     del 690.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2133 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 2133
+                                        .price 1890000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/11.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM laptop Kingston KVR26S19S8/8 (1x8GB) DDR4 2666MHz
+                                        span 960.000 đ
+                                        //- span
+                                        //-     del 1.490.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2133 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 960000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/12.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM laptop G.SKILL RipJaws F4-2400C16S-4GRS (1x4GB) DDR4 2400MHz
+                                        span 590.000 đ
+                                        //- span
+                                        //-     del 700.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR4 Bus: 2400 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard 2400
+                                        .price 590000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/13.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 22%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM laptop Kingston KCP424SS8/8FR (1x8GB) DDR4 2400MHz
+                                        span 1.290.000 đ
+                                        //- span
+                                        //-     del 3.250.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2400 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2400
+                                        .price 1290000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/14.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM Laptop 8GB Corsair Bus 2400MHz CMSX8GX4M1A2400C16
+                                        span 1.290.000 đ
+                                        //- span
+                                        //-     del 1.150.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2400 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2400
+                                        .price 1290000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/15.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM Laptop 16GB Corsair Bus 2666Mhz CMSX16GX4M1A2666C18
+                                        span 2.490.000 đ
+                                        //- span
+                                        //-     del 700.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 16 GB Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 2490000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/16.png", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM DDR4 Apacer 8GB 2666Mhz CL19 for Notebook (ES.08G2V.GNH)
+                                        span 1.390.000 đ
+                                        //- span
+                                        //-     del 1.890.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 2666
+                                        .price 1390000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/17.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 33%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram Laptop Kingston DDR4 8GB Bus 2400 KVR24S17S8/8
+                                        span 840.000 đ
+                                        span
+                                            del 1.250.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2400 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2400
+                                        .price 840000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/18.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 13%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") (8GB DDR4 1x8G 2666) Ram G.skill Ripjaws Laptop - F4-2666C19S-8GRS
+                                        span 1.090.000 đ
+                                        span
+                                            del 1.250.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2400 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skil
+                                        .standard 2400
+                                        .price 1090000
+                                        .memory 8
+                            .page-3.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/1.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 44%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram Laptop Apacer DDR3L 4GB Bus 1600Mhz 1.35v DV.04G2K.KAM
+                                        span 420.000 đ
+                                        span
+                                            del 750.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 1600
+                                        .price 420000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/2.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 40%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram Laptop Apacer DDR3 4GB Bus 1600Mhz 1.5v DS.04G2K.KAM
+                                        span 450.000 đ
+                                        span
+                                            del 750.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 1600
+                                        .price 450000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/3.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 17%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram G.Skill DDR3 4GB Bus 1600 1.5v F3-12800CL11S-4GBSQ
+                                        span 490.000 đ
+                                        //- span
+                                        //-     del 1.750.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 490000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/4.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram Kingston DDR3L 4GB Bus 1600 SODIMM 1.35v ( KVR16LS11/4 )
+                                        span 550.000 đ
+                                        //- span
+                                        //-     del 700.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1600
+                                        .price 550000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/5.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 23%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram G.Skill Ripjaws DDR3L 4GB Bus 1600MHz 1.35v F3-1600C11S-4GRSL
+                                        span 500.000 đ
+                                        span
+                                            del 650.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 1600
+                                        .price 500000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/6.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 18%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram Kingston DDR3 4GB Bus 1333 SODIMM 1.5v ( KVR13S9S8/4 )
+                                        span 520.000 đ
+                                        //- span
+                                        //-     del 1.890.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1333 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1333
+                                        .price 520000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/7.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 29%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram Corsair DDR3L 4GB Bus 1600 SODIMM 1.35v ( CMSO4GX3M1C1600C11 )
+                                        span 550.000 đ
+                                        span
+                                            del 770.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1333 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 550000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/8.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 14%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram Corsair Vengeance DDR3 4GB Bus 1600 1.5V ( CMSX4GX3M1A1600C9 )
+                                        span 560.000 đ
+                                        //- span
+                                        //-     del 2.150.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 1600
+                                        .price 560000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/9.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 27%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram Kingston DDR3L 8GB Bus 1600 SODIMM 1.35v ( KVR16LS11/8 )
+                                        span 870.000 đ
+                                        span
+                                            del 1.190.000đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR3 Bus: 1600 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 1600
+                                        .price 870000
+                                        .memory 8
+                            
+                            .page-4.page
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/10.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 36%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram G.Skill Ripjaws DDR4 16GB Bus 2133MHz 1.2v F4-2133C15S-16GRS
+                                        span 1.890.000 đ
+                                        //- span
+                                        //-     del 690.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2133 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skill
+                                        .standard 2133
+                                        .price 1890000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/11.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM laptop Kingston KVR26S19S8/8 (1x8GB) DDR4 2666MHz
+                                        span 960.000 đ
+                                        //- span
+                                        //-     del 1.490.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2133 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2666
+                                        .price 960000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/12.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM laptop G.SKILL RipJaws F4-2400C16S-4GRS (1x4GB) DDR4 2400MHz
+                                        span 590.000 đ
+                                        //- span
+                                        //-     del 700.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 4 GB Chuẩn: DDR4 Bus: 2400 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Western Digital
+                                        .standard 2400
+                                        .price 590000
+                                        .memory 4
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/13.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 22%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM laptop Kingston KCP424SS8/8FR (1x8GB) DDR4 2400MHz
+                                        span 1.290.000 đ
+                                        //- span
+                                        //-     del 3.250.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2400 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2400
+                                        .price 1290000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/14.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 43%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM Laptop 8GB Corsair Bus 2400MHz CMSX8GX4M1A2400C16
+                                        span 1.290.000 đ
+                                        //- span
+                                        //-     del 1.150.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2400 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2400
+                                        .price 1290000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/15.jpg", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 38%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM Laptop 16GB Corsair Bus 2666Mhz CMSX16GX4M1A2666C18
+                                        span 2.490.000 đ
+                                        //- span
+                                        //-     del 700.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 16 GB Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Corsair
+                                        .standard 2666
+                                        .price 2490000
+                                        .memory 16
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/16.png", alt="ssd")
+                                        //- .layer-sale
+                                        //-     img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                        //-     .sale-percent
+                                        //-         p 11%
+                                        //-         h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") RAM DDR4 Apacer 8GB 2666Mhz CL19 for Notebook (ES.08G2V.GNH)
+                                        span 1.390.000 đ
+                                        //- span
+                                        //-     del 1.890.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2666 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Apacer
+                                        .standard 2666
+                                        .price 1390000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/17.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 33%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") Ram Laptop Kingston DDR4 8GB Bus 2400 KVR24S17S8/8
+                                        span 840.000 đ
+                                        span
+                                            del 1.250.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2400 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand Kingston
+                                        .standard 2400
+                                        .price 840000
+                                        .memory 8
+                                .block-appearence-list
+                                    .left-only-img
+                                        img.img-fluid(src="./../images/product-list/ram/18.jpg", alt="ssd")
+                                        .layer-sale
+                                            img.img-fluid(src='./../images/home-page/bagde-sale.png' alt='ssd')
+                                            .sale-percent
+                                                p 13%
+                                                h5 giảm
+                                    .right-infor-price
+                                        h5
+                                            a(href="") (8GB DDR4 1x8G 2666) Ram G.skill Ripjaws Laptop - F4-2666C19S-8GRS
+                                        span 1.090.000 đ
+                                        span
+                                            del 1.250.000 đ
+                                        p Loại sản phẩm: Ram Laptop Dung lượng: 8 GB Chuẩn: DDR4 Bus: 2400 Mhz Điện áp: 1.2v Bảo hành: 3 năm
+                                        a.btn.btn-primary(href="") Mua ngay
+                                    .filter-hidden(style={display:'none'})
+                                        .brand G.Skil
+                                        .standard 2400
+                                        .price 1090000
+                                        .memory 8
+                        .page-number
+                            button.btn.btn-primary.isActive 1
+                            button.btn.btn-primary 2
+                            button.btn.btn-primary 3
+                            button.btn.btn-primary Trang cuối
+
+                            
+                    
+

@@ -1,0 +1,100 @@
+extends layout.pug
+block header
+    title Sstore - Thanh toán
+
+block content
+    section.payment
+        .container
+            .row
+                .col-lg-6
+                    .infor-puchare
+                        h4 Thông tin mua hàng
+                        form
+                            .form-group
+                                input#name.form-control(type='text' aria-describedby='name' placeholder='Họ tên')
+                            .form-group
+                                input#email.form-control(type='email' aria-describedby='email' placeholder='Email')
+                            .form-group
+                                input#phone.form-control(type='text' placeholder='Số ĐT')
+                            .form-group
+                                input#address.form-control(type='text' placeholder='Địa chỉ')
+                            .form-group
+                                .province-select
+                                    label(for='province') Tỉnh thành
+                                    select#province.form-control
+                                        option --- Chọn tỉnh thành ---
+                            .form-group
+                                .district-select
+                                    label(for='district') Quận huyện
+                                    select#district.form-control
+                                        option --- Chọn Quận/Huyện ---
+                            .form-group.form-check
+                                input#exampleCheck1.form-check-input(type='checkbox')
+                                span.check-mark
+                                label.form-check-label(for='exampleCheck1') Giao hàng đến địa chỉ khác           
+                            .form-group
+                                textarea#note.form-control(rows='10' placeholder='Ghi chú')
+                .col-lg-6
+                    .payment-method
+                        .infor
+                            h4 Thanh toán
+                        .choose-method
+                            .form-check
+                                label
+                                    input#exampleRadios1.form-check-input(type='radio' name='exampleRadios' value='option1' checked='')/ Thanh toán khi giao hàng
+                                    span.checkmark
+                            .guide-payment-delivery
+                                p Bạn sẽ nhận hàng và thanh toán với nhân viên giao hàng.Lưu ý: nhân viên giao hàng thuộc đối tác của Sstore chỉ cho phép kiểm tra hàng, không hỗ trợ kĩ thuật, lắp đặt. Khi nhận hàng cần kiểm tra bao bì, nếu có dấu hiệu bất thường xin vui lòng báo lại cho Sstore qua hotline 0976 747 562.
+                            .form-check
+                                label
+                                    input#exampleRadios2.form-check-input(type='radio' name='exampleRadios' value='option2' )/ Chuyển khoản qua ngân hàng
+                                    span.checkmark
+                            .guide-payment-bank
+                                p *** 
+                                    strong Số TK :
+                                    | 32310000283558
+                                p 
+                                    strong Chủ TK: 
+                                    |Ngô Văn Sơn
+                                p 
+                                    strong Ngân hàng:
+                                    |  BIDV chi nhánh Hà Nội ***
+                                p Sau khi chuyển khoản vui lòng báo cho giám đốc 0976 747 562, để tiến hành xác thực đặt hàng.
+                    .payment-confirm
+                        .infor  
+                            h4 Đơn hàng
+                        .order-product
+                            .detail-order
+                                img(src="./../images/payment/1.jpg", alt="hard-disk")
+                                .name-detail
+                                    p Ổ cứng di động Transcend StoreJet Slim 25M3S 2TB TS2TSJ25M3S
+                                .price-detail
+                                    p 2.250.000 đ
+                            .order-cost
+                                .provitional
+                                    p Tạm tính
+                                    p 2.250.000 đ
+                                .transport-cost
+                                    p Chi phí vận chuyển
+                                    p 30.000 đ
+                            .summary-order
+                                p Tổng cộng
+                                p 2.280.000 đ
+                            .action-after
+                                a(href="cart.html") 
+                                    i.fas.fa-chevron-left
+                                    |Quay lại giỏ hàng
+                                a.btn.btn-info(href="#ex1", rel="modal:open") Đặt ngay
+                                #ex1.modal
+                                    .title
+                                        h4 Đặt hàng thành công
+                                    .img-cart
+                                        img.img-fluid(src="./../images/payment/2.jpg", alt="")
+                                    p Cảm ơn bạn đã cho chúng tôi có cơ hội được phục vụ!
+                                        br 
+                                        |Chúng tôi sẽ liên hệ với bạn để xác nhận đơn hàng!
+                                        br 
+                                        |Tư vấn bán hàng: 0976 747 562
+                                    a(href='index.html' rel='') 
+                                        i.fas.fa-chevron-left
+                                        |Quay lại trang chủ

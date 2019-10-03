@@ -1,0 +1,159 @@
+extends layout.pug
+block header
+    title Sstore - Chi tiết sản phẩm
+
+block content
+    section.product-price-detail
+        .container
+            .row
+                .col-lg-4
+                    .slide-detail-product
+                        .img-product-big
+                            .img-top
+                                img.img-fluid(src="./../images/product-detail/1.jpg", alt="Samsung SSD 860 EVO")
+                            .img-top
+                                img.img-fluid(src="./../images/product-detail/2.jpg", alt="Samsung SSD 860 EVO")
+                            .img-top
+                                img.img-fluid(src="./../images/product-detail/3.jpg", alt="Samsung SSD 860 EVO")
+                            .img-top
+                                img.img-fluid(src="./../images/product-detail/4.jpg", alt="Samsung SSD 860 EVO")
+                        .img-product-small
+                            .img-slide
+                                img.img-fluid(src="./../images/product-detail/1.jpg", alt="Samsung SSD 860 EVO")
+                            .img-slide
+                                img.img-fluid(src="./../images/product-detail/2.jpg", alt="Samsung SSD 860 EVO")
+                            .img-slide
+                                img.img-fluid(src="./../images/product-detail/3.jpg", alt="Samsung SSD 860 EVO")
+                            .img-slide
+                                img.img-fluid(src="./../images/product-detail/4.jpg", alt="Samsung SSD 860 EVO")
+                .col-lg-5
+                    .detail-wrapper
+                        .title
+                            h4 SSD Samsung 860 Evo 500GB 2.5-Inch SATA III MZ-76E500BW
+                        .rating
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.far.fa-star
+                        .brand-and-status
+                            span.brand Thương hiệu:
+                                span Samsung
+                            span.status |Tình trạng:
+                                span Còn hàng
+                        .price
+                            p 1.830.000 đ
+                        .infor-detail
+                            .block-infor
+                                i.fas.fa-check-circle
+                                span Chuẩn SSD: 2.5 inches
+                            .block-infor
+                                i.fas.fa-check-circle
+                                span Tốc độ đọc: 550 MB/s
+                            .block-infor
+                                i.fas.fa-check-circle 
+                                span Tốc độ ghi: 520 MB/s
+                            .block-infor
+                                i.fas.fa-check-circle 
+                                span Bảo hành 5 năm
+                        .quantity
+                            p Số lượng
+                            .quantity-option
+                                .asc
+                                    button.btn.btn-primary +
+                                .screen
+                                    p 1
+                                .desc
+                                    button.btn.btn-primary -
+                        .action-button
+                            a.btn.btn-primary(href="cart.html")
+                                h5 Mua ngay
+                                p Giao hàng miễn phí tận nới
+                            button.btn.btn-secondary
+                                h5 Gọi đặt hàng
+                                p Vui lòng gọi: 0976 747 562       
+                .col-lg-3
+                    .delivery-options
+                        .free-delivery
+                            img(src="./../images/product-detail/truck-icon.png", alt="icon-truck")
+                            .infor-delivery
+                                p Giao hầng miễn phí toàn quốc 
+                                p Cho đơn hàng giá trị từ 300.000đ trở lên
+                        .free-delivery
+                            img(src="./../images/product-detail/cityscape-icon.png", alt="icon-city")
+                            .infor-delivery
+                                p Hà Nội
+                                p Nhận hàng từ 6h đến 24h sau khi đặt hàng
+                        .free-delivery
+                            img(src="./../images/product-detail/place-icon.png", alt="icon-place")
+                            .infor-delivery
+                                p Các tỉnh thành khác
+                                p Nhận hàng từ 24h đến 96h sau khi đặt hàng
+    section.description-product-detail
+        .container
+            .bagde-title
+                h4 Mô tả sản phẩm
+            .description-product
+                p Ổ cứng SSD Samsung 860 là dòng ổ cứng được nâng cấp từ dòng 850 EVO danh tiếng và bán chạy nhất toàn cầu, là sự lựa chọn tốt nhất dành cho game thủ cả về giá và hiệu năng hoạt động được khẳng định và đánh giá chi tiết bởi các tạp chí công nghệ hàng đầu thế giới như Cnet, thessdreview, the PC World. TweakTown..
+                .only-img
+                    img.img-fluid(src="./../images/product-detail/5.jpg", alt="samsung-evo860")
+                .infor-with-img
+                    .block-content
+                        h5 Công nghệ Samsung 64-Layer 3D V-NAND Technology
+                        p Công nghệ Samsung 64-Layer 3D V-NAND của Samsung chính là bước đột phá về kiến trúc bộ nhớ Flash bằng việc làm tăng mật độ, hiệu suất, và giới hạn về sự chịu đựng của kiến trúc NAND phẳng thông thường hiện nay. Công nghệ Samsung 3D V-NAND sắp xếp 64 lớp tế bào Cell theo chiều dọc làm tăng mật độ Cell cao hơn và hiệu suất tốt hơn gấp đôi so với công nghệ 32-Layer được sử dụng trên các dòng 850.
+                    .img-block
+                        img.img-fluid(src="./../images/product-detail/6.jpg", alt="")
+                .infor-with-img
+                    .img-block
+                        img.img-fluid(src="./../images/product-detail/7.jpg", alt="")
+                    .block-content
+                        h5 Tối ưu hóa tốc độ lên mức tối đa
+                        p Đạt hiệu suất đọc/ghi đáng kinh ngạc, giúp bạn hoàn thành công việc hàng ngày của bạn nhanh chóng với công nghệ Intelligent TurboWrite của Samsung. Với công nghệ mới này, hiệu suất Samsung 860 EVO được tăng lên 1.9 lần so với 840 Evo. Ổ cứng SSD Samsung 860 EVO mang đẳng cấp hàng đầu về tốc độ đọc (550MB/s) và ghi (520Mb/s). Ngoài ra, tối ưu hóa hiệu suất ngẫu nhiên IOPs lên đến 98k.
+                .infor-with-img
+                    .block-content
+                        h5 Chế độ RAPID Mode
+                        p Phần mềm Magician của Samsung được trang bị chế độ RAPID Mode. Khi được kích hoạt sẽ làm tăng hiệu năng của SSD Samsung 860 Evo rất nhiều lần bằng cách sử dụng bộ nhớ RAM PC còn trống như một bộ nhớ cache tốc độ cao. Phiên bản mới nhất của Samsung Magician hỗ trợ lên đến 4 GB bộ nhớ Cache trên một hệ thống 16GB DRAM.
+                    .img-block
+                        img.img-fluid(src="./../images/product-detail/8.jpg", alt="")
+                .infor-with-img
+                    .img-block
+                        img.img-fluid(src="./../images/product-detail/9.jpg", alt="")
+                    .block-content
+                        h5 Sức chịu đựng và độ tin cậy
+                        p Ổ cứng SSD Samsung 860 Evo có độ bền và độ tin cậy gấp sáu lần vì được trang bị công nghệ Intelligent TurboWrite mới được cải tiến so với thế hệ trước 850 EVO và có chế độ bảo hành 5 năm tại MemoryZone. Với độ tin cậy cao, ổ cứng SSD Samsung 860 EVO đảm bảo hiệu suất đáng tin cậy lâu hơn so với thế hệ trước đó 850 EVO.
+                .infor-with-img
+                    .block-content
+                        h5 Cải thiện năng lượng hiệu quả
+                        p Ổ cứng SSD Samsung 860 EVO làm gia tăng tuổi thọ pin lâu hơn trên máy tính xách tay của bạn với một bộ điều khiển được thiết kế và tối ưu hóa cho công nghệ 3D V-NAND, hỗ trợ Device-Sleep cho Windows với mức tiêu thụ điện chỉ 2mW. Ổ cứng SSD Samsung 860 EVO tiêu thụ năng lượng ít hơn 25% so với 840 EVO trong các hoạt động ghi nhờ công nghệ siêu hiệu quả 3D V-NAND, chỉ tốn một nửa năng lượng hơn so với Planar 2D NAND truyền thống.
+                    .img-block
+                        img.img-fluid(src="./../images/product-detail/10.jpg", alt="")
+                .infor-with-img
+                    .img-block
+                        img.img-fluid(src="./../images/product-detail/11.jpg", alt="")
+                    .block-content
+                        h5 Mã hóa dữ liệu cực an toàn với mã hóa AES 256 Encryption
+                        p Ổ cứng SSD Samsung 860 EVO đi kèm các công cụ mã hóa dựa trên phần cứng mới nhất của Samsung. Chuẩn mã hóa AES bằng phần cứng 256-bit không hề ảnh hưởng đến dữ liệu của bạn, phù hợp với TCG Opal 2.0. Dễ dàng tích hợp vào Windows với Microsoft IEEE1667 để giữ cho dữ liệu của bạn được bảo vệ ở tất cả các lần.
+                .infor-with-img
+                    .block-content
+                        h5 Chống nhiệt
+                        p Công nghê Dynamic Thermal Guard của ổ cứng SSD Samsung 860 EVO liên tục giám sát và duy trì nhiệt độ lý tưởng cho ổ đĩa để hoạt động trong điều kiện tối ưu nhất, đảm bảo tính an toàn của dữ liệu. Dynamic Thermal Guard tự động điều chỉnh hiệu năng ổ cứng để hạ nhiệt độ xuống khi nhiệt độ tăng lên trên mức cho phép. Điều này bảo vệ dữ liệu của bạn trong khi hoạt động để giúp đảm bảo máy tính của bạn luôn được an toàn khỏi bị quá nóng.
+                    .img-block
+                        img.img-fluid(src="./../images/product-detail/12.jpg", alt="")
+                .infor-with-img
+                    .img-block
+                        img.img-fluid(src="./../images/product-detail/13.jpg", alt="")
+                    .block-content
+                        h5 Samsung Navigator - Dễ dàng nâng cấp SSD và tăng hiệu suất tối đa
+                        p Chỉ cần ba bước đơn giản, phần mềm đi kèm Samsung Data Migration dễ dàng cho phép bạn di chuyển tất cả các dữ liệu và các ứng dụng từ ổ đĩa HDD hiện tại của bạn sang ổ cứng SSD Samsung 860 Evo. Các phần mềm bao gồm Samsung Magician cũng cho phép bạn thiết lập, tối ưu hóa và quản lý hệ thống của bạn, cho hiệu suất SSD cực cao.
+                .infor-with-img
+                    .block-content
+                        h5 End-to-end - Giải pháp tích hợp
+                        p Samsung là thương hiệu duy nhất trên thế giới tự thiết kế và sản xuất tất cả các thành phần linh kiện bên trong sản phẩm của họ, cho phép tích hợp hoàn toàn các linh kiện với nhau. Kết quả: tiêu thụ điện năng thấp hơn, hiệu suất được nâng cao, với bộ nhớ cache lên đến 1 GB LPDDR2 DRAM và cải thiện hiệu quả tiêu thụ năng lượng với bộ điều khiển MJX - tất cả từ nhà sản xuất bộ nhớ số 1 thế giới.
+                    .img-block
+                        img.img-fluid(src="./../images/product-detail/14.jpg", alt="")
+    section.comment
+        .container
+            .bagde-title
+                h4 Bình luận
+            .fb-comments(data-href='https://developers.facebook.com/docs/plugins/comments#configurator' data-width='auto' data-numposts='5')
+

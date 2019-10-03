@@ -1,0 +1,100 @@
+extends layout.pug
+block header
+    title Sstore - Phiếu yêu cầu bảo hành
+
+block content
+    section.guaranty
+        .container
+            .row
+                .col-md-12
+                    .content-guide
+                        h3 Phiếu yêu cầu bảo hành
+                        p Hướng dẫn thủ tục đổi trả bảo hành tại Sstore:
+                        ol 
+                            li Vui lòng điền đầy đủ thông tin vào các phần dưới đây
+                            li Phiếu này phải in ra và gửi kèm cùng với sản phẩm mà quí khách muốn đổi bảo hành.
+                            li Sản phẩm bảo hành phải có phiếu bảo hành hoặc tem bảo hành của Sstore.
+                            li Trong trường hợp thông tin cung cấp trong phiếu đổi trả bảo hành có khác biệt với tình trạng của sản phẩm được gửi bảo hành, bộ phận bảo hành Sstore sẻ liên hệ với quí khách trong vòng 24 giờ.
+                            li Sstore sẻ không chịu trách nhiệm trong trường hợp quí khách cung cấp sai địa chỉ gửi trả sản phẩm bảo hành.
+                    .form-guaranty
+                        .title-form
+                            h4 Phiếu yêu cầu bảo hành
+                        form
+                            .row
+                                .form-group.col-md-6
+                                    label(for='name' class="force") Họ tên:
+                                    input#name.form-control(type='text' aria-describedby='nameHelp' )
+                                    small#nameHelp.form-text.text-muted Vui lòng điền đầy đủ thông tin
+                                .form-group.col-md-6
+                                    label(for='email' class="force") Email:
+                                    input#email.form-control(type='email' aria-describedby='emailHelp')
+                                    small#emailHelp.form-text.text-muted Vui lòng điền đầy đủ thông tin
+                            .row
+                                .form-group.col-md-6
+                                    label(for='phone' class="force") Điện thoại:
+                                    input#phone.form-control(type='text' aria-describedby='phoneHelp')
+                                    small#phoneHelp.form-text.text-muted Vui lòng điền đầy đủ thông tin
+                                .form-group.col-md-6
+                                    label(for='bill-number' class="force") Số hóa đơn:
+                                    input#bill-number.form-control(type='text' aria-describedby='billHelp')
+                                    small#billHelp.form-text.text-muted Vui lòng điền đầy đủ thông tin
+                            .row
+                                .form-group.col-md-6
+                                    label(for='product') Tên sản phẩm:
+                                    input#product.form-control(type='text')
+                                .form-group.col-md-6
+                                    label(for='product') Số series:
+                                    input#product.form-control(type='text') 
+                            .form-group
+                                label(for='address') Địa chỉ:
+                                input#address.form-control(type='text') 
+                            .form-group
+                                h6 Tình trạng sản phẩm
+                                .radio-check
+                                    .form-check
+                                        label
+                                            input(type='radio' name="status" checked)/ Còn sử dụng được
+                                            span.checkmark
+                                        
+                                        //- input#use.form-check-input(type='radio' name='exampleRadios' checked='')
+                                        //- label.form-check-label(for='use')
+                                        //-     | Còn sử dụng được
+                                    .form-check
+                                        label
+                                            input(type='radio' name="status")/ Không thể sử dụng được
+                                            span.checkmark
+                                        //- input#no-use.form-check-input(type='radio' name='exampleRadios' )
+                                        //- label.form-check-label(for='no-use')
+                                        //-     | Không thể sử dụng được
+                            .form-group
+                                h6 Bao bì sản phẩm
+                                .radio-check
+                                    .form-check
+                                        label
+                                            input(type='radio' name="cover" checked)/ Còn bao bì
+                                            span.checkmark
+                                        //- input#have.form-check-input(type='radio' name='exampleRadios1'  checked='')
+                                        //- label.form-check-label(for='have')
+                                        //-     | Còn bao bì
+                                    .form-check
+                                        label
+                                            input(type='radio' name="cover")/ Mất bao bì
+                                            span.checkmark
+                                        //- input#no-have.form-check-input(type='radio' name='exampleRadios1' )
+                                        //- label.form-check-label(for='no-have')
+                                        //-     | Mất bao bì
+                            .form-group
+                                label(for='note') Mô tả chi tiết và ghi chú thêm:
+                                textarea#note.form-control(rows='10')
+                            button.btn.btn-primary(type='submit') Gửi yêu cầu
+                
+                    .notice
+                        p Yêu cầu của bạn đã được gửi thành công!
+                        p Mọi ý kiến thắc mắc vui lòng liên hệ: 0976.747.562
+                        a(href="index.html")
+                            i.fas.fa-chevron-left
+                            |Quay lại trang chủ
+
+                        .closed
+                            i.fas.fa-times
+        .layer-gray
