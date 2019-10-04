@@ -447,7 +447,7 @@ li.menu-list-item.active {} */
 .menu-main .container .list-menu-left ul.menu-list-cover li.menu-list-item .menu-level-2 {
     position: absolute;
     top: 0;
-    left: -5rem;
+    left: 15rem;
     width: 47.5rem;
     height: 18.75rem;
     display: flex!important;
