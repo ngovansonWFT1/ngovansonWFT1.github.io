@@ -196,6 +196,9 @@ $(function () {
             sortBy: sortByValue,
             sortAscending: bol
         });
+        $grid.imagesLoaded( function() {
+            $grid.isotope('.card');
+          });
 
 
 
