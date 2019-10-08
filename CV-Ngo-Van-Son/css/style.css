@@ -1,7 +1,34 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./../libs/font-face/SFProDisplay-Medium.woff2') format('woff2'),
+        url('./../libs/font-face/SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./../libs/font-face/SFProDisplay-Regular.woff2') format('woff2'),
+        url('./../libs/font-face/SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 *, *::after, *::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
 }
 
 .menu .open-menu {
@@ -151,6 +178,11 @@ section#experience {
     opacity: 0;
     transition: all .5s;
     font-size: 20px;
+}
+
+.item-content h3 a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .item-portfolio:hover h3 {
