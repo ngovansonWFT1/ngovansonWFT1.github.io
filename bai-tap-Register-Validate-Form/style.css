@@ -10,6 +10,8 @@ body {
     line-height: 1.5rem;
     color: black;
     background-image: url(./img/Anton_Fadeev_concept_art_artwork_digital_art_Duelist-159863.jpg!d);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h2 {
     padding-top: 10px;
