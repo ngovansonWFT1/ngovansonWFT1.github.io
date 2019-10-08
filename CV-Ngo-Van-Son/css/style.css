@@ -286,7 +286,7 @@ section#experience .row::before {
 }
 
 body {
-    background-color: #EFEFEF;
+    background-color: #E4EDF0;
 }
 
 section#skill {
@@ -385,7 +385,7 @@ li.li-info .title-info {
     font-weight: 500;
     margin-right: 20px;
     display: inline-block;
-    width: 60px;
+    width: 100px;
 }
 
 ul.ul-info {
