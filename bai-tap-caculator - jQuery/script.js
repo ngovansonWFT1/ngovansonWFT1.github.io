@@ -1,31 +1,35 @@
 $doi_phep_tinh = false;
 $phep_tinh_cu = '';
 $doi_dau = false;
+$string = '';
 
 $(document).ready(function() {
    $('#manhinh').attr('disabled', 'true');
    $('.box-buttom #daubang').attr('disabled', 'true');
-   $('.box-buttom .nhan').attr('disabled', 'true');
-   $('.box-buttom .chia').attr('disabled', 'true');
+   $('.box-buttom #nhan').attr('disabled', 'true');
+   $('.box-buttom #chia').attr('disabled', 'true');
+   $('.box-buttom #cong').attr('disabled', 'true');
+   $('.box-buttom #tru').attr('disabled', 'true');
    $('#so_0').attr('disabled', 'true');
    //$('.box-buttom .doidau').attr('disabled', 'true');
 });
 
 $('.box-buttom .phimso,.doidau').on('click', function () {
    $('.box-buttom #so_0').removeAttr('disabled');
-   $char = $(this).html();
+   $char = $(this).text();
    $value_caculation = $('#manhinh').val();
-   $string = $value_caculation + $char;
+   $string += $char;
+   // $string = $value_caculation + $char;
    $('.box-buttom .pheptinh').removeAttr('disabled');
    $('.box-buttom .equal').removeAttr('disabled');
-   if ($char == $('.doidau').html()) {
+   if ($char == $('.doidau').text()) {
       if ($doi_dau) {
          $doi_dau = false;
-         $('#manhinh').val($string.substring(0, $string.length - 3));
+         $('#manhinh').val($string);
       }
       else {
          $doi_dau = true;
-         $('#manhinh').val('-' + $string.substring(0, $string.length - 3) );
+         $('#manhinh').val('-' + $string);
       }
    }
    else {
